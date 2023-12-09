@@ -631,4 +631,15 @@ transition: 0.5s ease-in-out;
     .font_adjust{
         margin-top: 30px;
     }
+    .additional-h2{
+        font-size: var(--font-size18);
+    }
+    .bottomline button{
+        padding: 3px 5px !important;
+        font-size: var(--font-size11);
+    }
+    .residential .container .wrapper ul li a{
+        font-size: var(--font-size10) !important;
+        line-height: var(--line-height28)!important;
+    }
 }
