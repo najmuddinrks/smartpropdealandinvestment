@@ -1,0 +1,92 @@
+
+.slider  .slick-next:before, .slider .slick-prev:before{
+    font-family:"fontawesome";
+    font-size: var(--font-size30);
+    color: var(--dark-color);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    }
+    
+
+.slider .slick-next{
+    right: -43px !important;
+    top: 11px;
+    background: var(--pure-white) !important;
+    box-shadow: var(--box-shadow) !important;
+    width: 40px!important;
+    height: 40px!important;
+    border-radius: 50%;
+    text-align: center;
+    border-left: 1px solid red;
+}
+
+.slider .slick-prev:hover .main-blog li a,
+.slider .slick-prev.active .main-blog li a,
+.main-blog li:hover a, 
+.main-blog li:active a{
+    overflow-x: hidden;
+    z-index: -111;
+}
+
+.slider .slick-prev {
+    left: -43px !important;
+    background: var(--pure-white) !important;
+    box-shadow: var(--box-shadow) !important;
+    width: 40px!important;
+    height: 40px!important;
+    top: 11px;
+    border-right: 1px solid red;
+    transition: 0.5s ease-in-out;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+  /* *********************slider2************************* */
+  .slider2  .slick-next:before, .slider2 .slick-prev:before{
+    font-family:"fontawesome";
+    font-size: var(--font-size30);
+    color: var(--dark-color);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    }
+    .slider2 .slick-next{
+      right: -43px !important;
+      top: 11px;
+      background: var(--pure-white) !important;
+      box-shadow: var(--box-shadow) !important;
+      width: 40px!important;
+      height: 40px!important;
+      border-radius: 50%;
+      text-align: center;
+      border-left: 1px solid red;
+  }
+  
+  .slider2 .slick-prev:hover .main-blog li a,
+  .slider2 .slick-prev.active .main-blog li a,
+  .main-blog li:hover a, 
+  .main-blog li:active a{
+      overflow-x: hidden;
+      z-index: -111;
+  }
+  
+  .slider2 .slick-prev {
+      left: -43px !important;
+      background: var(--pure-white) !important;
+      box-shadow: var(--box-shadow) !important;
+      width: 40px!important;
+      height: 40px!important;
+      top: 11px;
+      border-right: 1px solid red;
+      transition: 0.5s ease-in-out;
+      border-radius: 50%;
+      text-align: center;
+      overflow: hidden;
+      z-index: 2;
+  }
+ 
