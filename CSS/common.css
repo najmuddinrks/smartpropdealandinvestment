@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap');
 /* paragraph font set */
 @font-face {
     font-family:"montserrat-regular" ;
@@ -109,6 +109,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 ul li {
     list-style: none;
@@ -597,7 +598,6 @@ font-size: var(--font-size16);
     transition: 0.5s ease-in-out;
 }
 
-
 .h2-set::before{
     content: '';
     position: absolute;
@@ -612,17 +612,16 @@ font-size: var(--font-size16);
 .h2-set:hover::before{
     width: 300px;
 }
-.selectSection {
+/* 
+:is(.selectSection,.selectSection2,.selectSection3,.selectSection4) {
 	display: flex;
-	/* grid-template-columns: repeat( 3, 1fr); */
 	justify-content: center;
 	text-align: center;
   margin-top: 10px;
-}
-.selectSection button {
+} */
+/* :is(.selectSection button ,.selectSection2 button, .selectSection3 button,.selectSection3 button) {
     font-family:var(--montserrat-medium-500-para) ;
     font-size: var(--font-size18);
-	/* background-color:var(--softpink); */
     background: var(--form-bg);
 	margin-left: 7px;
     margin-right: 7px;
@@ -638,7 +637,7 @@ font-size: var(--font-size16);
     white-space: nowrap;
     cursor: pointer;
 }
-.selectSection button::before {
+:is(.selectSection button ,.selectSection2 button, .selectSection3 button, .selectSection3 button)::before {
     content: '';
     position: absolute;
     top: 0px;
@@ -649,11 +648,11 @@ font-size: var(--font-size16);
     border-top: 1px dashed var(--pure-white);
     transition: 0.5s ease-in-out;
 }
-.selectSection button:hover::before {
+:is(.selectSection button ,.selectSection2 button, .selectSection3 button, .selectSection3 button):hover::before {
     width: 100%;
     height: 100%;
 }
-.selectSection button::after {
+:is(.selectSection button ,.selectSection2 button, .selectSection3 button, .selectSection3 button)::after {
     content: '';
     position: absolute;
     bottom: 0px;
@@ -664,17 +663,18 @@ font-size: var(--font-size16);
     border-bottom: 1px dashed var(--pure-white);
     transition: 0.5s ease-in-out;
 }
-.selectSection button:hover::after {
+:is(.selectSection button ,.selectSection2 button, .selectSection3 button, .selectSection3 button):hover::after {
     width: 100%;
     height: 100%;
-}
+} */
 
-.selectSection button:hover {
+/* :is(.selectSection button ,.selectSection2 button, .selectSection3 button, .selectSection3 button):hover {
 	cursor: pointer;
-    color: var(--li-color) !important;
+    color: var(--pure-white) !important;
     border: none;
     outline: none;
 	box-shadow: var(--box-shadow);
+    background: var(--red-main);
 }
 .active {
 	background-color:var(--red-main) !important;
@@ -682,15 +682,15 @@ font-size: var(--font-size16);
     border: none;
     outline: none;
 	box-shadow: var(--box-shadow);
-}
+} */
 /* hides every element except the first */
-.content:not(:first-child) {
+/* .content:not(:first-child) {
 	display: none;
-}
-.contentSection {
+} */
+/* :is(.contentSection, .contentSection2){
 	margin: 36px 50px;
 	display: grid;
-}
+} */
 .contentSection ul{
     width: 100%;
     height: auto;
@@ -721,7 +721,43 @@ font-size: var(--font-size16);
 .contentSection ul li a:hover{
     color: var(--m-hover-button);
 }
-.selectSection2 {
+.contentSection4 ul{
+    width: 100%;
+    height: auto;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; */
+    gap: 0px 40px;
+    align-items: flex-start;
+}
+.contentSection4 ul li{
+    /* width: 25%; */
+    padding: 5px 0px 0 0;
+}
+.contentSection4 ul li:first-child{
+    padding-bottom: 15px !important;
+}
+
+
+.contentSection4 ul li a{
+    font-family: var(--montserrat-regular-400-para);
+    max-width: 100%;
+    display: inline-block;
+    color: var(--li-color);
+    font-size: var(--font-size16);
+    line-height: 20px;
+    text-transform: capitalize;
+    overflow: hidden;
+    font-stretch: extra-condensed;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+}
+.contentSection4 ul li a:hover{
+    color: var(--m-hover-button);
+}
+:is(.selectSection,.selectSection2,.selectSection3,.selectSection4){
 	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -729,7 +765,7 @@ font-size: var(--font-size16);
 	text-align: center;
     margin-top: 10px;
 }
-.selectSection2 button {
+:is(.selectSection,.selectSection2,.selectSection3,.selectSection4) button {
     font-family:var(--montserrat-medium-500-para) ;
     font-size: var(--font-size18);
     background: var(--form-bg);
@@ -739,13 +775,17 @@ font-size: var(--font-size16);
     outline: none !important;
     position: relative;
     transition: 0.5s ease-in-out;
-    padding: 3px;
+    padding: 4px 10px;
+    margin: 0px 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     cursor: pointer;
 }
-.selectSection2 button::before {
+.selectSection button{
+    padding: 4px 0px !important;
+}
+:is(.selectSection,.selectSection2,.selectSection3,.selectSection4) button::before {
     content: '';
     position: absolute;
     top: 0px;
@@ -756,11 +796,11 @@ font-size: var(--font-size16);
     border-top: 1px dashed var(--pure-white);
     transition: 0.5s ease-in-out;
 }
-.selectSection2 button:hover::before {
+:is(.selectSection,.selectSection2,.selectSection3,.selectSection4) button:hover::before {
     width: 100%;
     height: 100%;
 }
-.selectSection2 button::after {
+:is(.selectSection,.selectSection2,.selectSection3,.selectSection4) button::after {
     content: '';
     position: absolute;
     bottom: 0px;
@@ -771,24 +811,29 @@ font-size: var(--font-size16);
     border-bottom: 1px dashed var(--pure-white);
     transition: 0.5s ease-in-out;
 }
-.selectSection2 button:hover::after {
+:is(.selectSection,.selectSection2,.selectSection3,.selectSection4) button:hover::after {
     width: 100%;
     height: 100%;
+    color: var(--pure-white);
 }
 
-.selectSection2 button:hover {
+:is(.selectSection,.selectSection2,.selectSection3,.selectSection4) button:hover {
 	cursor: pointer;
-    color: var(--li-color) !important;
+    color: var(--pure-white) !important;
+    background: var(--red-main);
     border: none;
     outline: none;
 	box-shadow: var(--box-shadow);
 }
 .active {
 	background-color:var(--red-main) !important;
-    color: var(--pure-white) !important;
+    color: var(--pure-white)!important;
     border: none;
     outline: none;
 	box-shadow: var(--box-shadow);
+}
+.content:not(:first-child) {
+	display: none;
 }
 
 .margin-center{
@@ -847,7 +892,7 @@ font-size: var(--font-size16);
     left: 0px;
     width: 870px;
     margin-top: 20px;
-    background: red;
+    background: var(--red-main);
 }
 .bottomline{
     border-bottom:1px solid var(--temp-head-col);
@@ -863,3 +908,13 @@ font-size: var(--font-size16);
     background: var(--red-main);
     color: var(--pure-white) !important;
 }
+/* *********************bottom-menu-set**************************** */
+/* .major-part{
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px 20px;
+} */
+/* .mega-block{
+    width: 100%;
+} */
