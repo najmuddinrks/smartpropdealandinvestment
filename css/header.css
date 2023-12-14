@@ -1,0 +1,271 @@
+/* top-,ain-header-section */
+.top-header-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    /* height: 60px; */
+    background:var(--heading-support);
+    box-shadow:var(--box-shadow) ;
+    border-radius: 4px;
+    width: 100vw;
+    z-index: 80;
+}
+.scroll {
+   background: var(--red-main);
+   /* background: blue; */
+
+ }
+.wrapper{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+}
+
+/* top header left sec is starte */
+.top-header-section .container .wrapper .top-header-left{
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 20px;
+}
+/* logo section is going to be startd */
+.top-header-section .container .wrapper .top-header-left .logo{
+   display: block;
+   transition:0.5s ease-in-out;
+   padding-left: 12px;
+}
+.top-header-section .container .wrapper .top-header-left .logo a img{
+   max-width: 222PX;
+   width: 100%;
+   transition: 0.5s ease-in-out;
+}
+.top-header-section .container .wrapper .top-header-left .logo a img:hover{
+   transform: translateX(10px);
+}
+
+/* logo part is over */
+
+ /* drop settinfg started */
+ .top-header-section .container .wrapper .top-header-left .select_box .hasDropdown + .dropBox .drop-setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+ }
+ 
+ .top-header-section .container .wrapper .top-header-left .select_box .hasDropdown + .dropBox .drop-setting  .sub-pattern{
+    padding-top: 3px;
+    line-height: 2;
+ }
+
+
+
+/* international part is stared */
+.top-header-section .container .wrapper .top-header-left .select_box .hasDropdown + .dropBox .drop-setting .global{
+    box-shadow: #0000003d 0px 3px 8px;
+    width: 100%;
+    max-width: 205px;
+    padding: 8px 10px;
+    height: calc(100vh - 10vh);
+    border-bottom-right-radius: 12px;
+ }
+
+ .top-header-section .container .wrapper .top-header-left .select_box .hasDropdown + .dropBox .drop-setting .global .global-formation ul {
+   margin-bottom: 0px;
+ }
+ .top-header-section .container .wrapper .top-header-left .select_box .hasDropdown + .dropBox .drop-setting .global .global-formation ul li{
+   line-height: var(--line-height36);
+ }
+ .top-header-section .container .wrapper .top-header-left .select_box .hasDropdown + .dropBox .drop-setting .global .global-formation ul li img{
+   max-width: 36px;
+ }
+ .top-header-section .container .wrapper .top-header-left .select_box .hasDropdown + .dropBox .drop-setting .global .global-formation ul li a{
+    font-size: var(--font-size16);
+    line-height: var(--line-height24);
+    text-decoration: none;
+    color: var(--para-tint-h4);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    padding-left: 10px;
+ }
+ .top-header-section .container .wrapper .top-header-left .select_box .hasDropdown + .dropBox .drop-setting .global .global-formation ul li a:hover,
+ .top-header-section .container .wrapper .top-header-left .select_box .hasDropdown + .dropBox .drop-setting .global .global-formation ul li a:visited {
+    color: var(--button);
+ }
+/* top-left-header part is ended  */
+
+/* top-right-header part is started HERE....... */
+.top-header-section .container .wrapper .top-header-right{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 0px 10px;
+
+}
+.top-header-section .container .wrapper .top-header-right .smartdeal .select_box{
+   max-width: 320px;
+}
+.top-header-section .container .wrapper .top-header-right .select_box .selected-person{
+   position: relative;
+}
+.top-header-section .container .wrapper .top-header-right .select_box .selected-person + .dropBoxAnother{
+   position: absolute;
+   display: none;
+   opacity: 0;
+   visibility: hidden;
+   box-shadow: var(--box-shadow);
+   top: 55px;
+   left: 50%;
+   z-index: 4;
+   background:url("../IMAGES/top-header.jpg");
+   background-size: 100% 100%;
+   border-radius: 18px;
+   width: 100%;
+   transition:0.5s ease-in-out;
+   min-height: 220px;
+   max-width: 330px;
+}
+.top-header-section .container .wrapper .top-header-right .select_box:hover .selected-person + .dropBoxAnother{
+   display: block;
+   opacity: 1;
+   visibility: visible;
+}
+.top-header-section .container .wrapper .top-header-right .select_box .selected-person + .dropBoxAnother .btn-abs{
+   top: 178px;
+   left: 99px;
+   position: absolute;
+   padding: 4px 8px !important;
+   max-width: 120px;
+}
+
+
+.top-header-section .container .wrapper .top-header-right .select_box .selected-person + .dropBoxAnother::before{
+   content: '';
+   background: url("../IMAGES/top-header.jpg")no-repeat;
+   background-size: 100% 100%;
+   position: absolute;
+   z-index: 6;
+   top: 55px;
+}
+.top-header-section .container .wrapper .top-header-right .select_box .login-bar{
+   position: relative;
+}
+.top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup{
+   position: absolute;
+   width: 100%;
+   height: calc(100vh - 38vh);
+   max-width: 300px;
+   top: 55px;
+   display: block;
+   visibility: hidden;
+   opacity: 0;
+   right: 10%;
+   transition:0.5s ease-in-out;
+   padding: 12px 14px;
+   background: var(--pure-white);
+   box-shadow: var(--box-shadow);
+}
+.top-header-section .container .wrapper .top-header-right .login .select_box:hover .login-bar + .login-popup{
+   opacity: 1;
+   visibility: visible;
+}
+
+.top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup .activity-border{
+   font-size: var(--montserrat-regular-400-para);
+   text-transform: capitalize;
+   position: relative;
+   color: var(--para-tint-h4);
+}
+.top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup .activity-border::after{
+   content: '';
+   width: 160px;
+   margin: 0 auto;
+   text-align: center;
+   background: var(--para-tint-h4);
+   height: 1px;
+   position: absolute;
+   top: 50%;
+   left: 122%;
+}
+.top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup .btn-center{
+   margin: 6px auto 3px;
+   text-align: center;
+   line-height: 1;
+}
+.top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup .signup{
+   font-size: var(--font-size14);
+   text-align: center;
+   line-height: 1;
+   color: var(--para-tint-h4);
+}
+.top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup .signup a{
+   color: var(--m-hover-button);
+   padding-left: 8px;
+   padding-bottom: 3px;
+}
+.top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup ul{
+   display: flex;
+   flex-direction: column;
+}
+.top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup ul li{
+   line-height: 2;
+}
+.top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup ul li a{
+   font-size: var(--font-size16);
+   text-transform: capitalize;
+   color: var(--para-shade);
+   transition:0.5s ease-in-out;
+   text-decoration: none;
+}
+.top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup ul li a:hover,.top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup ul li a:visited{
+   color: var(--m-hover-button);
+}
+.top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup ul .activity-boder-set{
+   background: var(--para-tint-h4);
+   width: 200px;
+   height: 1px;
+   margin: 20px 0px;
+}
+.top-header-section .container .wrapper .top-header-right .unstoppable .button::after,
+.top-header-section .container .wrapper .top-header-right .unstoppable .button::before{
+   display: none;
+}
+
+
+
+/* *****bottom-head-START***** */
+.bottom-header-section{
+   position: fixed;
+   box-shadow:var(--box-shadow);
+   background: var(--pure-white);
+   width: 100vw;
+   top: 50px;
+   left: 0;
+   height: 50px;
+   z-index: 79;
+}
+
+.bottom-header-section .container .wrapper .menset{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100%;
+}
+.bottom-header-section .container .wrapper .menset .menu-main .menu-full-width{
+   position: absolute;
+    width: 1286px;
+    left: -485%;
+    padding: 20px 10px 20px 10px;
+}
+.bottom-header-section .container .wrapper .menset .menu-main .menu-full-width-home{
+   left: -236%;
+   width: 1286px;
+
+}
+.bottom-header-section .container .wrapper .menset .menu-main .menu-full-adjustment{
+   padding:20px;
+}
+.plusminus{
+   display: none;
+}
