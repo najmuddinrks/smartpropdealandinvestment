@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Damion&family=Montserrat:wght@400;500;600;700;800;900&family=Roboto+Condensed:wght@900&display=swap');
 /* paragraph font set */
 @font-face {
     font-family:"montserrat-regular" ;
@@ -63,6 +63,10 @@
     --font-size29:29px;
     --font-size30:30px;
     --font-size32:32px;
+    --font-size36:36px;
+    --font-size42:42px;
+    --font-size46:46px;
+    --font-size50:50px;
     --line-height10:10px;
     --line-height12:12px;
     --line-height14:14px;
@@ -86,6 +90,7 @@
     --line-height66:66px;
     --box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
     --heading-support:linear-gradient(90deg, rgba(221,31,31,1) 17%, rgba(233,55,43,1) 35%, rgba(255,15,15,1) 50%, rgba(255,53,38,1) 100%);
+    --text-suppot:radial-gradient(circle, rgba(0,85,138,1) 35%, rgba(211,1,2,1) 100%);
     --pure-white:#fff;
     --dark-color:#2e2c2c;
     --badge:#dce622;
@@ -636,7 +641,41 @@ font-size: var(--font-size16);
 .contentSection4 ul li a:hover{
     color: var(--m-hover-button);
 }
-:is(.selectSection,.selectSection2,.selectSection3,.selectSection4){
+.contentSection5 ul{
+    width: 100%;
+    height: auto;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; */
+    gap: 0px 40px;
+    align-items: flex-start;
+}
+.contentSection5 ul li{
+    /* width: 25%; */
+    padding: 5px 20px 0 0;
+}
+.contentSection5 ul li:first-child{
+    padding-bottom: 15px !important;
+}
+.contentSection5 ul li a{
+    font-family: var(--montserrat-regular-400-para);
+    max-width: 100%;
+    display: inline-block;
+    color: var(--li-color);
+    font-size: var(--font-size16);
+    line-height: 20px;
+    text-transform: capitalize;
+    overflow: hidden;
+    font-stretch: extra-condensed;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+}
+.contentSection5 ul li a:hover{
+    color: var(--m-hover-button);
+}
+:is(.selectSection,.selectSection2,.selectSection3,.selectSection4,.selectSection5){
 	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -797,3 +836,112 @@ font-size: var(--font-size16);
     width: 100%;
     padding-left: 20px;
 } */
+.jumbo{
+    margin-top: 200px;
+}
+.jumbo .container .wrapper .jumbo__box{
+    background-color: var(--form-bg);
+    border-radius: 16px;
+    padding: 22px;
+    border: 1px solid var(--pure-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.jumbo .container .wrapper .jumbo__box .jumbo__box__left h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--font-size36);
+    color: var(--dark-color);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.jumbo .container .wrapper .jumbo__box .jumbo__box__left h2 span{
+    font-family: 'Damion', cursive;
+    font-size: var(--font-size36);
+    color: var(--dark-color);
+    font-stretch: 10px;
+    letter-spacing: 2px;
+}
+.jumbo .container .wrapper .jumbo__box .jumbo__box__left h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--font-size20);
+    padding: 5px 0px 10px;
+    color: var(--para-dark-h2);
+}
+.jumbo .container .wrapper .jumbo__box .jumbo__box__left h5 span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--font-size20);
+    padding: 5px 0px 10px;
+    background: var(--text-suppot);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    background:var(--text-suppot);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    color: var(--para-dark-h2);
+}
+.jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .btn-setting{
+    padding: 17px 50px 17px 17px !important;
+    width: 230px;
+    border: 3px solid var(--pure-white);
+    color: var(--pure-white);
+    font-size: var(--font-size18);
+    text-align: left;
+    border-radius: 30px;
+    text-transform: capitalize;
+    outline: none;
+    box-shadow: none;
+    position: relative;
+    cursor: pointer;
+    background: var(--dark-blue-op);
+    transition: 0.5s ease-in-out;
+    /* --dark-blue-op */
+}
+.jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .btn-setting:hover{
+    background: var(--m-hover-button);
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow);
+}
+.jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .btn-setting span{
+    position: absolute;
+    top: 19px;
+    right: 23px;
+    padding: 4px 12px;
+    transition: 0.5s ease-in-out;
+}
+.jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .btn-setting span:hover{
+    background: var(--form-bg);
+    color: var(--dark-color);
+}
+.fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file{
+    padding-right: 8px !important;
+    color: var(--red-main);
+    transition: 0.5s ease-in-out;
+}
+.fa-user:hover,.fa-lock:hover,.fa-envelope:hover,.fa-message:hover,.fa-file:hover{
+    color: var(--dark-blue-op);
+    transform: translateY(-1px);
+}
+.form-group label{
+    color: var(--para-dark-h2);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+.form-group .control-majno{
+    transition: 0.5s ease-in-out;
+}
+.form-group .control-majno:hover,
+.form-group .control-majno:visited,
+.form-group .control-majno.active {
+    box-shadow: none;
+    outline: none;
+    border: 2px solid var(--dark-blue-op) !important;
+    border-radius: 11px;
+}
+.modal span{
+    color:hotpink;
+    padding-left: 77px;
+}
+   
