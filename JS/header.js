@@ -246,3 +246,4 @@ $(window).scroll(function() {
       $('.top-header-section').removeClass("scroll");
     }
   });
+

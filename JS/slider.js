@@ -272,3 +272,26 @@ for (let button of Buttons4) {
      }
   });
 }
+// ****************selectSection5**************************
+let Buttons5 = document.querySelectorAll(".selectSection5 button");
+
+for (let button of Buttons5) {
+  button.addEventListener('click', (e) => {
+    const et = e.target;
+    const active = document.querySelector(".active");
+    if (active) {
+      active.classList.remove("active");
+    }
+    et.classList.add("active");
+    
+    let allContent = document.querySelectorAll('.contentSection5 .content');
+
+    for (let content4 of allContent) {
+      if(content4.getAttribute('data-number') === button.getAttribute('data-number')) {
+        content4.style.display = "block";
+       } else {
+        content4.style.display = "none";
+       }
+     }
+  });
+}
