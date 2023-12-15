@@ -1,3 +1,75 @@
+/* ****************************jumbo modification************************* */
+.jumbo{
+    margin-top: 200px;
+}
+.jumbo .container .wrapper .jumbo__box{
+    background-color: var(--form-bg);
+    border-radius: 16px;
+    padding: 22px;
+    border: 1px solid var(--pure-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.jumbo h2,
+.jumbo h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-color);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.jumbo h2 {
+    font-size: var(--font-size36);
+}
+.jumbo h2 span {
+    font-family: 'Damion', cursive;
+    font-size: var(--font-size36);
+    font-stretch: 10px;
+    letter-spacing: 2px;
+}
+.jumbo h5 {
+    font-size: var(--font-size20);
+    padding: 5px 0px 10px;
+    color: var(--para-dark-h2);
+}
+.jumbo h5 span {
+    background: var(--text-suppot);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.jumbo .btn-setting {
+    padding: 17px 50px 17px 17px !important;
+    width: 230px;
+    border: 3px solid var(--pure-white);
+    color: var(--pure-white);
+    font-size: var(--font-size18);
+    text-align: left;
+    border-radius: 30px;
+    text-transform: capitalize;
+    outline: none;
+    box-shadow: none;
+    position: relative;
+    cursor: pointer;
+    background: var(--dark-blue-op);
+    transition: 0.5s ease-in-out;
+}
+.jumbo .btn-setting:hover {
+    background: var(--m-hover-button);
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow);
+}
+.jumbo .btn-setting span {
+    position: absolute;
+    top: 19px;
+    right: 23px;
+    padding: 4px 12px;
+    transition: 0.5s ease-in-out;
+}
+.jumbo .btn-setting span:hover {
+    background: var(--form-bg);
+    color: var(--dark-color);
+}
 /* ****************************property option modification************************* */
 .property__option {
     margin-top: 200px;

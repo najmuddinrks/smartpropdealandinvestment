@@ -417,6 +417,35 @@ transition: 0.5s ease-in-out;
     .four-grid-template-column{
         gap: 0px 20px !important;
     }
+    .jumbo .container .wrapper .jumbo__box .jumbo__box__left{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .jumbo .container .wrapper .jumbo__box .jumbo__box__left h2{
+        font-size: var(--font-size24);
+    }
+    .jumbo .container .wrapper .jumbo__box .jumbo__box__left h2 span{
+        font-size: var(--font-size24);
+    }
+    .jumbo .container .wrapper .jumbo__box .jumbo__box__left h5{
+        font-size: var(--font-size17);
+    }
+    .jumbo .container .wrapper .jumbo__box .jumbo__box__left h5 span{
+        font-size: var(--font-size17);
+    }
+    .jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right{
+        margin: 0 auto;
+    }
+    .jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .btn-setting{
+        padding: 10px 36px 10px 10px !important;
+        width: 180px;
+        font-size: var(--font-size14);
+    }
+    .jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .btn-setting span{
+        top: 10px;
+        right: 14px;
+        padding: 2px 8px;
+    }
   
    
 }
@@ -578,6 +607,9 @@ transition: 0.5s ease-in-out;
 .h2-set:hover::before{
     width: 226px !important;
 }
+.badge-set{
+    top: 3px;
+}
 }
 @media(max-width:360px){
  
@@ -674,5 +706,25 @@ transition: 0.5s ease-in-out;
     }
     .font-adjust-h2{
         font-size: var(--font-size18) !important;
+    }
+    .jumbo .container .wrapper .jumbo__box .jumbo__box__left h2{
+        font-size: var(--font-size20);
+    }
+    .jumbo .container .wrapper .jumbo__box .jumbo__box__left h2 span{
+        font-size: var(--font-size20);
+    }
+    .jumbo .container .wrapper .jumbo__box .jumbo__box__left h5{
+        font-size: var(--font-size15);
+        padding: 0px;
+    }
+    .jumbo .container .wrapper .jumbo__box .jumbo__box__left h5 span{
+        font-size: var(--font-size15);
+    }
+    .modal-header h3{
+        font-size: var(--font-size19);
+    }
+    .modal span{
+        padding-left: 18px;
+        font-size: var(--font-size14);
     }
 }
