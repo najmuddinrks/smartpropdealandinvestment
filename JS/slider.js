@@ -239,9 +239,9 @@ $(document).ready(function () {
         // instead of a settings object
     ]
 });
-// $(".contentSection4 .contentSection5").click(function(){
-//   $(this).toggleClass("d-block d-none");
-// }).toggleClass("d-block d-none")
+$(".contentSection4 .contentSection5").click(function(){
+  $(this).toggleClass("d-block d-none");
+}).toggleClass("d-block d-none")
 
 });
 
@@ -352,11 +352,11 @@ for (let button of Buttons5) {
     
     let allContent = document.querySelectorAll('.contentSection5 .content');
 
-    for (let content of allContent) {
-      if(content.getAttribute('data-number') === button.getAttribute('data-number')) {
-        content.style.display = "block";
+    for (let content5 of allContent) {
+      if(content5.getAttribute('data-number') === button.getAttribute('data-number')) {
+        content5.style.display = "block";
        } else {
-        content.style.display = "none";
+        content5.style.display = "none";
        }
      }
   });
