@@ -97,9 +97,7 @@ $(document).ready(function(){
     // custom formatting example
     $(".count-number").data("countToOptions", {
       formatter: function(value, options) {
-        return value
-          .toFixed(options.decimals)
-          .replace(/\B(?=(?:\d{3})+(?!\d))/g, ",");
+        return + value.toFixed(options.decimals)+"+".replace(/\B(?=(?:\d{3})+(?!\d))/g, ",");
       }
     });
   
