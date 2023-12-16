@@ -1,6 +1,30 @@
+/* ****************************counter modification************************* */
+.counter__setting{
+    margin-top: 200px;
+}
+.counter__setting .container .wrapper .counter__text {
+    width: 100%;
+    border: 1px solid var(--temp-head-col);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 0px;
+}
+/* .counter__setting .container .wrapper .counter__text p{
+    text-overflow: ellipsis;
+} */
+.counter__setting .container .wrapper .counter__text p a{
+    color: var(--red-main);
+    transition: 0.5s ease-in-out;
+    text-transform: capitalize;
+}
+.counter__setting .container .wrapper .counter__text .counter p{
+    margin-bottom: 0px;
+}
+
 /* ****************************jumbo modification************************* */
 .jumbo{
-    margin-top: 200px;
+    margin-top: 20px;
 }
 .jumbo .container .wrapper .jumbo__box{
     background-color: var(--form-bg);
@@ -72,7 +96,7 @@
 }
 /* ****************************property option modification************************* */
 .property__option {
-    margin-top: 200px;
+    margin-top: 20px;
   }
   
   .property__option .container .extra-setting-h2::before {

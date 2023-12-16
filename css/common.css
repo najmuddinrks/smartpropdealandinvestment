@@ -758,7 +758,7 @@ font-size: var(--font-size16);
 /* *********************bottom-menu-set**************************** */
 /* *********************option-css**************************** */
 
-.bottom-menu-set{
+.bottomline{
     display: flex;
 }
 /* *********************option-css ednded**************************** */
@@ -831,6 +831,37 @@ font-size: var(--font-size16);
     background: var(--red-main);
     color: var(--pure-white) !important;
 }
+/* *********************our-client**************************** */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.sliderlogo {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+
+  .slide-track {
+    animation: scroll 50s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  .slide {
+    height: 100px;
+    width: 250px;
+  }
+}
+
+/* *********************our-client end**************************** */
+
 
 /* *********************modal-setting**************************** */
 .fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file{
@@ -863,4 +894,20 @@ font-size: var(--font-size16);
     color:hotpink;
     padding-left: 77px;
 }
-   
+/* *********************counter**************************** */
+/* .counter {
+    padding: 20px 0;
+  } */
+  
+  .count-title p{
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  /* .count-text {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+  } */
