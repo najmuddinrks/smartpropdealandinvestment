@@ -2,6 +2,21 @@
 .counter__setting{
     margin-top: 200px;
 }
+.counter__setting .container .extra-setting-h2-snapshot::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: var(--red-main);
+    bottom: 4px;
+    left: 0px;
+    transition: width 0.5s ease-in-out;
+    clip-path: polygon(51% 10%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 51% 90%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+  }
+  
+  .counter__setting .container .extra-setting-h2-snapshot:hover::before {
+    width: 351px;
+  }
 .counter__setting .container .wrapper .counter__text {
     width: 100%;
     border: 1px solid var(--temp-head-col);

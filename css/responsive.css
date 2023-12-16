@@ -349,7 +349,7 @@ transition: 0.5s ease-in-out;
 }
 }
 @media(max-width:1024px){
-    :is(.contentSection ul li a,.contentSection2 ul li a,.contentSection3 ul li a){
+    :is(.contentSection ul li a,.contentSection2 ul li a,.contentSection3 ul li a,.contentSection4 ul li a,.contentSection5 ul li a){
         font-size: var(--font-size17);
         line-height: var(--line-height21);
         color: var(--li-color);
@@ -378,7 +378,7 @@ transition: 0.5s ease-in-out;
         padding: 5px 10px !important;
         margin: 10px 3px;
     }
-    :is(.selectSection,.selectSection2,.selectSection3) button{
+    :is(.selectSection,.selectSection2,.selectSection3,.selectSection4,.selectSection5) button{
         font-size: var(--font-size16);
     }
     .slider4 .slick-prev{
@@ -633,6 +633,9 @@ transition: 0.5s ease-in-out;
 .property__option .container .extra-setting-h2:hover::before{
     width: 277px !important;
 }
+.counter__setting .container .extra-setting-h2-snapshot:hover::before{
+    width: 261px !important;
+}
 .h2-set:hover::before{
     width: 226px !important;
 }
@@ -755,6 +758,9 @@ transition: 0.5s ease-in-out;
     }
     .property__option .container .extra-setting-h2:hover::before{
         width: 228px !important;
+    }
+    .counter__setting .container .extra-setting-h2-snapshot:hover::before{
+        width: 216px !important;
     }
     .h2-set:hover::before{
         width: 190px !important;
