@@ -360,6 +360,9 @@ transition: 0.5s ease-in-out;
     .slider4 .slick-next, .slider4 .slick-next, .slider4 .slick-next{
         right: -1% !important;
     }
+    .counter__setting .container .wrapper .counter__text .counter p{
+        font-size: var(--font-size14);
+    }
 
 }
 @media(max-width:992px){
@@ -383,6 +386,15 @@ transition: 0.5s ease-in-out;
     }
     .slider4 .slick-next{
         top: 222px !important;
+    }
+    .counter__setting .container .wrapper .counter__text .counter p{
+        font-size: var(--font-size11);
+    }
+    .counter__setting .container .wrapper .counter__text h2{
+        font-size: var(--font-size24);
+    }
+    .fa-inr,.fa-building,.fa-tasks,.font-reload{
+        font-size: var(--font-size24);
     }
     
 }
@@ -446,7 +458,24 @@ transition: 0.5s ease-in-out;
         right: 14px;
         padding: 2px 8px;
     }
-  
+    .counter__setting .container .wrapper .counter__text .counter p{
+        font-size: var(--font-size15);
+    }
+    .counter__setting .container .wrapper .counter__text h2{
+        font-size: var(--font-size26);
+    }
+    .fa-inr,.fa-building,.fa-tasks,.font-reload{
+        font-size: var(--font-size28);
+    }
+    .counter{
+        margin-bottom: 10px;
+    }
+    .form-group label{
+        font-size: var(--font-size16);
+    }
+    .form-group .control-majno{
+        font-size: var(--font-size16);
+    }
    
 }
 
@@ -610,7 +639,33 @@ transition: 0.5s ease-in-out;
 .badge-set{
     top: 3px;
 }
+.counter__setting .container .wrapper .counter__text .counter p{
+    font-size: var(--font-size11);
 }
+.counter__setting .container .wrapper .counter__text h2{
+    font-size: var(--font-size24);
+    margin-bottom: 4px !important;
+}
+.fa-inr,.fa-building,.fa-tasks,.font-reload{
+    font-size: var(--font-size24);
+}
+.counter{
+    margin-bottom: 6px;
+}
+.read-section p{
+    font-size: var(--font-size14);
+}
+.read-section p a{
+    font-size: var(--font-size14);
+}
+.form-group label{
+    font-size: var(--font-size14);
+}
+.form-group .control-majno{
+    font-size: var(--font-size14);
+}
+}
+
 @media(max-width:360px){
  
     .main-blog li > a{
@@ -625,14 +680,14 @@ transition: 0.5s ease-in-out;
     .contentSection ul li a{
         font-size: var(--font-size11);
     }
-    .contentSection4 ul li{
+    .contentSection4 ul li,.contentSection5 ul li{
         padding: 5px 10px 0 0;
     }
-    .contentSection4 ul li strong{
+    .contentSection4 ul li strong,.contentSection5 ul li strong{
         font-size: var(--font-size13);
         display: inline-block;
     }
-    .contentSection4 ul li a{
+    .contentSection4 ul li a,.contentSection5 ul li a{
         font-size: var(--font-size13);
     }
     .bottomHead{
@@ -708,23 +763,55 @@ transition: 0.5s ease-in-out;
         font-size: var(--font-size18) !important;
     }
     .jumbo .container .wrapper .jumbo__box .jumbo__box__left h2{
-        font-size: var(--font-size20);
+        font-size: var(--font-size18);
     }
     .jumbo .container .wrapper .jumbo__box .jumbo__box__left h2 span{
-        font-size: var(--font-size20);
+        font-size: var(--font-size18);
     }
     .jumbo .container .wrapper .jumbo__box .jumbo__box__left h5{
-        font-size: var(--font-size15);
+        font-size: var(--font-size12);
         padding: 0px;
     }
     .jumbo .container .wrapper .jumbo__box .jumbo__box__left h5 span{
-        font-size: var(--font-size15);
+        font-size: var(--font-size12);
     }
     .modal-header h3{
         font-size: var(--font-size19);
     }
     .modal span{
-        padding-left: 18px;
+        padding-left: 11px;
         font-size: var(--font-size14);
     }
+    .form-group label{
+        font-size: var(--font-size12);
+    }
+    .form-group .control-majno{
+        font-size: var(--font-size12);
+    }
+    .read-section p{
+        font-size: var(--font-size12);
+    }
+    .read-section p a{
+        font-size: var(--font-size12);
+    }
+    .counter__setting .container .wrapper .counter__text h2{
+        font-size: var(--font-size18);
+        margin-bottom: 4px !important;
+    }
+    .fa-inr,.fa-building,.fa-tasks,.font-reload{
+        font-size: var(--font-size20);
+    }
+    .counter__setting .container .wrapper .counter__text{
+        padding: 10px;
+    }
+    .jumbo .container .wrapper .jumbo__box{
+        padding: 10px;
+    }
+    .jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .btn-setting{
+        width: 150px;
+        padding: 8px 24px 8px 8px !important;
+        font-size: var(--font-size12)
+    }
+   
+    
 }

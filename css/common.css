@@ -864,12 +864,12 @@ font-size: var(--font-size16);
 
 
 /* *********************modal-setting**************************** */
-.fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file{
+.fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file,.fa-inr,.fa-building,.fa-tasks{
     padding-right: 8px !important;
     color: var(--red-main);
     transition: 0.5s ease-in-out;
 }
-.fa-user:hover,.fa-lock:hover,.fa-envelope:hover,.fa-message:hover,.fa-file:hover{
+.fa-user:hover,.fa-lock:hover,.fa-envelope:hover,.fa-message:hover,.fa-file:hover,.fa-inr:hover,.fa-building:hover,.fa-tasks:hover{
     color: var(--dark-blue-op);
     transform: translateY(-1px);
 }
@@ -902,6 +902,7 @@ font-size: var(--font-size16);
   .count-title p{
     margin-bottom: 0;
     text-align: center;
+    color: var(--dark-blue-op);
   }
   
   /* .count-text {
