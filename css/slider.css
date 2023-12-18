@@ -3,12 +3,14 @@
 .slider2 .slick-next:before,
 .slider2 .slick-prev:before,
 .slider4 .slick-next:before,
-.slider4 .slick-prev:before {
+.slider4 .slick-prev:before,
+.slider5 .slick-next:before,
+.slider5 .slick-prev:before {
   font-family: "fontawesome";
-  font-size: var(--font-size22);
+  font-size: var(--font-size30);
   color: var(--pure-white) !important;
   font-weight: bolder;
-  top: 50%;
+  top: 45%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -26,7 +28,8 @@
 
 .slider .slick-next,
 .slider2 .slick-next,
-.slider4 .slick-next {
+.slider4 .slick-next,
+.slider5 .slick-next {
   right: -43px !important;
   top: 10px;
   background: var(--dark-blue-op) !important;
@@ -41,7 +44,8 @@
 
 .slider .slick-next:hover,
 .slider2 .slick-next:hover,
-.slider4 .slick-next:hover {
+.slider4 .slick-next:hover,
+.slider5 .slick-next:hover {
   background: var(--red-main) !important;
 }
 
@@ -59,7 +63,8 @@
 
 .slider .slick-prev,
 .slider2 .slick-prev,
-.slider4 .slick-prev {
+.slider4 .slick-prev,
+.slider5 .slick-prev {
   left: -43px !important;
   background: var(--dark-blue-op) !important;
   box-shadow: var(--box-shadow) !important;
@@ -76,7 +81,8 @@
 
 .slider .slick-prev:hover,
 .slider2 .slick-prev:hover,
-.slider4 .slick-prev:hover {
+.slider4 .slick-prev:hover,
+.slider5 .slick-prev:hover {
   background: var(--red-main) !important;
 }
 
@@ -86,5 +92,13 @@
 }
 
 .slider4 .slick-prev {
+  top: 170px;
+}
+/* slider5 specific */
+.slider5 .slick-next {
+  top: 170px;
+}
+
+.slider5 .slick-prev {
   top: 170px;
 }

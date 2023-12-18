@@ -99,6 +99,7 @@
     --para-dark-h2:#7a7a7a;
     --temp-head-col:#c4c4c4;
     /* --form-bg:f6eabce6; */
+    --temp-head-line:#ffeae8;
     --li-color:#303030;
     --para-shade:#585656;
     --para-shade-op:#58565610;
@@ -641,41 +642,7 @@ font-size: var(--font-size16);
 .contentSection4 ul li a:hover{
     color: var(--m-hover-button);
 }
-.contentSection5 ul{
-    width: 100%;
-    height: auto;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; */
-    gap: 0px 40px;
-    align-items: flex-start;
-}
-.contentSection5 ul li{
-    /* width: 25%; */
-    padding: 5px 20px 0 0;
-}
-.contentSection5 ul li:first-child{
-    padding-bottom: 15px !important;
-}
-.contentSection5 ul li a{
-    font-family: var(--montserrat-regular-400-para);
-    max-width: 100%;
-    display: inline-block;
-    color: var(--li-color);
-    font-size: var(--font-size16);
-    line-height: 20px;
-    text-transform: capitalize;
-    overflow: hidden;
-    font-stretch: extra-condensed;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    transition: 0.5s ease-in-out;
-    text-decoration: none;
-}
-.contentSection5 ul li a:hover{
-    color: var(--m-hover-button);
-}
-:is(.selectSection,.selectSection2,.selectSection3,.selectSection4,.selectSection5){
+:is(.selectSection,.selectSection2,.selectSection3,.selectSection4){
 	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -683,7 +650,10 @@ font-size: var(--font-size16);
 	text-align: center;
     margin-top: 10px;
 }
-:is(.selectSection,.selectSection2,.selectSection3,.selectSection4,.selectSection5) button {
+.selectSection button{
+    padding: 4px 0px !important;
+}
+ .button2 {
     font-family:var(--montserrat-medium-500-para) ;
     font-size: var(--font-size18);
     background: var(--form-bg);
@@ -700,10 +670,8 @@ font-size: var(--font-size16);
     white-space: nowrap;
     cursor: pointer;
 }
-.selectSection button{
-    padding: 4px 0px !important;
-}
-:is(.selectSection,.selectSection2,.selectSection3,.selectSection4,.selectSection5) button::before {
+
+.button2::before {
     content: '';
     position: absolute;
     top: 0px;
@@ -714,11 +682,11 @@ font-size: var(--font-size16);
     border-top: 1px dashed var(--pure-white);
     transition: 0.5s ease-in-out;
 }
-:is(.selectSection,.selectSection2,.selectSection3,.selectSection4,.selectSection5) button:hover::before {
+.button2:hover::before {
     width: 100%;
     height: 100%;
 }
-:is(.selectSection,.selectSection2,.selectSection3,.selectSection4,.selectSection5) button::after {
+.button2::after {
     content: '';
     position: absolute;
     bottom: 0px;
@@ -729,12 +697,12 @@ font-size: var(--font-size16);
     border-bottom: 1px dashed var(--pure-white);
     transition: 0.5s ease-in-out;
 }
-:is(.selectSection,.selectSection2,.selectSection3,.selectSection4,.selectSection5) button:hover::after {
+.button2:hover::after {
     width: 100%;
     height: 100%;
     color: var(--pure-white);
 }
-:is(.selectSection,.selectSection2,.selectSection3,.selectSection4,.selectSection5) button:hover {
+.button2:hover {
 	cursor: pointer;
     color: var(--pure-white) !important;
     background: var(--red-main);
@@ -752,17 +720,31 @@ font-size: var(--font-size16);
 .content:not(:first-child) {
 	display: none;
 }
+.content ul li a{
+    font-family: var(--montserrat-regular-400-para);
+    max-width: 100%;
+    display: inline-block;
+    color: var(--li-color);
+    font-size: var(--font-size16);
+    line-height: 20px;
+    text-transform: capitalize;
+    overflow: hidden;
+    background: transparent;
+    font-stretch: extra-condensed;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+}
+.content ul li a:hover{
+    color: var(--m-hover-button);
+    background: transparent;
+    overflow: hidden;
+}
 .margin-center{
     margin: 0 auto;
 }
 /* *********************bottom-menu-set**************************** */
-/* *********************option-css**************************** */
-
-.bottomline{
-    display: flex;
-}
-/* *********************option-css ednded**************************** */
-
 .bottom-menu-set .menu-main{
     background: var(--pure-white);
     padding:0px 16px 0px 16px;
@@ -831,84 +813,44 @@ font-size: var(--font-size16);
     background: var(--red-main);
     color: var(--pure-white) !important;
 }
-/* *********************our-client**************************** */
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 7));
-  }
+.modal-span span{
+    color: hotpink !important
 }
-
-.sliderlogo {
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: auto;
-
-  .slide-track {
-    animation: scroll 50s linear infinite;
-    display: flex;
-    width: calc(250px * 14);
-  }
-  .slide {
-    height: 100px;
-    width: 250px;
-  }
-}
-
-/* *********************our-client end**************************** */
-
-
-/* *********************modal-setting**************************** */
-.fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file,.fa-inr,.fa-building,.fa-tasks{
-    padding-right: 8px !important;
+.fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file,.fa-indian-rupee-sign,.fa-building,.fa-list-check{
     color: var(--red-main);
     transition: 0.5s ease-in-out;
 }
-.fa-user:hover,.fa-lock:hover,.fa-envelope:hover,.fa-message:hover,.fa-file:hover,.fa-inr:hover,.fa-building:hover,.fa-tasks:hover{
+.fa-user:hover,.fa-lock:hover,.fa-envelope:hover,.fa-message:hover,.fa-file:hover,.fa-indian-rupee-sign:hover,.fa-building:hover,.fa-list-check:hover{
+    transform: translateY(2px);
     color: var(--dark-blue-op);
-    transform: translateY(-1px);
-}
-.form-group label{
-    color: var(--para-dark-h2);
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    line-height: 1.6;
 }
 .form-group .control-majno{
+    font-size: var(--font-size12);
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--temp-head-col);
+    border-radius: 6px;
     transition: 0.5s ease-in-out;
 }
+.form-group label{
+    font-size: var(--font-size16);
+}
 .form-group .control-majno:hover,
-.form-group .control-majno:visited,
-.form-group .control-majno.active {
+.form-group .control-majno:focus,
+.form-group .control-majno:visited
+.form-group .control-majno.active{
     box-shadow: none;
     outline: none;
-    border: 2px solid var(--dark-blue-op) !important;
-    border-radius: 11px;
 }
-.modal span{
-    color:hotpink;
-    padding-left: 77px;
+.modal-content{
+    padding: 10px !important;
+    background: var(--temp-head-line) !important;
 }
-/* *********************counter**************************** */
-/* .counter {
-    padding: 20px 0;
-  } */
-  
-  .count-title p{
-    margin-bottom: 0;
-    text-align: center;
-    color: var(--dark-blue-op);
-  }
-  
-  /* .count-text {
-    font-size: 13px;
-    font-weight: normal;
-    margin-top: 10px;
-    margin-bottom: 0;
-    text-align: center;
-  } */
+
+
+/* *********************cardblock**************************** */
+/* .mega-block{
+    width: 100%;
+    padding-left: 20px;
+} */

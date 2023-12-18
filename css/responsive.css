@@ -2,6 +2,7 @@
 @media(max-width:1199px){
     .container{
         max-width: 1080px;
+        margin: 0;
       }
       .ui-icon {
         width: 18px !important;
@@ -239,28 +240,6 @@ transition: 0.5s ease-in-out;
     /* font-weight: bold; */
     letter-spacing: 1px;
 }
-.button2 {
-    font-family: var(--montserrat-regular-400-para);
-    line-height: var(--line-height12);
-    letter-spacing: 0.04em;
-    width: 180px;
-    border-radius: 20px;
-    font-size: var(--font-size16);
-    background: var(--red-main);
-    color: var(--pure-white);
-    border: 1px solid var(--para-tint);
-    text-align: left;
-    transition: 0.5s ease-in-out;
-    margin: 10px 0px;
-   }
-   .button2:hover {
-    background: var(--dark-blue-op);
-    font-family: var(--montserrat-semibold);
-    transform: translateY(2px);
-    color: var(--pure-white);
-    border:none !important;
-    outline: none;
-   }
    .light-color{
     background-color: var(--temp-head-col);
    }
@@ -349,21 +328,22 @@ transition: 0.5s ease-in-out;
 }
 }
 @media(max-width:1024px){
-    :is(.contentSection ul li a,.contentSection2 ul li a,.contentSection3 ul li a,.contentSection4 ul li a,.contentSection5 ul li a){
+    .content ul li a{
         font-size: var(--font-size17);
         line-height: var(--line-height21);
         color: var(--li-color);
     }
-    .slider4 .slick-prev, .slider4 .slick-prev, .slider4 .slick-prev{
+    .slider4 .slick-prev, .slider4 .slick-prev, .slider4 .slick-prev,
+    .slider5 .slick-prev, .slider5 .slick-prev, .slider5 .slick-prev{
         left: -1% !important;
     }
-    .slider4 .slick-next, .slider4 .slick-next, .slider4 .slick-next{
+    .slider4 .slick-next, .slider4 .slick-next, .slider4 .slick-next,
+    .slider5 .slick-next, .slider5 .slick-next, .slider5 .slick-next{
         right: -1% !important;
     }
     .counter__setting .container .wrapper .counter__text .counter p{
         font-size: var(--font-size14);
     }
-
 }
 @media(max-width:992px){
     .container {
@@ -378,13 +358,15 @@ transition: 0.5s ease-in-out;
         padding: 5px 10px !important;
         margin: 10px 3px;
     }
-    :is(.selectSection,.selectSection2,.selectSection3,.selectSection4,.selectSection5) button{
+     .button2{
         font-size: var(--font-size16);
     }
-    .slider4 .slick-prev{
+    .slider4 .slick-prev,
+    .slider5 .slick-prev{
         top: 222px !important;
     }
-    .slider4 .slick-next{
+    .slider4 .slick-next,
+    .slider5 .slick-next{
         top: 222px !important;
     }
     .counter__setting .container .wrapper .counter__text .counter p{
@@ -474,7 +456,7 @@ transition: 0.5s ease-in-out;
         font-size: var(--font-size16);
     }
     .form-group .control-majno{
-        font-size: var(--font-size16);
+        font-size:var(--font-size16) !important;
     }
    
 }
@@ -492,9 +474,9 @@ transition: 0.5s ease-in-out;
         font-size: var(--font-size13)!important;
         line-height:var(--line-height30) !important;;
     }
-    :is(.selectSection,.selectSection2,.selectSection3){
+    /* :is(.selectSection,.selectSection2,.selectSection3){
         justify-content: center !important;
-    }
+    } */
     .main-blog li > a{
         font-size: var(--font-size14);
     }
@@ -504,14 +486,15 @@ transition: 0.5s ease-in-out;
     .h2-set{
         font-size: var(--font-size24);
      }
-     :is(.selectSection,.selectSection2,.selectSection3) button{
+      .button2{
         font-size: var(--font-size16);
         margin-left: 5px;
         margin-right: 5px;
     }
-    :is(.contentSection ul li a,.contentSection2 ul li a,.contentSection3 ul li a){
+    .content ul li a{
         font-size: var(--font-size14);
     }
+
     .bottomHead{
         height: 50px;
     }
@@ -548,7 +531,7 @@ transition: 0.5s ease-in-out;
 }
 .button2{
     width: 86px;
-    margin: 10px 0px;
+    margin: 10px 7px;
 }
 .badge-wrapper{
     padding: 4px 8px;
@@ -581,6 +564,15 @@ transition: 0.5s ease-in-out;
     right: 123px !important;
 
 }
+.contentSection4 ul li:first-child{
+    padding-bottom: 8px !important;
+}
+.property__option .container .wrapper .contentSection4 ul li strong{
+    font-size: var(--font-size13);
+}
+.property__option .container .wrapper .contentSection4 ul li a{
+    font-size: var(--font-size13);
+}
 
 .mobile-nav-icon{
     font-size: var(--font-size20) !important;
@@ -589,7 +581,7 @@ transition: 0.5s ease-in-out;
     font-size: var(--font-size10)!important;
     padding: 4px 10px !important;
     letter-spacing: 0px;
-    width: 108px;
+    width: 90px;
 } 
 /* ******************slider action****************** */
 .slider .slick-prev, 
@@ -649,6 +641,12 @@ transition: 0.5s ease-in-out;
     font-size: var(--font-size24);
     margin-bottom: 4px !important;
 }
+.counter__setting .container .wrapper .counter__text{
+    padding: 15px !important;
+}
+.jumbo .container .wrapper .jumbo__box{
+    padding: 15px !important;
+}
 .fa-inr,.fa-building,.fa-tasks,.font-reload{
     font-size: var(--font-size24);
 }
@@ -656,16 +654,16 @@ transition: 0.5s ease-in-out;
     margin-bottom: 6px;
 }
 .read-section p{
-    font-size: var(--font-size14);
+    font-size: var(--font-size13);
 }
 .read-section p a{
-    font-size: var(--font-size14);
+    font-size: var(--font-size13);
 }
 .form-group label{
-    font-size: var(--font-size14);
+    font-size: var(--font-size12);
 }
 .form-group .control-majno{
-    font-size: var(--font-size14);
+    font-size: var(--font-size10) !important;
 }
 }
 
@@ -683,14 +681,14 @@ transition: 0.5s ease-in-out;
     .contentSection ul li a{
         font-size: var(--font-size11);
     }
-    .contentSection4 ul li,.contentSection5 ul li{
+    .contentSection4 ul li{
         padding: 5px 10px 0 0;
     }
-    .contentSection4 ul li strong,.contentSection5 ul li strong{
+    .contentSection4 ul li strong{
         font-size: var(--font-size13);
         display: inline-block;
     }
-    .contentSection4 ul li a,.contentSection5 ul li a{
+    .contentSection4 ul li a{
         font-size: var(--font-size13);
     }
     .bottomHead{
@@ -701,6 +699,9 @@ transition: 0.5s ease-in-out;
      .mega__item h4 sub {
         font-size: var(--font-size11) !important;
         right: 72px !important;
+    }
+    :is(.selectSection,.selectSection2,.selectSection3,.selectSection4){
+        justify-content: center;
     }
     
      .wrapper{
@@ -719,16 +720,12 @@ transition: 0.5s ease-in-out;
     .mega__item{
         margin-top: 0px;
     }
-    .button{
-        font-size: var(--font-size9) !important;
-        width: 77px;
-        padding: 3px 6px !important;
-    }
+
     .badge-set{
         font-size: var(--font-size8);
         top: 3px;
         right: 1px;
-        padding: 0px 10px;
+        padding: 0px 3px;
     }
     .center__div ul li a{
         font-size: var(--font-size16);
@@ -793,6 +790,15 @@ transition: 0.5s ease-in-out;
     }
     .form-group .control-majno{
         font-size: var(--font-size12);
+        border: none;
+        outline: none;
+        box-shadow: none;
+        border: 1px solid var(--temp-head-col);
+        border-radius: 6px;
+        transition: 0.5s ease-in-out;
+    }
+    .form-group .control-majno:hover{
+        border: 2px solid var(--dark-blue-op) !important;
     }
     .read-section p{
         font-size: var(--font-size12);
@@ -808,16 +814,15 @@ transition: 0.5s ease-in-out;
         font-size: var(--font-size20);
     }
     .counter__setting .container .wrapper .counter__text{
-        padding: 10px;
+        padding: 10px !important;
     }
     .jumbo .container .wrapper .jumbo__box{
-        padding: 10px;
+        padding: 10px !important;
     }
     .jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .btn-setting{
         width: 150px;
         padding: 8px 24px 8px 8px !important;
         font-size: var(--font-size12)
     }
-   
     
 }

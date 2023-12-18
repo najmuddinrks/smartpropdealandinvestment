@@ -13,7 +13,6 @@
     transition: width 0.5s ease-in-out;
     clip-path: polygon(51% 10%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 51% 90%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
   }
-  
   .counter__setting .container .extra-setting-h2-snapshot:hover::before {
     width: 351px;
   }
@@ -29,9 +28,7 @@
     color: var(--dark-blue-op);
     text-shadow: 0px 0px 2px var(--dark-color);
 }
-/* .counter__setting .container .wrapper .counter__text p{
-    text-overflow: ellipsis;
-} */
+
 .counter__setting .container .wrapper .counter__text p a{
     color: var(--red-main);
     transition: 0.5s ease-in-out;
@@ -40,7 +37,6 @@
 .counter__setting .container .wrapper .counter__text .counter p{
     margin-bottom: 0px;
 }
-
 /* ****************************jumbo modification************************* */
 .jumbo{
     margin-top: 20px;
@@ -55,33 +51,33 @@
     align-items: center;
     flex-wrap: wrap;
 }
-.jumbo h2,
-.jumbo h5 {
+.jumbo .container .wrapper .jumbo__box h2,
+.jumbo .container .wrapper .jumbo__box h5 {
     font-family: 'Montserrat', sans-serif;
     color: var(--dark-color);
     letter-spacing: 1px;
     text-transform: capitalize;
 }
-.jumbo h2 {
-    font-size: var(--font-size36);
+.jumbo .container .wrapper .jumbo__box h2 {
+    font-size:var(--font-size36);
 }
-.jumbo h2 span {
+.jumbo .container .wrapper .jumbo__box h2 span {
     font-family: 'Damion', cursive;
     font-size: var(--font-size36);
     font-stretch: 10px;
     letter-spacing: 2px;
 }
-.jumbo h5 {
+.jumbo .container .wrapper .jumbo__box h5 {
     font-size: var(--font-size20);
     padding: 5px 0px 10px;
     color: var(--para-dark-h2);
 }
-.jumbo h5 span {
+.jumbo .container .wrapper .jumbo__box h5 span {
     background: var(--text-suppot);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.jumbo .btn-setting {
+.jumbo .container .wrapper .jumbo__box .btn-setting {
     padding: 17px 50px 17px 17px !important;
     width: 230px;
     border: 3px solid var(--pure-white);
@@ -97,22 +93,32 @@
     background: var(--dark-blue-op);
     transition: 0.5s ease-in-out;
 }
-.jumbo .btn-setting:hover {
+.jumbo .container .wrapper .jumbo__box .btn-setting:hover {
     background: var(--m-hover-button);
     transform: translateY(-3px);
     box-shadow: var(--box-shadow);
 }
-.jumbo .btn-setting span {
+.jumbo .container .wrapper .jumbo__box .btn-setting span {
     position: absolute;
     top: 19px;
     right: 23px;
     padding: 4px 12px;
     transition: 0.5s ease-in-out;
 }
-.jumbo .btn-setting span:hover {
+.jumbo .container .wrapper .jumbo__box .btn-setting span:hover {
     background: var(--form-bg);
     color: var(--dark-color);
 }
+/* .jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .modal h3 {
+    font-size: var(--font-size24);
+}
+ .jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .modal ::placeholder{
+    font-size: var(--font-size14);
+} 
+.jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .modal .modal-dialog .modal-content .modal-footer span{
+    color: hotpink !important;
+    padding-left: 70px;
+} */
 /* ****************************property option modification************************* */
 .property__option {
     margin-top: 20px;
