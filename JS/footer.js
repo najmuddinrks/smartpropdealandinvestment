@@ -7,6 +7,7 @@ $(document).ready(function(){
         $(this).parent("p").find(".visible-content").toggle();
     });
 });
+// ********************************counter*********************************
 (function($) {
     $.fn.countTo = function(options) {
       options = options || {};
@@ -110,4 +111,7 @@ $(document).ready(function(){
       $this.countTo(options);
     }
   });
-  
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
