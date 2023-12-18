@@ -562,6 +562,8 @@ font-size: var(--font-size16);
     text-transform: capitalize;
     position: relative;
     padding-bottom: 10px;
+    display: inline-block;
+    overflow: hidden;
     transition: 0.5s ease-in-out;
 }
 .h2-set::before{
@@ -576,7 +578,7 @@ font-size: var(--font-size16);
     clip-path: polygon(51% 10%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 51% 90%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
 }
 .h2-set:hover::before{
-    width: 300px;
+    width:100%;
 }
 .contentSection ul{
     width: 100%;
@@ -744,6 +746,9 @@ font-size: var(--font-size16);
 .margin-center{
     margin: 0 auto;
 }
+/* section,footer{
+    margin-top: 20px;
+} */
 /* *********************bottom-menu-set**************************** */
 .bottom-menu-set .menu-main{
     background: var(--pure-white);

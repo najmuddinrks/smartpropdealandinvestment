@@ -616,21 +616,7 @@ transition: 0.5s ease-in-out;
 .slider4 .slick-next{
     right: -1px !important;
 }
-.residential .container h2:hover::before{
-    width: 417px !important;
-}
-.residential .container .additional-setting-h2:hover::before{
-    width: 240px !important;
-}
-.property__option .container .extra-setting-h2:hover::before{
-    width: 277px !important;
-}
-.counter__setting .container .extra-setting-h2-snapshot:hover::before{
-    width: 261px !important;
-}
-.h2-set:hover::before{
-    width: 226px !important;
-}
+
 .badge-set{
     top: 3px;
 }
@@ -747,24 +733,7 @@ transition: 0.5s ease-in-out;
         font-size: var(--font-size10) !important;
         line-height: var(--line-height28)!important;
     }
-    .residential .container h2:hover::before{
-        width: 312px !important;
-    }
-    .residential .container .additional-setting-h2:hover::before{
-        width: 202px !important;
-    }
-    .property__option .container .extra-setting-h2:hover::before{
-        width: 228px !important;
-    }
-    .counter__setting .container .extra-setting-h2-snapshot:hover::before{
-        width: 216px !important;
-    }
-    .h2-set:hover::before{
-        width: 190px !important;
-    }
-    .font-adjust-h2{
-        font-size: var(--font-size18) !important;
-    }
+   
     .jumbo .container .wrapper .jumbo__box .jumbo__box__left h2{
         font-size: var(--font-size18);
     }

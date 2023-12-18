@@ -1,21 +1,13 @@
-/* ****************************counter modification************************* */
-.counter__setting{
+
+/* ****************************fresh modification************************* */
+.fresh__prop{
     margin-top: 200px;
 }
-.counter__setting .container .extra-setting-h2-snapshot::before {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 4px;
-    background: var(--red-main);
-    bottom: 4px;
-    left: 0px;
-    transition: width 0.5s ease-in-out;
-    clip-path: polygon(51% 10%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 51% 90%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
-  }
-  .counter__setting .container .extra-setting-h2-snapshot:hover::before {
-    width: 351px;
-  }
+
+/* ****************************counter modification************************* */
+.counter__setting{
+    margin-top: 20px;
+}
 .counter__setting .container .wrapper .counter__text {
     width: 100%;
     border: 1px solid var(--temp-head-col);
@@ -109,70 +101,15 @@
     background: var(--form-bg);
     color: var(--dark-color);
 }
-/* .jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .modal h3 {
-    font-size: var(--font-size24);
-}
- .jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .modal ::placeholder{
-    font-size: var(--font-size14);
-} 
-.jumbo .container .wrapper .jumbo__box .jumbo__box__fa-pull-right .modal .modal-dialog .modal-content .modal-footer span{
-    color: hotpink !important;
-    padding-left: 70px;
-} */
+
 /* ****************************property option modification************************* */
 .property__option {
     margin-top: 20px;
   }
-  
-  .property__option .container .extra-setting-h2::before {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 4px;
-    background: var(--red-main);
-    bottom: 4px;
-    left: 0px;
-    transition: width 0.5s ease-in-out;
-    clip-path: polygon(51% 10%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 51% 90%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
-  }
-  
-  .property__option .container .extra-setting-h2:hover::before {
-    width: 370px;
-  }
+
 /* ****************************residential-part************************* */
 .residential{
     margin-top: 20px;
-}
-.residential .container h2{
-    position: relative;
-}
-.residential .container h2::before{
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 4px;
-    background: var(--red-main);
-    bottom: 4px;
-    left: 0px;
-    transition: 0.5s ease-in-out;
-    clip-path: polygon(51% 10%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 51% 90%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
-}
-.residential .container h2:hover::before{
-    width: 555px;
-}
-.residential .container .additional-setting-h2::before{
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 4px;
-    background: var(--red-main);
-    bottom: 4px;
-    left: 0px;
-    transition: 0.5s ease-in-out;
-    clip-path: polygon(51% 10%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 51% 90%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
-}
-.residential .container .additional-setting-h2:hover::before{
-    width: 330px;
 }
     :is(.residential .container .wrapper .contentSection2,.residential .container .wrapper .contentSection3) .mega-menu{
         margin-top: 0px;
