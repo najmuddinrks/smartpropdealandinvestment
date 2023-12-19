@@ -113,5 +113,10 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
-  });
+  //   $('.card').hover(function(){
+  //     $(this).find('.btn-padding').css('transform', 'translateY(-30px)');
+  //     $(this).find('.card-footer').css('display', 'none');
+  // });
+});
+
 
