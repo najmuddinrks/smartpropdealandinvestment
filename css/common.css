@@ -89,6 +89,7 @@
     --line-height50:50px;
     --line-height66:66px;
     --box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --card-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
     --heading-support:linear-gradient(90deg, rgba(221,31,31,1) 17%, rgba(233,55,43,1) 35%, rgba(255,15,15,1) 50%, rgba(255,53,38,1) 100%);
     --text-suppot:radial-gradient(circle, rgba(0,85,138,1) 35%, rgba(211,1,2,1) 100%);
     --pure-white:#fff;
@@ -821,11 +822,21 @@ font-size: var(--font-size16);
 .modal-span span{
     color: hotpink !important
 }
-.fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file,.fa-indian-rupee-sign,.fa-building,.fa-list-check{
+.fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file,.fa-indian-rupee-sign,.fa-building,.fa-list-check,.fa-arrow-up-right-from-square,.fa-credit-card,.fa-car{
     color: var(--red-main);
     transition: 0.5s ease-in-out;
 }
-.fa-user:hover,.fa-lock:hover,.fa-envelope:hover,.fa-message:hover,.fa-file:hover,.fa-indian-rupee-sign:hover,.fa-building:hover,.fa-list-check:hover{
+.fa-arrow-up-right-from-square{
+    font-size: var(--font-size16) !important;
+}
+.fa-credit-card,.fa-car{
+    font-size: var(--font-size13);
+}
+.badge-font{
+    font-size: var(--font-size10) !important;
+    vertical-align: middle;
+}
+.fa-user:hover,.fa-lock:hover,.fa-envelope:hover,.fa-message:hover,.fa-file:hover,.fa-indian-rupee-sign:hover,.fa-building:hover,.fa-list-check:hover,.fa-arrow-up-right-from-square:hover,.fa-credit-card:hover,.fa-car:hover{
     transform: translateY(2px);
     color: var(--dark-blue-op);
 }
@@ -859,3 +870,96 @@ font-size: var(--font-size16);
     width: 100%;
     padding-left: 20px;
 } */
+.card{
+    padding: 0px !important;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+.card:hover {
+    box-shadow: var(--card-shadow);
+}
+.card:hover .btn-padding{
+    transform: translateY(0px);
+}
+.card:hover .card-footer-block{
+    display: none !important;
+}
+
+.card-body{
+    /* padding: 0px 10px 10px 10px !important; */
+    width: 100%;
+    height: calc(100% - 156px);
+    padding: 18px 16px 16px !important;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+.btn-padding{
+    padding: 7px 15px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    transform: translateY(83px);
+}
+.card-header,.card-content,.card-footer{
+    background: transparent !important;
+    padding: 0px 0px 2px !important;
+    width: 100%;
+    border-bottom: 0px !important;
+    border-top: 0px !important;
+
+}
+.card-header h2{
+    display: flex;
+    justify-content:flex-start;
+    gap: 0px 16px;
+    align-items: center;
+}
+.card-footer-block{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+.card-header,.card-content,.card-footer h2{
+    font-family: var(--montserrat-regular-400-para);
+    display: inline-block;
+    color: var(--dark-color);
+    font-size: var(--font-size15);
+    /* line-height: 16px; */
+    text-transform: capitalize;
+    overflow: hidden;
+    font-stretch: extra-condensed;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+}
+.card-header p,.card-content p,.card-footer p{
+    font-family: var(--montserrat-regular-400-para);
+    max-width: 100%;
+    display: inline-block;
+    color: var(--para-dark-h2);
+    font-size: var(--font-size16);
+    line-height: 20px;
+    text-transform: capitalize;
+    overflow: hidden;
+    background: transparent;
+    font-stretch: extra-condensed;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    margin-bottom: 0px !important;
+}
+
+.card-header h2 strong, .card-content h2 strong, .card-footer h2 strong{
+    font-family: var(--montserrat-regular-400-para);
+    display: inline-block;
+    color: var(--li-color);
+    font-size: var(--font-size18);
+    /* line-height: 20px; */
+    text-transform: capitalize;
+    overflow: hidden;
+    font-stretch: extra-condensed;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+}
