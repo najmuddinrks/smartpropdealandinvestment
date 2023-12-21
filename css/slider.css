@@ -7,7 +7,9 @@
 .slider5 .slick-next:before,
 .slider5 .slick-prev:before,
 .slider6 .slick-next:before,
-.slider6 .slick-prev:before {
+.slider6 .slick-prev:before,
+.slider7 .slick-next:before,
+.slider7 .slick-prev:before {
   font-family: "fontawesome";
   font-size: var(--font-size30);
   color: var(--pure-white) !important;
@@ -26,7 +28,9 @@
 .slider4 .slick-next:hover:before,
 .slider4 .slick-prev:hover:before,
 .slider6 .slick-next:hover:before,
-.slider6 .slick-prev:hover:before {
+.slider6 .slick-prev:hover:before,
+.slider7 .slick-next:hover:before,
+.slider7 .slick-prev:hover:before  {
   left: 55%;
 }
 
@@ -34,7 +38,8 @@
 .slider2 .slick-next,
 .slider4 .slick-next,
 .slider5 .slick-next,
-.slider6 .slick-next {
+.slider6 .slick-next,
+.slider7 .slick-next {
   right: -43px !important;
   top: 10px;
   background: var(--dark-blue-op) !important;
@@ -51,7 +56,8 @@
 .slider2 .slick-next:hover,
 .slider4 .slick-next:hover,
 .slider5 .slick-next:hover,
-.slider6 .slick-next:hover {
+.slider6 .slick-next:hover,
+.slider7 .slick-next:hover {
   background: var(--red-main) !important;
 }
 
@@ -71,7 +77,8 @@
 .slider2 .slick-prev,
 .slider4 .slick-prev,
 .slider5 .slick-prev,
-.slider6 .slick-prev {
+.slider6 .slick-prev,
+.slider7 .slick-prev {
   left: -43px !important;
   background: var(--dark-blue-op) !important;
   box-shadow: var(--box-shadow) !important;
@@ -90,7 +97,8 @@
 .slider2 .slick-prev:hover,
 .slider4 .slick-prev:hover,
 .slider5 .slick-prev:hover,
-.slider6 .slick-prev:hover {
+.slider6 .slick-prev:hover,
+.slider7 .slick-prev:hover {
   background: var(--red-main) !important;
 }
 
@@ -117,6 +125,16 @@
 }
 
 .slider6 .slick-prev {
+  top: 200px;
+  left: -6px !important;
+}
+/* slider5 specific */
+.slider7 .slick-next {
+  top: 200px;
+  left: 97%;
+}
+
+.slider7 .slick-prev {
   top: 200px;
   left: -6px !important;
 }

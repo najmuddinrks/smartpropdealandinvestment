@@ -458,6 +458,18 @@ transition: 0.5s ease-in-out;
     .form-group .control-majno{
         font-size:var(--font-size16) !important;
     }
+    .card-header h2,.card-content h2,.card-footer h2{
+        font-size: var(--font-size13)!important;
+    }
+    .card-header h2 strong, .card-content h2 strong, .card-footer h2 strong{
+        font-size: var(--font-size13)!important;
+    }
+    .card-header p,.card-content p,.card-footer p{
+        font-size: var(--font-size11);
+    }
+    .card-body{
+        padding: 8px 10px 0px 9px !important;
+    }
    
 }
 
@@ -487,7 +499,7 @@ transition: 0.5s ease-in-out;
         font-size: var(--font-size24);
      }
       .button2{
-        font-size: var(--font-size16);
+        font-size: var(--font-size14);
         margin-left: 5px;
         margin-right: 5px;
     }
@@ -530,7 +542,8 @@ transition: 0.5s ease-in-out;
     margin-top: 13px;
 }
 .button2{
-    width: 86px;
+    width: auto;
+    /* width: 86px; */
     margin: 10px 7px;
 }
 .badge-wrapper{
@@ -581,19 +594,24 @@ transition: 0.5s ease-in-out;
     font-size: var(--font-size10)!important;
     padding: 4px 10px !important;
     letter-spacing: 0px;
-    width: 90px;
+    width: 101px;
 } 
 /* ******************slider action****************** */
 .slider .slick-prev, 
 .slider2 .slick-prev, 
-.slider4 .slick-prev {
+.slider4 .slick-prev,
+.slider6 .slick-prev,
+.slider7 .slick-prev {
     left: -32px !important;
     width: 30px !important;
     height: 30px !important;
 }
 .slider .slick-next, 
 .slider2 .slick-next, 
-.slider4 .slick-next {
+.slider4 .slick-next,
+.slider6 .slick-next,
+.slider7 .slick-next 
+ {
     right: -32px !important;
     width: 30px!important;
     height: 30px!important;
@@ -603,18 +621,38 @@ transition: 0.5s ease-in-out;
 .slider2 .slick-next:before, 
 .slider2 .slick-prev:before, 
 .slider4 .slick-next:before, 
-.slider4 .slick-prev:before{
+.slider4 .slick-prev:before,
+.slider6 .slick-next:before, 
+.slider6 .slick-prev:before,
+.slider7 .slick-next:before, 
+.slider7 .slick-prev:before{
     font-size: var(--font-size17) !important;
 }
 .slider4 .slick-prev,
-.slider4 .slick-next {
+.slider4 .slick-next
+ {
     top: 222px !important;
 }
-.slider4 .slick-prev{
+.slider6 .slick-prev,
+.slider6 .slick-next,
+.slider7 .slick-next{
+    top: 197px !important;
+}
+.slider4 .slick-prev
+{
     left: -1px !important;
 }
-.slider4 .slick-next{
+.slider6 .slick-prev,
+.slider7 .slick-prev{
+    left: 10px !important;
+}
+.slider4 .slick-next
+{
     right: -1px !important;
+}
+.slider6 .slick-next,
+.slider7 .slick-next{
+    left: 86% !important;
 }
 
 .badge-set{
@@ -711,7 +749,7 @@ transition: 0.5s ease-in-out;
         font-size: var(--font-size8);
         top: 3px;
         right: 1px;
-        padding: 0px 3px;
+        padding: 1px 5px;
     }
     .center__div ul li a{
         font-size: var(--font-size16);

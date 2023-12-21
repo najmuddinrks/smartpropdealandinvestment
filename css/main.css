@@ -1,7 +1,11 @@
 
 /* ****************************fresh modification************************* */
 .fresh__prop{
-    margin-top: 200px;
+    margin-top: 20px;
+}
+/* ****************************fresh modification************************* */
+.trending__societies{
+    margin-top: 20px;
 }
 
 /* ****************************counter modification************************* */
@@ -34,7 +38,7 @@
     margin-top: 20px;
 }
 .jumbo .container .wrapper .jumbo__box{
-    background-color: var(--form-bg);
+    background-color: var(--softpink);
     border-radius: 16px;
     padding: 22px;
     border: 1px solid var(--pure-white);
@@ -98,7 +102,7 @@
     transition: 0.5s ease-in-out;
 }
 .jumbo .container .wrapper .jumbo__box .btn-setting span:hover {
-    background: var(--form-bg);
+    background: var(--softpink);
     color: var(--dark-color);
 }
 
@@ -291,7 +295,7 @@
  .form-smartdeal{
     margin-top: 20px;
     margin-bottom: 10px;
-    background: var(--form-bg);
+    background: var(--softpink);
  }
  .form-setting{
     padding: 20px 0px;
