@@ -89,7 +89,7 @@
     --line-height50:50px;
     --line-height66:66px;
     --box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    --card-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --card-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;;
     --heading-support:linear-gradient(90deg, rgba(221,31,31,1) 17%, rgba(233,55,43,1) 35%, rgba(255,15,15,1) 50%, rgba(255,53,38,1) 100%);
     --text-suppot:radial-gradient(circle, rgba(0,85,138,1) 35%, rgba(211,1,2,1) 100%);
     --pure-white:#fff;
@@ -837,7 +837,7 @@ font-size: var(--font-size16);
 .modal-span span{
     color: hotpink !important
 }
-.fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file,.fa-indian-rupee-sign,.fa-building,.fa-list-check,.fa-arrow-up-right-from-square,.fa-credit-card,.fa-car,.fa-house{
+.fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file,.fa-indian-rupee-sign,.fa-building,.fa-list-check,.fa-arrow-up-right-from-square,.fa-credit-card,.fa-car,.fa-house,.fa-circle-play{
     color: var(--red-main);
     transition: 0.5s ease-in-out;
 }
@@ -851,7 +851,7 @@ font-size: var(--font-size16);
     font-size: var(--font-size10) !important;
     vertical-align: middle;
 }
-.fa-user:hover,.fa-lock:hover,.fa-envelope:hover,.fa-message:hover,.fa-file:hover,.fa-indian-rupee-sign:hover,.fa-building:hover,.fa-list-check:hover,.fa-arrow-up-right-from-square:hover,.fa-credit-card:hover,.fa-car:hover,.fa-house:hover{
+.fa-user:hover,.fa-lock:hover,.fa-envelope:hover,.fa-message:hover,.fa-file:hover,.fa-indian-rupee-sign:hover,.fa-building:hover,.fa-list-check:hover,.fa-arrow-up-right-from-square:hover,.fa-credit-card:hover,.fa-car:hover,.fa-house:hover,.fa-circle-play:hover{
     transform: translateY(2px);
     color: var(--dark-blue-op);
 }
@@ -890,7 +890,8 @@ font-size: var(--font-size16);
     transition: 0.5s ease-in-out;
     overflow: hidden;
     border-radius: 15px 15px 0px 0px !important;
-    /* min-height: 400px !important; */
+    box-sizing: border-box;
+    min-height: 350px !important;
 }
 .card img{
     transition: 0.5s ease-in-out;
@@ -898,6 +899,7 @@ font-size: var(--font-size16);
     height: 150px;
     overflow: hidden;
 }
+
 .card:hover {
     box-shadow: var(--card-shadow);
     /* overflow: hidden; */
@@ -922,6 +924,7 @@ font-size: var(--font-size16);
     padding: 18px 16px 16px !important;
     position: relative;
     transition: 0.5s ease-in-out;
+    box-sizing: border-box;
 }
 .btn-padding{
     padding: 8px 16px;
@@ -999,6 +1002,54 @@ font-size: var(--font-size16);
     white-space: nowrap;
     transition: 0.5s ease-in-out;
 }
+.card-top-border{
+    border-top: 5px solid var(--red-main) !important;
+    list-style-position: inside;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.card-img-margin{
+    /* padding: 10px; */
+    height: 100px !important;
+    transform: none !important;
+}
+.card-seperated{
+    display: block;
+    box-sizing: border-box;
+    padding: 6px;
+}
+.card-seperated p{
+    font-size: var(--font-size14);
+    padding-bottom: 2px;
+}
+.card-footer ul li a{
+    font-size: var(--font-size14);
+    color: var(--red-main);
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.card-content ul li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    line-height: 2;
+}
+.card-content ul li a{
+    font-size: var(--font-size14);
+    color: var(--para-dark-h2);
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    font-stretch: extra-condensed;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+}
+
+
 main{
     margin-top: 200px;
+    /* visibility: hidden; */
 }

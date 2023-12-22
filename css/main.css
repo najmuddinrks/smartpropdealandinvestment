@@ -3,6 +3,11 @@
 .fresh__prop{
     margin-top: 20px;
 }
+.fresh__prop ul li a{
+    font-size: var(--font-size16);
+    color:var(--red-main);
+    text-decoration: none;
+}
 /* ****************************fresh modification************************* */
 .trending__societies{
     margin-top: 20px;
