@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/whatsapp.css">
     <link rel="stylesheet" href="CSS/responsive.css">
-    <link rel="stylesheet" href="CSS/footer.resp.css">
+    <!-- <link rel="stylesheet" href="CSS/footer.resp.css"> -->
     <!-- <link rel="stylesheet" href="CSS/slick.css"> -->
     <link rel="stylesheet" href="CSS/slick.min.css">
     <link rel="stylesheet" href="CSS/slick.theme.min.css">
@@ -211,7 +211,47 @@
             <svg class="svg-inline--fa fa-angle-down font-setting fa-1x" id="arrow" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
           </span>
           <div class="dropBoxAnother">
-              <div class="button btn-abs">join now</div>
+            <button type="button" class="button btn-abs" data-target="#mymodal" data-toggle="modal">
+              join now
+            </button>
+             <div class="modal fade" id="mymodal1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">                    
+            <div class="modal-header">
+              <h3 class="text-primary font-weight-bold">SignUp</h3>
+  <button type="button" class="close close-edit" data-dismiss="modal" >&times;</button>
+            </div>
+            <div class="modal-body">
+              <form>
+              <div class="form-group">
+                <label><i class="fas fa-user pr-2 fa-1x"></i>Username:</label>
+                <input type="text" name="" class="form-control control-majno" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <label><i class="fas fa-lock pr-2 fa-1x"></i>Password:</label>
+                <input type="number" maxlength="12" name="" class="form-control control-majno" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label><i class="fas fa-envelope pr-2 fa-1x"></i>E-mail:</label>
+                <input type="text" name="" class="form-control control-majno" placeholder="E-mail">
+              </div>
+              <div class="form-group">
+                <label><i class="fas fa-message pr-2 fa-1x"></i>Message:</label>
+                <textarea type="Message" name="" id="Message1" class="form-control control-majno" placeholder="Message" style="height: 200px;"></textarea>
+              </div> 
+              <div class="form-group">
+                <label><i class="fas fa-file pr-2 fa-1x"></i>Upload File:</label>
+                <input type="file" name="" class="form-control control-majno" placeholder="Upload File">
+              </div>
+              </form>   
+            </div>   
+            <div class="modal-footer justify-content-center modal-span">
+              <button class="btn btn-danger btn-outline-danger btn-sm" data-dismiss="modal">SignUp Please</button>
+            </div>
+              <span class="text-center" style="color: hotpink;">Generate a Link Please Wait a Movement !!!!</span>
+          </div>
+        </div>
+      </div>
           </div>
           </div>
       </div>
@@ -880,51 +920,11 @@
     <!-- ********************megastar is HERE STARTED ******************** -->
      <div class="megastar  d-xl-none d-block"> 
       <ul class="mega-menu">
-      <li class="mega__item light-color py-md-4 py-sm-2">
+      <li class="mega__item light-color w-100">
         <a class="mega__link" href="#">
           <div class="d-xl-none signup-section" id="signup">
             <span class="sign">Sign into get a personalised feed!!!</span>
-            <button type="button" class="button btn-setting">
-              Login
-            </button>
-            <!-- <div class="modal fade" id="mymodal2">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">                    
-                  <div class="modal-header">
-                    <h3 class="text-primary font-weight-bold">Sign Up</h3>
-        <button type="button" class="close close-edit" data-dismiss="modal" >&times;</button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                    <div class="form-group">
-                      <label><i class="fas fa-user pr-2 fa-1x"></i>Username:</label>
-                      <input type="text" name="" class="form-control control-majno" placeholder="Username">
-                    </div>
-                    <div class="form-group">
-                      <label><i class="fas fa-lock pr-2 fa-1x"></i>Password:</label>
-                      <input type="password" maxlength="12" name="" class="form-control control-majno" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                      <label><i class="fas fa-envelope pr-2 fa-1x"></i>E-mail:</label>
-                      <input type="email" name="" class="form-control control-majno" placeholder="E-mail">
-                    </div>
-                    <div class="form-group">
-                      <label><i class="fas fa-message pr-2 fa-1x"></i>Message:</label>
-                      <textarea type="Message" name="" id="Message2.0" class="form-control control-majno" placeholder="Message" style="height: 200px;"></textarea>
-                    </div> 
-                    <div class="form-group">
-                      <label><i class="fas fa-file pr-2 fa-1x"></i>Upload File:</label>
-                      <input type="file" name="" class="form-control control-majno" placeholder="Upload File">
-                    </div>
-                    </form>   
-                  </div>   
-                  <div class="modal-footer justify-content-center modal-span">
-                    <button class="btn btn-danger btn-outline-danger btn-sm" data-dismiss="modal">Sign Up Please</button>
-                  </div>
-                    <span class="text-center" style="color: hotpink;">Generate a Link Please Wait a Moment !!!!</span>
-                </div>
-              </div>
-            </div> -->
+            <button type="button" class="btn button2 btn-sm btn-adjustment">Login</button>
           </div>
         </a>   
       </li>
@@ -1304,9 +1304,129 @@
    </header>
    <main>
      <!-- ****************fresh__prop modification********************** -->
+    <section class="real__estate__guide">
+      <div class="container">
+        <h2 class="h2-set">Your Real Estate Guide</h2>
+        <div class="wrapper row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-block m-auto">
+            <div class="card card-top-border">
+              <div class="card-body">
+                <div class="card-header">
+                  <h2 class="m-lg-0 text-center"><strong>Locality Videos</strong></h2>
+                </div>  
+                <div class="card-content">
+                  <div class="slider8">
+                    <div class="card-seperated">
+                      <img class="card-img-top card-img-margin img-fluid" src="IMAGES/card/fresh-prop/andher-east-1-retouching.jpg" alt="Card image-fresh">
+                      <p>Locality Review -</p>
+                      <p>Kalamboli, Navi Mumbai</p>
+                    </div>
+                    <div class="card-seperated">
+                      <img class="card-img-top card-img-margin img-fluid" src="IMAGES/card/fresh-prop/andher-east-1-retouching.jpg" alt="Card image-fresh">
+                      <p>Locality Review - </p>
+                      <p>Dahisar West, Mumbai</p>
+                    </div>
+                    <div class="card-seperated">
+                      <img class="card-img-top card-img-margin img-fluid" src="IMAGES/card/fresh-prop/andher-east-1-retouching.jpg" alt="Card image-fresh">
+                      <p> Locality Review -</p>
+                      <p>Chandivali, Mumbai</p>
+                    </div>
+                    <div class="card-seperated">
+                      <img class="card-img-top card-img-margin img-fluid" src="IMAGES/card/fresh-prop/andher-east-1-retouching.jpg" alt="Card image-fresh">
+                      <p>Locality Review - </p>
+                      <p>Byculla, Mumbai</p>
+                    </div>
+                    <div class="card-seperated">
+                      <img class="card-img-top card-img-margin img-fluid" src="IMAGES/card/fresh-prop/andher-east-1-retouching.jpg" alt="Card image-fresh">
+                      <p>Locality Review -</p>
+                      <p>Badlapur, Mumbai</p>
+                    </div>
+                    <div class="card-seperated">
+                      <img class="card-img-top card-img-margin img-fluid" src="IMAGES/card/fresh-prop/andher-east-1-retouching.jpg" alt="Card image-fresh">
+                      <p>Locality Review -</p>
+                      <p>Matunga East, Mumbai</p>
+                    </div>
+                    <div class="card-seperated">
+                      <img class="card-img-top card-img-margin img-fluid" src="IMAGES/card/fresh-prop/andher-east-1-retouching.jpg" alt="Card image-fresh">
+                      <p>Locality Review -</p>
+                      <p>Juhu, Mumbai</p>
+                    </div>
+                    <div class="card-seperated">
+                      <img class="card-img-top card-img-margin img-fluid" src="IMAGES/card/fresh-prop/andher-east-1-retouching.jpg" alt="Card image-fresh">
+                      <p>Locality Review -</p>
+                      <p>Kandivali East, Mumbai</p>
+                    </div>
+                    <div class="card-seperated">
+                      <img class="card-img-top card-img-margin img-fluid" src="IMAGES/card/fresh-prop/andher-east-1-retouching.jpg" alt="Card image-fresh">
+                      <p>Locality Review -</p>
+                      <p>Santacruz West, Mumbai</p>
+                    </div>
+                    <div class="card-seperated">
+                      <img class="card-img-top card-img-margin img-fluid" src="IMAGES/card/fresh-prop/andher-east-1-retouching.jpg" alt="Card image-fresh">
+                      <p>Locality Review -</p>
+                      <p>Andheri West, Mumbai</p>
+                    </div>  
+                </div>
+                </div>
+                <div class="card-footer pb-lg-0">
+                  <ul class="mb-0">
+                   <li><a href="javasript:void" class="pr-lg-2">see all properties <i class="fas fa-arrow-right"></i></a></li></ul>
+                </div>
+              </div>
+            </div> 
+          </div>
+         
+       
+       
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-block m-auto">
+          <div class="card card-top-border">
+            <div class="card-body">
+              <div class="card-header">
+                <h2 class="m-lg-0 text-center"><strong>Industry Insights</strong></h2>
+              </div>  
+              <div class="card-content">
+                <ul>
+                  <li><i class="fas fa-file pr-lg-3"></i><a href="javascript:void">14 Cheapest Platforms To Pay Rent With Credit Card</a></li>
+                  <li><i class="fas fa-file pr-lg-3"></i><a href="javascript:void">Sale Deed: Meaning, Format, and Components of a Sale Deed</a></li>
+                  <li><i class="fas fa-file pr-lg-3"></i><a href="javascript:void">Ready Reckoner Rate - What Does it Mean and How to Calculate It?</a></li>
+                  <li><i class="fas fa-circle-play pr-lg-3"></i><a href="javascript:void">Stamp Duty and Registration Charges in Maharashtra 2023</a></li>
+                  <li><i class="fas fa-circle-play pr-lg-3"></i><a href="javascript:void">Most Posh Areas in Mumbai (Top 12 Most Expensive Areas)</a></li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <ul class="mb-0">
+                  <li><a href="javasript:void" class="pr-lg-2">see all properties <i class="fas fa-arrow-right"></i></a></li></ul>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-block m-auto">
+          <div class="card card-top-border">
+            <img class="card-img-top img-fluid" src="IMAGES/card/fresh-prop/andher-east-1-retouching.jpg" alt="Card image-fresh">
+            <div class="card-body">
+              <div class="card-header">
+                <p class="d-flex justify-content-between align-items-center">1 BHK Flat<i class="fa-solid fa-house"></i></p>
+              </div>  
+              <div class="card-content">
+                <h2 class="m-lg-0"><strong><span>&#8377;33,000</span><span class="pl-lg-2">|</span><span class="pl-lg-2">&#8377;650 sqft.</span></strong></h2>
+                <p>andheri east, mumbai</p>
+                <p>ready to move</p>
+              </div>
+              <div class="card-footer">
+                <button class="button2 btn-padding">Contact Owner</button>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+      </div>
+    </section>
+     <!-- ****************fresh__prop modification********************** -->
     <section class="fresh__prop">
       <div class="container">
+        <ul class="d-flex justify-content-between align-items-center">
         <h2 class="h2-set">Fresh Properties in Mumbai</h2>
+       <li class="d-xl-block d-none"><a href="javasript:void" class="pr-lg-2">see all properties <i class="fas fa-arrow-right"></i></a></li></ul>
         <div class="wrapper row slider7">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-block m-auto">
             <div class="card">
@@ -1346,7 +1466,7 @@
           </div>
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-block m-auto">
             <div class="card">
-              <img class="card-img-top img-fluid" src="IMAGES/card/fresh-prop/andher-east3.jpg" alt="Card image-fresh">
+              <img class="card-img-top img-fluid" src="IMAGES/card/fresh-prop/retouching-card-andher-east-3.jpg" alt="Card image-fresh">
               <div class="card-body">
                 <div class="card-header">
                   <p class="d-flex justify-content-between align-items-center">1 BHK Flat<i class="fa-solid fa-house"></i></p>
@@ -1746,7 +1866,7 @@
               <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 d-block">
                   <div class="counter">
-                    <i class="fa fa-indian-rupee-sign fa-2x"></i>
+                    <i class="fa fa-indian-rupee-sign fa-2x "></i>
                     <h2 class="timer count-title count-number" data-to="2507" data-speed="1700">2507+</h2>
                     <p class="count-text ">Low Budget Flat </p>
                     <p class="count-text ">in Mumbai </p>
@@ -1754,7 +1874,7 @@
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 d-block">
                     <div class="counter">
-                      <i class="fa fa-building fa-2x"></i>
+                      <i class="fa fa-building fa-2x "></i>
                       <h2 class="timer count-title count-number" data-to="82424" data-speed="1700">82424+</h2>
                       <p class="count-text ">Properties for Rent </p>
                       <p class="count-text ">in Mumbai </p>
@@ -1762,7 +1882,7 @@
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 d-block">
                     <div class="counter">
-                      <i class="fa fa-user font-reload fa-2x"></i>
+                      <i class="fa fa-user font-reload fa-2x "></i>
                       <h2 class="timer count-title count-number" data-to="14" data-speed="1700">14+</h2>
                       <p class="count-text ">Residential Property </p>
                       <p class="count-text ">Agents in Mumbai</p>
@@ -1770,7 +1890,7 @@
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 d-block">
                     <div class="counter">
-                      <i class="fa fa-list-check fa-2x"></i>
+                      <i class="fa fa-list-check fa-2x "></i>
                       <h2 class="timer count-title count-number" data-to="24614" data-speed="1700">24614+</h2>
                       <p class="count-text ">Residential Projects </p>
                       <p class="count-text ">in Mumbai </p>
@@ -3140,23 +3260,23 @@
           <div class="more-network">
             <h3>More from our Network</h3>
             <div class="li-adjust five-grid-template-column">
-              <ul class="letterwise">
+              <ul class="letterwise mb-md-0 mb-sm-0">
                 <li><a href="javascript:void">Times of India</a></li>
                 <li><a href="javascript:void">MensXp</a></li>
               </ul>
-              <ul class="letterwise">
+              <ul class="letterwise mb-md-0 mb-sm-0">
                 <li><a href="javascript:void">Economic Times</a></li>
                 <li><a href="javascript:void">iDiva</a></li>
               </ul>
-              <ul class="letterwise">
+              <ul class="letterwise mb-md-0 mb-sm-0">
                 <li><a href="javascript:void">Navbharat times</a></li>
                 <li><a href="javascript:void">TimesJobs</a></li>
               </ul>
-              <ul class="letterwise">
+              <ul class="letterwise mb-md-0 mb-sm-0">
                 <li><a href="javascript:void">India Times</a></li>
                 <li><a href="javascript:void">Gadgets Now</a></li>
               </ul>
-              <ul class="letterwise">
+              <ul class="letterwise mb-md-0 mb-sm-0">
                 <li><a href="javascript:void">Filmfare</a></li>
               </ul>
             </div>
