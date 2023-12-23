@@ -1,4 +1,20 @@
-
+/* ****************************real__estate__guide modification************************* */
+.fresh__prop{
+    margin-top: 20px;
+}
+/* .real__estate__guide .container .wrapper .card .card__block .video__Part{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 0px 20px 0px;
+} */
+/* .card__block.video__Part .video__sec{
+    display: flex !important;
+    flex-direction: row;
+} */
+.real__estate__guide .container .wrapper .card .card__block .video__Part .video__sec .video__sec-img{
+    transform: none !important;
+}
 /* ****************************fresh modification************************* */
 .fresh__prop{
     margin-top: 20px;
@@ -8,7 +24,7 @@
     color:var(--red-main);
     text-decoration: none;
 }
-/* ****************************fresh modification************************* */
+/* ****************************trending modification************************* */
 .trending__societies{
     margin-top: 20px;
 }

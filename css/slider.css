@@ -176,6 +176,21 @@
   .slider5 .slick-next{
       top: 222px !important;
   }
+  .slider6 .slick-prev,
+  .slider7 .slick-prev{
+    left: 0px !important;
+  }
+  .slider6 .slick-next,
+  .slider7 .slick-next{
+    left: 95% !important;
+  }
+  .slider .slick-next, .slider2 .slick-next, .slider4 .slick-next, .slider5 .slick-next, .slider6 .slick-next, .slider7 .slick-next{
+    right: -12px !important;
+  }
+  .main-footer .container .wrapper .footer-left-section h3, .main-footer .container .wrapper .footer-right-section .prop-india h3{
+    font-size: var(--font-size26);
+  }
+
 }
 @media(max-width:768px){
   .slider .slick-prev, 

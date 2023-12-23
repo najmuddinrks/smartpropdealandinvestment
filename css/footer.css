@@ -195,9 +195,31 @@
     }
    
 }
+@media(max-width:1024px){
+    .main-footer .container .wrapper .footer-left-section h3, .main-footer .container .wrapper .footer-right-section .prop-india h3{
+        font-size: var(--font-size28);
+    }
+    .main-footer .container .wrapper .footer-right-section .prop-india ul li span a, .main-footer .container .wrapper .footer-left-section .more-network .li-adjust li a, .main-footer .container .wrapper .footer-left-section p{
+        font-size: var(--font-size23);
+        line-height: 1.7;
+    }
+    .main-footer .container .wrapper .footer-left-section .social-media {
+        justify-content: flex-start !important;
+    }
+    .main-footer .container .wrapper .footer-left-section .social-media .social-media-links{
+        padding-top: 0px;
+    }
+}
 @media(max-width:992px){
     .read-bottom-footer p{
         font-size: var(--font-size16);
+    }
+    .main-footer .container .wrapper .footer-left-section h3, .main-footer .container .wrapper .footer-right-section .prop-india h3{
+        font-size: var(--font-size24);
+    }
+    .main-footer .container .wrapper .footer-right-section .prop-india ul li span a, .main-footer .container .wrapper .footer-left-section .more-network .li-adjust li a, .main-footer .container .wrapper .footer-left-section p{
+        line-height: 1.4;
+        font-size: var(--font-size21);
     }
 }
 @media(max-width:768px){

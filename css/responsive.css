@@ -12,9 +12,7 @@
       .ui-icon-circle-plus{
         transform: scale(1.5) !important;
       }
-      .main-footer .container .wrapper .footer-left-section .social-media{
-        justify-content: center;
-      }
+    
 
       .bottomHead {
         position: fixed;
@@ -343,15 +341,30 @@ transition: 0.5s ease-in-out;
     .counter__setting .container .wrapper .counter__text .counter p{
         font-size: var(--font-size14);
     }
+    .jumbo .container .wrapper .jumbo__box h2{
+        font-size: var(--font-size30);
+    }
+    .jumbo .container .wrapper .jumbo__box h2 span{
+        font-size: var(--font-size30);
+    }
+    .video__part, .article__part{
+        width: 70px;
+        margin-right: 5px;
+    }
+    .video__text p{
+        font-size: var(--font-size12);
+    }
 }
 @media(max-width:992px){
+   
     .container {
         margin: 0 auto;
         padding: 0px 20px !important;
     }
     .h4-set h4{
-        text-align: center;
-        font-weight: bold;
+        text-align: left;
+        color: var(--li-color);
+        font-size: var(--font-size17);
     }
     .bottomline button{
         padding: 5px 10px !important;
@@ -462,6 +475,9 @@ transition: 0.5s ease-in-out;
         font-size: var(--font-size16)!important;
     }
     .card-header p,.card-content p,.card-footer p{
+        font-size: var(--font-size14);
+    }
+    .card-content ul li a{
         font-size: var(--font-size13);
     }
     .card-body{
@@ -485,6 +501,9 @@ transition: 0.5s ease-in-out;
         padding: 0px !important;
         font-size: var(--font-size13)!important;
         line-height:var(--line-height30) !important;;
+    }
+    .card{
+        width: 100%;
     }
     /* :is(.selectSection,.selectSection2,.selectSection3){
         justify-content: center !important;
