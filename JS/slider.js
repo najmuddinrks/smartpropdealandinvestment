@@ -337,7 +337,8 @@ $(document).ready(function () {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: false,
-          dots: false,
+          dots: true,
+          arrows: false,
         },
       },
       {
@@ -345,10 +346,11 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: false,
+          infinite: true,
           // centerMode: true,
           // centerPadding: '20px',
-          dots: false,
+          dots: true,
+          arrows: false,
         },
       },
       {
@@ -356,8 +358,9 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: false,
-          dots: false,
+          infinite: true,
+          dots: true,
+          arrows: false,
         },
       },
       {
@@ -365,7 +368,8 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          arrows: true,
+          arrows: false,
+          dots: true,
         },
       },
       {
@@ -373,7 +377,8 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: true,
+          arrows: false,
+          dots: true,
         },
       },
       // You can unslick at a given breakpoint now by adding:
