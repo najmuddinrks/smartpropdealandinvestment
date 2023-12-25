@@ -324,12 +324,17 @@ h5{ font-family:var(--montserrat-semibold) ;}
     transform-origin: left;
     box-shadow:var(--box-shadow) ;
  } */
+ .close-edit2{
+    margin-top: -60px !important;
+    font-size: 30px !important;
+ }
  .close-edit[data-dismiss="modal"]:hover,
  .close-edit[data-dismiss="modal"].active,
  .close-edit[data-dismiss="modal"]:focus {
    border: none !important;
    outline: none !important;
    box-shadow: none !important;
+  
 }
  
  .badge-set{

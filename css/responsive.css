@@ -380,7 +380,7 @@ transition: 0.5s ease-in-out;
     .counter__setting .container .wrapper .counter__text h2{
         font-size: var(--font-size24);
     }
-    .fa-inr,.fa-building,.fa-tasks,.font-reload{
+    .fa-inr,.fa-building,.fa-tasks,.font-reload,.fa-chart-line,.fa-file-lines,.fa-calculator,.fa-book{
         font-size: var(--font-size24);
     }
     
@@ -483,8 +483,27 @@ transition: 0.5s ease-in-out;
     .card-body{
         padding: 8px 10px 0px 9px !important;
     }
-    .fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file,.fa-indian-rupee-sign,.fa-building,.fa-list-check,.fa-arrow-up-right-from-square,.fa-credit-card,.fa-car,.fa-house,.fa-circle-play{
+    .fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file,.fa-indian-rupee-sign,.fa-building,.fa-list-check,.fa-arrow-up-right-from-square,.fa-credit-card,.fa-car,.fa-house,.fa-circle-play,.fa-chart-line,.fa-file-lines,.fa-calculator,.fa-book{
         font-size:var(--font-size20);
+    }
+    .service__icon{
+        width:2rem;
+        height:2rem;
+    }
+    .form-group label{
+        font-size: var(--font-size14)!important;
+    }
+    .form-group .control-majno{
+        font-size: var(--font-size14)!important;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        border: 1px solid var(--temp-head-col);
+        border-radius: 6px;
+        transition: 0.5s ease-in-out;
+    }
+    .h2-set{
+        font-size: var(--font-size28) !important;
     }
    
 }

@@ -9,7 +9,9 @@
 .slider6 .slick-next:before,
 .slider6 .slick-prev:before,
 .slider7 .slick-next:before,
-.slider7 .slick-prev:before {
+.slider7 .slick-prev:before,
+.slider9 .slick-next:before,
+.slider9 .slick-prev:before {
   font-family: "fontawesome";
   font-size: var(--font-size30);
   color: var(--pure-white) !important;
@@ -30,7 +32,9 @@
 .slider6 .slick-next:hover:before,
 .slider6 .slick-prev:hover:before,
 .slider7 .slick-next:hover:before,
-.slider7 .slick-prev:hover:before  {
+.slider7 .slick-prev:hover:before,
+.slider9 .slick-next:hover:before,
+.slider9 .slick-prev:hover:before  {
   left: 55%;
 }
 
@@ -39,7 +43,8 @@
 .slider4 .slick-next,
 .slider5 .slick-next,
 .slider6 .slick-next,
-.slider7 .slick-next {
+.slider7 .slick-next,
+.slider9 .slick-next {
   right: -43px !important;
   top: 10px;
   background: var(--dark-blue-op) !important;
@@ -57,7 +62,8 @@
 .slider4 .slick-next:hover,
 .slider5 .slick-next:hover,
 .slider6 .slick-next:hover,
-.slider7 .slick-next:hover {
+.slider7 .slick-next:hover,
+.slider9 .slick-next:hover {
   background: var(--red-main) !important;
 }
 
@@ -78,7 +84,8 @@
 .slider4 .slick-prev,
 .slider5 .slick-prev,
 .slider6 .slick-prev,
-.slider7 .slick-prev {
+.slider7 .slick-prev,
+.slider9 .slick-prev {
   left: -43px !important;
   background: var(--dark-blue-op) !important;
   box-shadow: var(--box-shadow) !important;
@@ -98,7 +105,8 @@
 .slider4 .slick-prev:hover,
 .slider5 .slick-prev:hover,
 .slider6 .slick-prev:hover,
-.slider7 .slick-prev:hover {
+.slider7 .slick-prev:hover,
+.slider9 .slick-prev:hover {
   background: var(--red-main) !important;
 }
 
@@ -128,13 +136,23 @@
   top: 200px;
   left: -6px !important;
 }
-/* slider5 specific */
+/* slider7 specific */
 .slider7 .slick-next {
   top: 200px;
   left: 97%;
 }
 
 .slider7 .slick-prev {
+  top: 200px;
+  left: -6px !important;
+}
+/* slider9 specific */
+.slider9 .slick-next {
+  top: 200px;
+  left: 97%;
+}
+
+.slider9 .slick-prev {
   top: 200px;
   left: -6px !important;
 }
@@ -155,6 +173,15 @@
   justify-content: center;
   align-items: center;
 
+}
+.modal2{
+  width: 600px !important;
+  height: 400px;
+  padding-right: 0px !important;
+  margin-right: 20px;
+}
+.modal-backdrop {
+  display: none !important;
 }
 @media(max-width:1199px){}
 @media(max-width:1024px){
@@ -177,27 +204,34 @@
       top: 222px !important;
   }
   .slider6 .slick-prev,
-  .slider7 .slick-prev{
+  .slider7 .slick-prev,
+  .slider9 .slick-prev{
     left: 0px !important;
   }
   .slider6 .slick-next,
-  .slider7 .slick-next{
+  .slider7 .slick-next,
+  .slider9 .slick-next{
     left: 95% !important;
   }
-  .slider .slick-next, .slider2 .slick-next, .slider4 .slick-next, .slider5 .slick-next, .slider6 .slick-next, .slider7 .slick-next{
+  .slider .slick-next, 
+  .slider2 .slick-next, 
+  .slider4 .slick-next, 
+  .slider5 .slick-next, 
+  .slider6 .slick-next, 
+  .slider7 .slick-next,
+  .slider9 .slick-next{
     right: -12px !important;
   }
-  .main-footer .container .wrapper .footer-left-section h3, .main-footer .container .wrapper .footer-right-section .prop-india h3{
-    font-size: var(--font-size26);
-  }
+
 
 }
 @media(max-width:768px){
-  .slider .slick-prev, 
+.slider .slick-prev, 
 .slider2 .slick-prev, 
 .slider4 .slick-prev,
 .slider6 .slick-prev,
-.slider7 .slick-prev {
+.slider7 .slick-prev,
+.slider9 .slick-prev {
     left: -32px !important;
     width: 30px !important;
     height: 30px !important;
@@ -206,7 +240,8 @@
 .slider2 .slick-next, 
 .slider4 .slick-next,
 .slider6 .slick-next,
-.slider7 .slick-next 
+.slider7 .slick-next,
+.slider9 .slick-next 
  {
     right: -32px !important;
     width: 30px!important;
@@ -221,7 +256,9 @@
 .slider6 .slick-next:before, 
 .slider6 .slick-prev:before,
 .slider7 .slick-next:before, 
-.slider7 .slick-prev:before{
+.slider7 .slick-prev:before,
+.slider9 .slick-next:before, 
+.slider9 .slick-prev:before{
     font-size: var(--font-size17) !important;
 }
 .slider4 .slick-prev,
@@ -231,7 +268,8 @@
 }
 .slider6 .slick-prev,
 .slider6 .slick-next,
-.slider7 .slick-next{
+.slider7 .slick-next,
+.slider9 .slick-next{
     top: 197px !important;
 }
 .slider4 .slick-prev
@@ -239,7 +277,8 @@
     left: -1px !important;
 }
 .slider6 .slick-prev,
-.slider7 .slick-prev{
+.slider7 .slick-prev,
+.slider9 .slick-prev{
     left: 10px !important;
 }
 .slider4 .slick-next
@@ -247,7 +286,8 @@
     right: -1px !important;
 }
 .slider6 .slick-next,
-.slider7 .slick-next{
+.slider7 .slick-next,
+.slider9 .slick-next{
     left: 86% !important;
 }
 
