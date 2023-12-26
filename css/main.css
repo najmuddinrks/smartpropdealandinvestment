@@ -1,3 +1,26 @@
+
+/* ****************************explore modification************************* */
+.explore__properties{
+    margin-top: 20px;
+}
+.explore__properties .container .wrapper .explore{
+    background: var(--light-blue-op);
+    padding: 28px;
+}
+.explore__properties .container .wrapper .explore span{
+    font-family: 'Damion', cursive;
+    font-size: var(--font-size42);
+    font-stretch: 10px;
+    letter-spacing: 2px;
+    color: var(--pure-white);
+}
+.explore__properties .container .wrapper .explore h2{
+    color: var(--pure-white);
+    font-size: var(--font-size24);
+    border-bottom: 2px solid var(--form-bg);
+    padding-bottom: 6px;
+}
+
 /* ****************************real__estate__guide modification************************* */
 .fresh__prop{
     margin-top: 20px;
