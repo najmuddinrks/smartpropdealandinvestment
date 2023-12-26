@@ -19,6 +19,7 @@ function validation(){
         document.getElementById("username").innerHTML = "**only characters are allowed";
         return false;
     }
+   
 
 
     // password and confirm password protection
@@ -108,7 +109,7 @@ function validation2(){
         document.getElementById("Password2").innerHTML = "**password length must be between 5 and 20 characters";
         return false;
       }
-      if(pass!=conpass){
+      if(pass2!=conpass){
         document.getElementById("Password2").innerHTML = "**password did not matching !";
         return false;
       }
@@ -154,4 +155,40 @@ if((mobile2.charAt(0)!=9) && (mobile2.charAt(0)!=8) && (mobile2.charAt(0)!=7)){
             return false;
             }
 
+}
+function validation3(){
+    // password and confirm password protection
+    if (pass3 == "") {
+        if (pass3 == "") {
+          document.getElementById("Password3").innerHTML = "** Please fill the correct Password";
+        }
+     
+        return false;
+      }
+      if ((pass.length <= 5) ||  (pass3.length >=20)) {
+        document.getElementById("Password3").innerHTML = "**password length must be between 5 and 20 characters";
+        return false;
+      }
+      if(pass3!=conpass){
+        document.getElementById("Password3").innerHTML = "**password did not matching !";
+        return false;
+      }  
+      // email validation
+    if(email3 == ""){
+        document.getElementById("emailid3").innerHTML = "** Please fill the correct email id field";
+        return false;
+    }
+    if((email3.indexOf('@')) <= 0){
+        document.getElementById("emailid3").innerHTML = "** @ invalid position";
+        return false;
+    }
+    if((email3.charAt(email3.length -4)!='.') && (email.charAt(email.length -3)!='.')){
+        document.getElementById("emailid3").innerHTML = "** . invalid position";
+        return false;
+    }
+
+    if(email3 == "" || email3.indexOf('@') <= 0 || (email3.charAt(email3.length -4) != '.' && email3.charAt(email3.length -3) != '.')){
+        document.getElementById("emailid3").innerHTML = "** Please fill the correct email id field";
+        return false;
+    }  
 }
