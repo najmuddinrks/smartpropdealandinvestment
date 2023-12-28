@@ -156,39 +156,36 @@ if((mobile2.charAt(0)!=9) && (mobile2.charAt(0)!=8) && (mobile2.charAt(0)!=7)){
             }
 
 }
-function validation3(){
-    // password and confirm password protection
-    if (pass3 == "") {
-        if (pass3 == "") {
-          document.getElementById("Password3").innerHTML = "** Please fill the correct Password";
-        }
-     
-        return false;
+$(document).ready(function () {
+    //called when key is pressed in textbox
+    $("#quantity").keypress(function (e) {
+       
+       var maxlengthNumber = parseInt($('#quantity').attr('maxlength'));
+       var inputValueLength = $('#quantity').val().length + 1;
+       if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+          
+                 return false;
       }
-      if ((pass.length <= 5) ||  (pass3.length >=20)) {
-        document.getElementById("Password3").innerHTML = "**password length must be between 5 and 20 characters";
-        return false;
+      if(maxlengthNumber < inputValueLength) {
+          return false;
       }
-      if(pass3!=conpass){
-        document.getElementById("Password3").innerHTML = "**password did not matching !";
-        return false;
-      }  
-      // email validation
-    if(email3 == ""){
-        document.getElementById("emailid3").innerHTML = "** Please fill the correct email id field";
-        return false;
-    }
-    if((email3.indexOf('@')) <= 0){
-        document.getElementById("emailid3").innerHTML = "** @ invalid position";
-        return false;
-    }
-    if((email3.charAt(email3.length -4)!='.') && (email.charAt(email.length -3)!='.')){
-        document.getElementById("emailid3").innerHTML = "** . invalid position";
-        return false;
-    }
-
-    if(email3 == "" || email3.indexOf('@') <= 0 || (email3.charAt(email3.length -4) != '.' && email3.charAt(email3.length -3) != '.')){
-        document.getElementById("emailid3").innerHTML = "** Please fill the correct email id field";
-        return false;
-    }  
-}
+     });
+  });
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
