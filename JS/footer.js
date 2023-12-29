@@ -127,5 +127,22 @@ jQuery(function($) {
 //   }
 //   updateNumber();
 // })
+// ******************************bottom to top *************************
+var btnsetting = $('#button__top');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btnsetting.addClass('show');
+  } else {
+    btnsetting.removeClass('show');
+  }
+});
+
+btnsetting.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
 
 
