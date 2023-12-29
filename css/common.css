@@ -245,10 +245,16 @@ h5{ font-family:var(--montserrat-semibold) ;}
  .fa-arrow-right:hover{
     transform: translateX(5px);
  }
+ 
 
 .border-none{
     border: none !important;
 }
+/* .border-radius-none{
+    border-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+} */
  /* ******font-awesome END Here...********* */
 
  .button{
@@ -870,6 +876,7 @@ font-size: var(--font-size16);
     border-radius: 15px 15px 0px 0px !important;
     box-sizing: border-box;
     min-height: 350px !important;
+    position: relative;
 }
 .h-auto{
     min-height: auto !important;
@@ -879,6 +886,7 @@ font-size: var(--font-size16);
     transition: 0.5s ease-in-out;
     height: 150px;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .card:hover {
@@ -887,9 +895,12 @@ font-size: var(--font-size16);
 .card:hover .btn-padding{
     transform: translateY(0px);
     overflow: hidden;
+    box-sizing: border-box;
 }
 .card:hover img{
     transform: scale(1.1);
+    object-fit: cover;
+    overflow: hidden;
     box-shadow: none;
     overflow: hidden;
 }
@@ -931,6 +942,7 @@ font-size: var(--font-size16);
     width: 100%;
     border-bottom: 0px !important;
     border-top: 0px !important;
+    box-sizing: border-box;
 }
 .card-header,.card-footer{
    line-height: 0.7 !important;
@@ -960,6 +972,15 @@ font-size: var(--font-size16);
     transition: 0.5s ease-in-out;
     margin-bottom: 0px !important;
 }
+.white-space{
+    text-transform: capitalize;
+    display: inline-block;
+    overflow: hidden;
+    font-stretch: extra-condensed;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+}
 .card-header p,.card-content p,.card-footer p{
     font-family: var(--montserrat-regular-400-para);
     max-width: 100%;
@@ -988,6 +1009,9 @@ font-size: var(--font-size16);
     text-overflow: ellipsis;
     white-space: nowrap;
     transition: 0.5s ease-in-out;
+}
+.card-header h6 strong, .card-content h6 strong, .card-footer h6 strong{
+    color: var(--para-shade);
 }
 .card-top-border{
     border-top: 5px solid var(--red-main) !important;
@@ -1036,6 +1060,27 @@ font-size: var(--font-size16);
     display: flex;
     border-bottom: 1px solid var(--softpink);
     padding-bottom: 15px;
+    box-sizing: border-box;  
+}
+.card__block2{
+    border-radius: 0px !important;
+    box-sizing: border-box;
+}
+.card__block3{
+    min-height: fit-content !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+.card__block3 figure{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    box-sizing: border-box;
+}
+.card__block3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .card__segment p{
     white-space: normal;

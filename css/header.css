@@ -118,7 +118,7 @@
    top: 55px;
    left: 50%;
    z-index: 4;
-   background:url("../IMAGES/top-header.jpg");
+   background:url("../IMAGES/logo/top-header.jpg");
    background-size: 100% 100%;
    border-radius: 18px;
    width: 100%;
@@ -142,7 +142,7 @@
 
 .top-header-section .container .wrapper .top-header-right .select_box .selected-person + .dropBoxAnother::before{
    content: '';
-   background: url("../IMAGES/top-header.jpg")no-repeat;
+   background: url("../IMAGES/logo/top-header.jpg")no-repeat;
    background-size: 100% 100%;
    position: absolute;
    z-index: 6;
@@ -518,6 +518,7 @@ transition: 0.5s ease-in-out;
   flex-direction: row-reverse;
   justify-content: flex-end;
   gap: 0px 20px;
+  margin-top: 20px;
   font-size: var(--font-size29);
 }
 .badge__head{

@@ -1,8 +1,67 @@
-
-/* ****************************explore modification************************* */
-.explore__properties{
+/* ***********************bottom to top reach out button*********************** */
+#button__top {
+    display: inline-block;
+    background-color: var(--dark-blue-op);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    transition: 0.5s ease-in-out;
+    /* opacity: 0;
+    visibility: hidden; */
+    border: 1px dashed var(--pure-white);
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+    animation: border-movement 4s linear infinite;
+  }
+  @keyframes border-movement{
+    0%{
+        border-radius:50%;
+    }
+    20%{
+        border-radius:50%;
+    }
+    50%{
+        border-radius:100% 0% 0% 100% / 0% 38% 62% 100% ;
+    }
+    80%{
+        border-radius:99% 1% 100% 0% / 2% 0% 100% 98%;
+    }
+    100%{
+        border-radius:50% ;
+    }
+  }
+  .font-adjustment{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:var(--font-size22) !important;
+    transition: 0.5s ease-in-out;
+    color: var(--pure-white);
+ }
+  #button__top:hover{
+    cursor: pointer;
+    background-color:var(--red-main);
+  }
+/* *****space-top every section********** */
+.Latest__Project__Gallery, 
+.explore__properties,
+.fresh__prop,
+.trending__societies,
+.counter__setting,
+.jumbo,
+.property__option,
+.residential,
+.blogspot,
+.map,
+.form-smartdeal {
     margin-top: 20px;
 }
+
 .explore__properties .container .wrapper .explore{
     background: var(--light-blue-op);
     padding: 28px;
@@ -20,42 +79,16 @@
     border-bottom: 2px solid var(--form-bg);
     padding-bottom: 6px;
 }
-
-/* ****************************real__estate__guide modification************************* */
-.fresh__prop{
-    margin-top: 20px;
-}
-/* .real__estate__guide .container .wrapper .card .card__block .video__Part{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 0px 0px 20px 0px;
-} */
-/* .card__block.video__Part .video__sec{
-    display: flex !important;
-    flex-direction: row;
-} */
 .real__estate__guide .container .wrapper .card .card__block .video__Part .video__sec .video__sec-img{
     transform: none !important;
 }
 /* ****************************fresh modification************************* */
-.fresh__prop{
-    margin-top: 20px;
-}
 .fresh__prop ul li a{
     font-size: var(--font-size16);
     color:var(--red-main);
     text-decoration: none;
 }
-/* ****************************trending modification************************* */
-.trending__societies{
-    margin-top: 20px;
-}
-
 /* ****************************counter modification************************* */
-.counter__setting{
-    margin-top: 20px;
-}
 .counter__setting .container .wrapper .counter__text {
     width: 100%;
     border: 1px solid var(--temp-head-col);
@@ -78,9 +111,6 @@
     margin-bottom: 0px;
 }
 /* ****************************jumbo modification************************* */
-.jumbo{
-    margin-top: 20px;
-}
 .jumbo .container .wrapper .jumbo__box{
     background-color: var(--softpink);
     border-radius: 16px;
@@ -150,15 +180,7 @@
     color: var(--dark-color);
 }
 
-/* ****************************property option modification************************* */
-.property__option {
-    margin-top: 20px;
-  }
-
 /* ****************************residential-part************************* */
-.residential{
-    margin-top: 20px;
-}
     :is(.residential .container .wrapper .contentSection2,.residential .container .wrapper .contentSection3) .mega-menu{
         margin-top: 0px;
         width: 100%;
@@ -282,9 +304,6 @@
 }
 
 /* ****************************blogspot************************* */
-.blogspot{
-    margin-top: 20px;
-}
 .blogs{
     margin-top: 0px;
     margin-bottom: 20px;
@@ -334,10 +353,8 @@
 
 .map{
     width: 100%;
-    margin-top: 20px;
  }
  .form-smartdeal{
-    margin-top: 20px;
     margin-bottom: 10px;
     background: var(--softpink);
  }
