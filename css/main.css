@@ -58,7 +58,11 @@
 .residential,
 .blogspot,
 .map,
-.form-smartdeal {
+.form-smartdeal,
+.exclusive__owner__properties,
+.Top__Projects,
+.property__Services 
+{
     margin-top: 20px;
 }
 
@@ -83,11 +87,11 @@
     transform: none !important;
 }
 /* ****************************fresh modification************************* */
-.fresh__prop ul li a{
+/* .fresh__prop ul li a{
     font-size: var(--font-size16);
     color:var(--red-main);
     text-decoration: none;
-}
+} */
 /* ****************************counter modification************************* */
 .counter__setting .container .wrapper .counter__text {
     width: 100%;

@@ -304,9 +304,11 @@ transition: 0.5s ease-in-out;
     .video__text p{
         font-size: var(--font-size12);
     }
-    .button2{
+     .button2{
+        width: 130px;
         font-size: var(--font-size14);
-     }
+
+    }
      .card-header h2 strong{
         font-size: var(--font-size14);
      }
@@ -348,6 +350,10 @@ transition: 0.5s ease-in-out;
     }
     .badge-set {
         padding: 0px 6px;
+    }
+    .img-hidden-content{
+        font-size: var(--font-size14) !important;
+        padding: 6px 0px !important;
     }
     .container{
         max-width: 720px;
@@ -464,6 +470,7 @@ transition: 0.5s ease-in-out;
         font-size: var(--font-size7);
         top: 3px;
     }
+    
 }
 
 @media(max-width:576px){

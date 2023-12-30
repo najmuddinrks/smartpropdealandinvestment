@@ -366,6 +366,13 @@ h5{ font-family:var(--montserrat-semibold) ;}
     font-size: var(--font-size8);
     padding: 2px 7px;
  }
+ .badge-adjusment-top-offer{
+    position: absolute;
+    top: 130px;
+    right: 77%;
+    padding: 2px 12px;
+    border: 1px solid var(--pure-white);
+ }
  .badge__head{
     top: 18px;
     right: -14px;
@@ -897,6 +904,13 @@ font-size: var(--font-size16);
     overflow: hidden;
     box-sizing: border-box;
 }
+.card:hover .badge-adjusment-top-offer{
+    display: none !important;
+}
+.card:hover .img-hidden-content{
+    display: block;
+    transition-delay: smooth;
+}
 .card:hover img{
     transform: scale(1.1);
     object-fit: cover;
@@ -1085,13 +1099,20 @@ font-size: var(--font-size16);
 .card__segment p{
     white-space: normal;
 }
+.card__block__element{
+    padding: 16px;
+    padding-top: 0px;
+}
+.card__block__element strong{
+    color: var(--para-shade) !important;
+    padding-bottom: 4px !important;
+}
 .video__part,.article__part{
     display: flex;
     width: 133px;
     margin-right: 20px;
     position: relative;
 }
-
 .video__part::before{
     content: '';
     position: absolute;
@@ -1106,11 +1127,20 @@ font-size: var(--font-size16);
 }
 .card__flag{
     transition: 0.7s ease-in-out;
-}
-.card__flag {
     margin-top: 30px !important;
 }
-
+.img-hidden-content{
+    background: var(--red-main);
+    padding: 10px 0px;
+    width: 100%;
+    position: relative;
+    bottom: 35px;
+    color: var(--pure-white);
+    font-size: var(--font-size16);
+    text-align: center;
+    display: none;
+    transition: 0.5s ease-in-out;
+}
 .service__icon{
     font-size: var(--font-size30);
     width: 3rem;
@@ -1203,4 +1233,20 @@ font-size: var(--font-size16);
 }
 main{
     margin-top: 200px;
+}
+/* *************************youtube play button setting********************* */
+.ytp-large-play-button {
+    width: 40px !important;
+    height: 40px !important;
+    margin-left: -20px !important;
+    margin-top: -20px !important;
+}
+.see-all-prop{
+    font-size: var(--font-size16);
+    color:var(--red-main);
+    text-decoration: none !important;
+    transition: 0.5s ease-in-out;
+}
+.see-all-prop:hover{
+    color: var(--red-main) !important;
 }
