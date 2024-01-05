@@ -61,7 +61,8 @@
 .form-smartdeal,
 .exclusive__owner__properties,
 .Top__Projects,
-.property__Services 
+.property__Services,
+.Featured__Agents 
 {
     margin-top: 20px;
 }
@@ -127,7 +128,7 @@
 }
 .jumbo .container .wrapper .jumbo__box h2,
 .jumbo .container .wrapper .jumbo__box h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family:var(--montserrat-semibold);
     color: var(--dark-color);
     letter-spacing: 1px;
     text-transform: capitalize;
@@ -229,7 +230,7 @@
       }
      
     :is(.residential .container .wrapper .contentSection2 ul li a,.residential .container .wrapper .contentSection3 ul li a){
-        font-family: var(--montserrat-regular-400-para);
+        font-family: var(--montserrat-regular);
         max-width: 100%;
         display: inline-block;
         color: var(--li-color);
@@ -253,7 +254,7 @@
     border-bottom: 1px solid var(--temp-head-col);
 }
 .residential .container .wrapper ul li a{
-    font-family: var(--montserrat-regular-400-para);
+    font-family: var(--montserrat-regular);
     max-width: 100%;
     display: inline-block;
     color: var(--para-dark-h2);
@@ -313,7 +314,7 @@
     margin-bottom: 20px;
 }
 .h4-set h4{
-    font-family: var(--montserrat-semibold);
+    font-family: var(--Montserrat-ExtraBold);
     font-size: var(--font-size22);
     color: var(--para-tint-h4);
 }
@@ -335,7 +336,7 @@
     border: 1px solid var(--dark-blue-op);
 }
 .main-blog li > a{
-    font-family: var(--montserrat-regular-400-para);
+    font-family: var(--montserrat-regular);
     font-size: var(--font-size16);
     text-transform: capitalize;
     color: var(--li-color);
