@@ -2,45 +2,46 @@
 /* paragraph font set */
 @font-face {
     font-family:"montserrat-regular" ;
-    src: url("../fonts/motserrat/Montserrat-Regular.ttf")truetype("ttf");
+    src: url("../fonts/motserrat/Montserrat-Regular.ttf") format("ttf");
 }
 @font-face {
     font-family:"montserrat-light" ;
-    src: url("../fonts/motserrat/Montserrat-Light.ttf")truetype("ttf");
+    src: url("../fonts/motserrat/Montserrat-Light.ttf") format("ttf");
 }
 
 @font-face {
     font-family:"montserrat-medium" ;
-    src: url("../fonts/motserrat/Montserrat-Medium.ttf")type("ttf");
+    src: url("../fonts/motserrat/Montserrat-Medium.woff") format("woff");
 }
 /* sub-heading font are used  */
 @font-face {
     font-family:"Montserrat-Bold";
-    src: url("../fonts/Montserrat-Bold.ttf")type("ttf");
+    src: url("../fonts/motserrat/Montserrat-Bold.woff") format("woff");
 }
 @font-face {
     font-family:"Montserrat-ExtraBold" ;
-    src: url("../fonts/motserrat/Montserrat-ExtraBold.ttf")type("ttf");
+    src: url("../fonts/motserrat/Montserrat-ExtraBold.woff2") format("woff2");
 }
 @font-face {
-    font-family:"montserrat-semibold" ;
-    src: url("../fonts/motserrat/Montserrat-SemiBold.ttf")type("ttf");
+    font-family:"--montserrat-semibold" ;
+    src: url("../fonts/motserrat/Montserrat-SemiBold.woff") format("woff");
 }
+
 
 /* main heading font are used  */
 @font-face {
     font-family:"roboto-black" ;
-    src: url("../fonts/roboto-condensened/RobotoCondensed-Black.ttf")type("ttf");
+    src: url("../fonts/roboto-condensened/RobotoCondensed-Black.ttf") format("ttf");
 }
 
 p{ font-family:var(--montserrat-regular) ;}
 span{ font-family:var(--montserrat-regular) ;}
-strong{ font-family:var(--Montserrat-Bold) ;}
+strong{ font-family:var(--montserrat-bold) ;}
 h1{ font-family:var(--roboto-black) ;}
-h2{ font-family:var(--montserrat-semibold) ;}
+h2{ font-family:var(--Montserrat-Bold) ;}
 h3{ font-family:var(--montserrat-medium) ;}
 h4{ font-family:var(--Montserrat-ExtraBold) ;}
-h5{ font-family:var(--montserrat-semibold) ;}
+h5{ font-family:var(--montserrat-bold) ;}
 
 :root{
     --montserrat-light:"montserrat-light";
@@ -77,6 +78,7 @@ h5{ font-family:var(--montserrat-semibold) ;}
     --font-size42:42px;
     --font-size46:46px;
     --font-size50:50px;
+    --font-size60:60px;
     --line-height10:10px;
     --line-height12:12px;
     --line-height14:14px;
@@ -145,8 +147,6 @@ h5{ font-family:var(--montserrat-semibold) ;}
 }
 ul li {
     list-style: none;
-    font-family: var(montserrat-regular);
-    /* color: var(--li-color); */
 }
 a{
     text-decoration: none;
@@ -169,9 +169,6 @@ body{
     max-width: 1286px;
     padding-right: 40px;
     padding-left: 40px;
-    /* margin: 0 !important; */
-    /* margin-right: auto;
-    margin-left: auto; */
   }
 /* ***********container part is END here..************** */
 
@@ -194,6 +191,28 @@ body{
     display: grid !important;
     grid-template-columns: repeat(5,1fr) !important;
     gap: 0px 40px;
+}
+/* *****space-top every section********** */
+.Latest__Project__Gallery, 
+.explore__properties,
+.fresh__prop,
+.trending__societies,
+.counter__setting,
+.jumbo,
+.property__option,
+.residential,
+.blogspot,
+.map,
+.form-smartdeal,
+.exclusive__owner__properties,
+.Top__Projects,
+.property__Services,
+.Featured__Agents,
+.kalpataru__properties,
+.mumbai__properties,
+.search__bar 
+{
+    margin-top: 20px;
 }
 
 /* ***********top-header-drop-down inside of the part*********** */
@@ -259,6 +278,9 @@ body{
  }
  .fa-arrow-right:hover{
     transform: translateX(5px);
+ }
+ .font__card__setting{
+    font-size: var(--font-size60);
  }
 .border-none{
     border: none !important;
@@ -589,7 +611,6 @@ font-size: var(--font-size16);
     border: none;
 }
 .h2-set{
-    font-family: var(--montserrat-semibold);
     color: var(--para-dark-h2);
     font-size: var(--font-size32);
     text-transform: capitalize;
@@ -626,7 +647,6 @@ font-size: var(--font-size16);
     padding: 12px 24px 0 0;
 }
 .contentSection ul li a{
-    font-family: var(--montserrat-regular);
     max-width: 100%;
     display: inline-block;
     color: var(--li-color);
@@ -656,7 +676,6 @@ font-size: var(--font-size16);
     padding-bottom: 15px !important;
 }
 .contentSection4 ul li a{
-    font-family: var(--montserrat-regular);
     max-width: 100%;
     display: inline-block;
     color: var(--li-color);
@@ -679,9 +698,15 @@ font-size: var(--font-size16);
     flex-wrap: wrap;
 	text-align: center;
     margin-top: 10px;
+    font-size: var(--font-size14);
+
 }
 .selectSection button{
     padding: 4px 0px !important;
+    font-size: var(--font-size16);
+}
+:is(.selectSection2 button,.selectSection3 button,.selectSection4 button){
+    font-size: var(--font-size15) !important;
 }
  .button2 {
     font-family:var(--montserrat-medium) ;
@@ -753,7 +778,6 @@ font-size: var(--font-size16);
 	display: none;
 }
 .content ul li a{
-    font-family: var(--montserrat-regular);
     max-width: 100%;
     display: inline-block;
     color: var(--li-color);
@@ -792,7 +816,6 @@ font-size: var(--font-size16);
     text-align: center;
 }
 .bottom-menu-set .menu-main .mega-list2 a{
-    font-family:var(--montserrat-semibold) ;
     font-size: var(--font-size18);
     color: var(--para-tint-h4);
     transition: 0.5s ease-in-out;
@@ -841,7 +864,7 @@ font-size: var(--font-size16);
 .modal-span span{
     color: hotpink !important
 }
-.fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file,.fa-indian-rupee-sign,.fa-building,.fa-list-check,.fa-arrow-up-right-from-square,.fa-credit-card,.fa-car,.fa-house,.fa-circle-play,.fa-chart-line,.fa-file-lines,.fa-calculator,.fa-book,.fa-star{
+.fa-user,.fa-lock,.fa-envelope,.fa-message,.fa-file,.fa-indian-rupee-sign,.fa-building,.fa-list-check,.fa-arrow-up-right-from-square,.fa-credit-card,.fa-car,.fa-house,.fa-circle-play,.fa-chart-line,.fa-file-lines,.fa-calculator,.fa-book,.fa-star,.fa-clock,.fa-key,.fa-city,.fa-location-dot{
     color: var(--red-main);
     transition: 0.5s ease-in-out;
 }
@@ -855,7 +878,20 @@ font-size: var(--font-size16);
     font-size: var(--font-size10) !important;
     vertical-align: middle;
 }
-.fa-user:hover,.fa-lock:hover,.fa-envelope:hover,.fa-message:hover,.fa-file:hover,.fa-indian-rupee-sign:hover,.fa-building:hover,.fa-list-check:hover,.fa-arrow-up-right-from-square:hover,.fa-credit-card:hover,.fa-car:hover,.fa-house:hover,.fa-circle-play:hover,.fa-file-lines:hover,.fa-chart-line:hover,.fa-calculator:hover,.fa-book:hover,.fa-star:hover{
+.bg-setting__badge span{
+    background: var(--li-color);
+    color: var(--pure-white);
+    text-transform: uppercase;
+    font-size: var(--font-size9);
+    padding: 3px 6px;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+.bg-setting__badge span:hover{
+    background: var(--red-main);
+}
+.fa-user:hover,.fa-lock:hover,.fa-envelope:hover,.fa-message:hover,.fa-file:hover,.fa-indian-rupee-sign:hover,.fa-building:hover,.fa-list-check:hover,.fa-arrow-up-right-from-square:hover,.fa-credit-card:hover,.fa-car:hover,.fa-house:hover,.fa-circle-play:hover,.fa-file-lines:hover,.fa-chart-line:hover,.fa-calculator:hover,.fa-book:hover,.fa-star:hover,.fa-clock:hover,.fa-key:hover,.fa-city:hover,.fa-location-dot:hover{
     transform: translateY(2px);
     color: var(--dark-blue-op);
 }
@@ -940,7 +976,6 @@ font-size: var(--font-size16);
 .fig-img img{
     width: 100%;
 }
-
 .property h2 strong{
     color: var(--pure-white) !important;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
@@ -1083,7 +1118,6 @@ font-size: var(--font-size16);
     transition: 0.5s ease-in-out;
 }
 .card-header h2,.card-content h2,.card-footer h2{
-    font-family: var(--montserrat-semibold);
     display: inline-block;
     color: var(--dark-color);
     font-size: var(--font-size15);
@@ -1104,8 +1138,22 @@ font-size: var(--font-size16);
     white-space: nowrap;
     transition: 0.5s ease-in-out;
 }
+.card1{
+    padding: 5px;
+    border: 1px solid var(--temp-head-col);
+    transition: 0.5s ease-in-out;
+}
+.card1:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.card__elem{
+    display: flex;
+    justify-content: flex-start;
+    width: 100% !important;
+    height: 100px !important;
+}
 .card-header p,.card-content p,.card-footer p{
-    font-family: var(--montserrat-regular);
     max-width: 100%;
     display:block;
     color: var(--para-dark-h2);
@@ -1122,7 +1170,6 @@ font-size: var(--font-size16);
     margin-bottom: 0px !important;
 }
 .card-header h2 strong, .card-content h2 strong, .card-footer h2 strong{
-    font-family: var(--Montserrat-Bold);
     display: inline-block;
     color: var(--li-color);
     font-size: var(--font-size18);
@@ -1219,6 +1266,25 @@ font-size: var(--font-size16);
     color: var(--para-shade) !important;
     padding-bottom: 4px !important;
 }
+.gradient{
+    padding: 26px 24px 0px !important;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.gradient h2{
+    font-size: var(--font-size20);
+    white-space: normal;
+}
+.gradient h2 span{
+     background: var(--text-suppot);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--font-size26);
+}
+.back__card{
+    background: var(--softpink) !important;
+    position: relative;
+}
 .video__part,.article__part{
     display: flex;
     width: 133px;
@@ -1301,6 +1367,7 @@ font-size: var(--font-size16);
     display: none;
     transition: 0.5s ease-in-out;
 }
+
 .service__icon{
     font-size: var(--font-size30);
     width: 3rem;

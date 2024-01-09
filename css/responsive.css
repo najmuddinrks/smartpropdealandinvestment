@@ -327,6 +327,24 @@ transition: 0.5s ease-in-out;
      .card__block__element strong{
         font-size: var(--font-size15);
      }
+     .leftside__img__card{
+        width: 100%;
+     }
+     .flex__header{
+        flex-direction: column;
+    }
+    .btn-combination{
+        left: 50% !important;
+    }
+    .anchor-tag-form a{
+        color: var(--li-color) !important;
+    }
+    .gradient h2{
+        font-size: var(--font-size15);
+    }
+    .fa-clock,.fa-key,.fa-city,.fa-location-dot{
+        font-size: var(--font-size50);
+    }
 }
 @media(max-width:992px){
     .container {
@@ -351,6 +369,7 @@ transition: 0.5s ease-in-out;
     .fa-inr,.fa-building,.fa-tasks,.font-reload,.fa-chart-line,.fa-file-lines,.fa-calculator,.fa-book{
         font-size: var(--font-size24);
     }
+   
     .card__content__description__block{
         justify-content: space-between !important;
     } 
@@ -505,10 +524,36 @@ transition: 0.5s ease-in-out;
     .exclusive__owner__properties,
     .Top__Projects,
     .property__Services,
-    .Featured__Agents 
+    .Featured__Agents,
+    .kalpataru__properties,
+    .mumbai__properties,
+    .search__bar 
     {
         margin-top: 15px;
     }
+    .main__card__customization{
+        flex-direction: column !important;
+    }
+    .leftside__img__card{
+        width: 100%;
+    }
+    .fig-img img{
+        width: 100%;
+    }
+    .leftside__img__card .fig-img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .card__elem img
+    {
+        max-width: 200px !important;
+    }
+    .card__elem .card-body{
+        padding: 0px !important;
+    }
+
+   
  
     
 }
@@ -558,7 +603,6 @@ transition: 0.5s ease-in-out;
         top: -67px;
     }
 .mega__link{
-    font-family: var(--montserrat-semibold);
     padding: 7px 10px;
     font-size: var(--font-size14);
     line-height: 1;
@@ -647,6 +691,16 @@ transition: 0.5s ease-in-out;
 .form-group .control-majno{
     font-size: var(--font-size10) !important;
 }
+.anchor-tag-form p{
+    font-size: var(--font-size12) !important;
+    color: var(--para-tint-h4) !important;
+}
+.anchor-tag-form a{
+    color: var(--para-tint-h4) !important;
+}
+.card__elem img{
+    max-width: 120px !important;
+}
 
 }
 
@@ -654,6 +708,15 @@ transition: 0.5s ease-in-out;
     #button__top {
         bottom: 50px;
       }
+      .card__elem img{
+        max-width: 80px !important;
+    }
+    .card__elem strong{
+        font-size: var(--font-size11);
+    }
+    .card__elem p{
+        font-size: var(--font-size10);
+    }
     .mega__link {
         font-size: var(--font-size12);
     }
@@ -805,7 +868,10 @@ transition: 0.5s ease-in-out;
 .exclusive__owner__properties,
 .Top__Projects,
 .property__Services,
-.Featured__Agents 
+.Featured__Agents,
+.kalpataru__properties,
+.mumbai__properties,
+.search__bar 
 {
     margin-top: 10px;
 }

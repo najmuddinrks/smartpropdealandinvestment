@@ -1,3 +1,40 @@
+/* ***********************kalpataru__properties*********************** */
+.leftside__img__card{
+    width: 200px;
+    height:150px;
+    box-sizing: border-box;
+    object-fit: cover;
+    overflow: hidden;
+}
+.leftside__img__card .fig-img{
+    height: 150px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.leftside__img__card .fig-img img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+.leftside__img__card .fig-img .fig-caption{
+    background: transparent !important;
+}
+.rightside__card{
+    height: 150px;
+}
+.btn-combination{
+    width: fit-content;
+    height: auto;
+    left: 60% !important;
+    transform: translateY(170px) !important;
+    transition: 0.5s ease-in-out;
+}
+.main__card__block:hover .btn-combination{
+    transform: translateY(70px) !important ;
+    /* position: relative; */
+}
+
 /* ***********************bottom to top reach out button*********************** */
 #button__top {
     display: inline-block;
@@ -47,25 +84,7 @@
     cursor: pointer;
     background-color:var(--red-main);
   }
-/* *****space-top every section********** */
-.Latest__Project__Gallery, 
-.explore__properties,
-.fresh__prop,
-.trending__societies,
-.counter__setting,
-.jumbo,
-.property__option,
-.residential,
-.blogspot,
-.map,
-.form-smartdeal,
-.exclusive__owner__properties,
-.Top__Projects,
-.property__Services,
-.Featured__Agents 
-{
-    margin-top: 20px;
-}
+
 
 .explore__properties .container .wrapper .explore{
     background: var(--light-blue-op);
@@ -128,13 +147,12 @@
 }
 .jumbo .container .wrapper .jumbo__box h2,
 .jumbo .container .wrapper .jumbo__box h5 {
-    font-family:var(--montserrat-semibold);
-    color: var(--dark-color);
+    color: var(--li-color);
     letter-spacing: 1px;
     text-transform: capitalize;
 }
 .jumbo .container .wrapper .jumbo__box h2 {
-    font-size:var(--font-size36);
+    font-size:var(--font-size30);
 }
 .jumbo .container .wrapper .jumbo__box h2 span {
     font-family: 'Damion', cursive;
@@ -230,7 +248,6 @@
       }
      
     :is(.residential .container .wrapper .contentSection2 ul li a,.residential .container .wrapper .contentSection3 ul li a){
-        font-family: var(--montserrat-regular);
         max-width: 100%;
         display: inline-block;
         color: var(--li-color);
@@ -254,7 +271,6 @@
     border-bottom: 1px solid var(--temp-head-col);
 }
 .residential .container .wrapper ul li a{
-    font-family: var(--montserrat-regular);
     max-width: 100%;
     display: inline-block;
     color: var(--para-dark-h2);
@@ -314,8 +330,7 @@
     margin-bottom: 20px;
 }
 .h4-set h4{
-    font-family: var(--Montserrat-ExtraBold);
-    font-size: var(--font-size22);
+    font-size: var(--font-size19);
     color: var(--para-tint-h4);
 }
 
@@ -336,7 +351,6 @@
     border: 1px solid var(--dark-blue-op);
 }
 .main-blog li > a{
-    font-family: var(--montserrat-regular);
     font-size: var(--font-size16);
     text-transform: capitalize;
     color: var(--li-color);

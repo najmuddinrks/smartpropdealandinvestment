@@ -382,7 +382,6 @@
   border-bottom: 0;
 }
 .badge-wrapper{
-  font-family: var(--Montserrat-Bold);
   background: var(--red-main);
   color: var(--pure-white);
   padding: 4px 12px;
@@ -493,9 +492,7 @@ transition: 0.5s ease-in-out;
 }
 .signup-section .sign{
   color: var(--dark-color);
-  font-family: var(--Montserrat-ExtraBold);
   font-size: var(--font-size15);
-  /* font-weight: bold; */
   letter-spacing: 1px;
 }
  .light-color{
@@ -533,7 +530,6 @@ transition: 0.5s ease-in-out;
 }
 /* *******************accordian H4*************************** */
 .ui-accordion .ui-accordion-header{
-   font-family: var(--Montserrat-Bold);
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -572,7 +568,6 @@ transition: 0.5s ease-in-out;
    box-sizing: border-box;
 }
 .accordion__div ul li a{
-   font-family: var(--montserrat-regular);
    font-size: var(--font-size16);
    text-transform: capitalize;
    color: var(--pure-white);
