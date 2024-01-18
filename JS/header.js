@@ -35,6 +35,15 @@ $('.mega__link').click(function(e) {
 });
 
 
+// $(document).on('click', '.allision', function () {
+//   $('.recent__search').append('<button class="conclusion">Delhi</button>');
+// });
+
+// $(document).on('click', '.conclusion', function () {
+//   $(this).remove();
+// });
+
+
 
   //////////////////////////////////////////////////////////////
   
