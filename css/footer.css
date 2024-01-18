@@ -35,7 +35,7 @@
 }
 .main-footer .container .wrapper .footer-left-section .social-media{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -52,27 +52,107 @@
     margin-right: 10px;
 }
 .playstore img{
-    min-height: 110px;
+    min-height: 90px;
 }                   
 
 .main-footer .container .wrapper .footer-left-section .social-media .social-media-links{
-    width: 300px;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 610px;
     height: auto;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
-.main-footer .container .wrapper .footer-left-section .social-media .social-media-links ul{
+
+.social-media-links a {
+    width: 70px !important;
+    height: 70px !important;
+    text-decoration: none;
+    outline: none;
+    border-radius: 50%;
+    background:var(--social-media);
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: var(--social-shadow);
+    margin: 0px 10px;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+.main-footer .container .wrapper .footer-left-section .social-media .social-media-links a i{
+    transition: 0.5s ease-in-out;
+}
+
+.main-footer .container .wrapper .footer-left-section .social-media .social-media-links a:hover 
+.social__link__available {
+    transform: scale(1.2);
+    color: var(--social-media);
+}
+.main-footer .container .wrapper .footer-left-section .social-media .social-media-links a::before{
+    position: absolute;
+    top: 90%;
+    left: -50%;
+    content: '';
+    width: 120%;
+    height: 120%;
+    background: var(--dark-blue-op);
+    transform: rotate(60deg);
+    transition: 0.5s ease-in-out;
+}
+.main-footer .container .wrapper .footer-left-section .social-media .social-media-links a:hover::before{
+    animation: socialicon 0.8s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes socialicon {
+    0% {
+        top: 90%;
+        left: -50%;
+    }
+
+    50% {
+        top: -60%;
+        left: -10%;
+    }
+
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+.facebook__setting {
+    color: var(--facebook);
+}
+
+.twitter__setting {
+    color: var(--twitter);
+}
+.instagram__setting {
+    color: var(--instagram);
+}
+.youtube__setting {
+    color: var(--youtube);
+}
+.linkedin__setting {
+    color: var(--linkedin);
+}
+.social__link__available{
+    padding-top: 17px;
+}
+
+/* .main-footer .container .wrapper .footer-left-section .social-media .social-media-links ul{
     display: flex;
     gap: 0px 6px;
 }
 .main-footer .container .wrapper .footer-left-section .social-media .social-media-links ul li a{
-    /* background:url("../IMAGES/ICON/images/option_03.png") no-repeat; */
     width: 45px;
     height: 46px;
     float: left;
     transition: 0.5s ease-in-out;
-}
+} */
 
-.main-footer .container .wrapper .footer-left-section .social-media .social-media-links ul li:nth-child(1) a{
+/* .main-footer .container .wrapper .footer-left-section .social-media .social-media-links ul li:nth-child(1) a{
     background: url("../IMAGES/ICON/facebook-rks.png") no-repeat;
 }
 
@@ -92,10 +172,9 @@
     background: url("../IMAGES/ICON/instagram-rks.png") no-repeat;
 }
 .main-footer .container .wrapper .footer-right-section{
-    /* width: 100%; */
     padding: 0px 20px 70px 0px;
 
-}
+} */
 .main-footer .container .wrapper .footer-right-section .prop-margin{
     margin-bottom: 20px;
 }
@@ -192,6 +271,9 @@
         justify-content: center;
         gap: 0px 20px;
     }
+    .main-footer .container .wrapper .footer-left-section .social-media .social-media-links{
+        padding-bottom: 20px;
+    }
 }
 @media(max-width:768px){
     .main-footer .container .wrapper{
@@ -234,6 +316,17 @@
         flex-wrap: wrap;
 
     }
+    .social-media-links a{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .social__link__available {
+        padding-top: 9px;
+    }
+    .main-footer .container .wrapper .footer-left-section .social-media .social-media-links a:hover 
+    .social__link__available {
+    transform: scale(0.9);
+}
 }
 
 

@@ -3,13 +3,43 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 50px;
-    /* height: 60px; */
+    /* height: 50px; */
+    height: 64px;
     background:var(--heading-support);
     box-shadow:var(--box-shadow) ;
     border-radius: 4px;
     width: 100vw;
     z-index: 80;
+}
+.gradient-support-bar{
+   width: 100%;
+	height: 64px;
+	float: left;
+   background: var(--gradient-support); 
+	animation: movement linear 2s infinite;
+	background-size: 200% 200%;
+}
+@keyframes movement {
+   0%{
+    background-position: 20% 0%
+}
+
+  20%{
+    background-position: 40% 60%
+}
+
+  40%{
+    background-position: 60% 20%
+}
+
+  60%{
+    background-position: 40% 80%
+}
+
+  80%{
+    background-position: 20% 70%
+}
+
 }
 .scroll {
    background: var(--red-main);
@@ -21,6 +51,9 @@
    justify-content:space-between;
    align-items:center;
 }
+/* .top-header-section .container .wrapper{
+   height: 50px;
+} */
 
 /* top header left sec is starte */
 .top-header-section .container .wrapper .top-header-left{
@@ -38,6 +71,8 @@
 .top-header-section .container .wrapper .top-header-left .logo a img{
    max-width: 222PX;
    width: 100%;
+   min-height: 80px;
+   height: 50px;
    transition: 0.5s ease-in-out;
 }
 .top-header-section .container .wrapper .top-header-left .logo a img:hover{
@@ -115,8 +150,8 @@
    opacity: 0;
    visibility: hidden;
    box-shadow: var(--box-shadow);
-   top: 55px;
-   left: 50%;
+   top: 56px;
+   left: 60%;
    z-index: 4;
    background:url("../IMAGES/logo/top-header.jpg");
    background-size: 100% 100%;
@@ -156,7 +191,7 @@
    width: 100%;
    height: calc(100vh - 38vh);
    max-width: 300px;
-   top: 55px;
+   top: 56px;
    display: block;
    visibility: hidden;
    opacity: 0;
@@ -240,7 +275,7 @@
    box-shadow:var(--box-shadow);
    background: var(--pure-white);
    width: 100vw;
-   top: 50px;
+   top: 64px;
    left: 0;
    height: 50px;
    z-index: 79;
@@ -503,7 +538,10 @@ transition: 0.5s ease-in-out;
   width: 350px !important;
  }
  .logo-section{
-  margin-top: -5px;
+  /* margin-top: -5px; */
+  padding: 12px 10px;
+  height: 50px;
+  background: var(--red-main);
  }
 .badge-set{
   right: 6px;

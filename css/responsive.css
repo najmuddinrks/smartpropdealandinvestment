@@ -15,6 +15,7 @@
     .mobile-nav-icon{
         font-size: var(--font-size24) !important;
         padding-left: 20px;
+        padding-bottom: 10px;
         color: var(--pure-white);
     }
     .mobile-nav-icon[name="close-outline"]{
@@ -91,7 +92,7 @@
         width: 300px;
         height: auto;
         z-index: 82;
-        top: -56px;
+        top: -70px;
         left: -40px;
         background: var(--pure-white);
         transform: translateX(-110%); 
@@ -183,7 +184,6 @@ transition: 0.5s ease-in-out;
     line-height: 2;
 }
 .center__div ul li a{
-font-size: var(--font-size15) !important;
 text-decoration: none;
 color: var(--li-color);
 padding-bottom: 2px;
@@ -212,6 +212,9 @@ transition: 0.5s ease-in-out;
 }
    .light-color{
     background-color: var(--temp-head-col);
+   }
+   .unstoppable{
+    padding-bottom: 10px;
    }
 :is(.contentSection ul li a,.contentSection2 ul li a,.contentSection3 ul li a){
     font-size: var(--font-size16);
@@ -280,6 +283,9 @@ transition: 0.5s ease-in-out;
 .price__range p{
     font-size: var(--font-size11) !important;
 }
+.mega__link:last-child:after{
+    display: none;
+}
 }
 @media(max-width:1024px){
     .content ul li a{
@@ -345,6 +351,13 @@ transition: 0.5s ease-in-out;
     .fa-clock,.fa-key,.fa-city,.fa-location-dot{
         font-size: var(--font-size50);
     }
+    .Real__estate__properties__dubai .fig-img .fig-caption .property__bar__option h2{
+        font-size: var(--font-size30);
+    }
+    .Real__estate__properties__dubai .fig-img .fig-caption .property__bar__option p{
+        font-size: var(--font-size14);
+    }
+    
 }
 @media(max-width:992px){
     .container {
@@ -369,6 +382,9 @@ transition: 0.5s ease-in-out;
     .fa-inr,.fa-building,.fa-tasks,.font-reload,.fa-chart-line,.fa-file-lines,.fa-calculator,.fa-book{
         font-size: var(--font-size24);
     }
+    .mega__item + .mega__item:last-child{
+        border-bottom: 0px !important;
+    }
    
     .card__content__description__block{
         justify-content: space-between !important;
@@ -386,7 +402,7 @@ transition: 0.5s ease-in-out;
 @media(max-width:768px){
     .logo a img{
         max-width: 222px !important;
-        padding: 7px 17px 0px;
+        padding: 0px 17px 0px;
     }
     .badge-set {
         padding: 0px 6px;
@@ -395,6 +411,7 @@ transition: 0.5s ease-in-out;
         font-size: var(--font-size14) !important;
         padding: 6px 0px !important;
     }
+   
     .container{
         max-width: 720px;
         padding: 0px 10px;
@@ -527,7 +544,8 @@ transition: 0.5s ease-in-out;
     .Featured__Agents,
     .kalpataru__properties,
     .mumbai__properties,
-    .search__bar 
+    .search__bar,
+    .Real__estate__properties__dubai 
     {
         margin-top: 15px;
     }
@@ -551,11 +569,7 @@ transition: 0.5s ease-in-out;
     }
     .card__elem .card-body{
         padding: 0px !important;
-    }
-
-   
- 
-    
+    }  
 }
 
 @media(max-width:576px){
@@ -717,14 +731,12 @@ transition: 0.5s ease-in-out;
     .card__elem p{
         font-size: var(--font-size10);
     }
-    .mega__link {
-        font-size: var(--font-size12);
-    }
+ 
     .bottomHead .megastar{
-        top: -88px;
+        top: -97px;
     }
     .signup-section .sign{
-        flex: 0 0 48.4%;
+        flex: 0 0 50.4%;
     }
     .main-blog li > a{
         font-size: var(--font-size12) !important;
@@ -752,7 +764,7 @@ transition: 0.5s ease-in-out;
         font-size: var(--font-size13);
     }
     .bottomHead{
-        height: 66px;
+        height: 90px;
         align-items: center;
      }
     :is(.selectSection,.selectSection2,.selectSection3,.selectSection4){
@@ -854,6 +866,15 @@ transition: 0.5s ease-in-out;
     .counter__setting .container .wrapper .counter__text{
         padding: 10px !important;
     }
+    .Real__estate__properties__dubai .fig-img .fig-caption .property__bar__option h2{
+        padding: 10px 0 0px 0;
+        font-size: var(--font-size24);
+    }
+    .Real__estate__properties__dubai .fig-img .fig-caption .property__bar__option p{
+        font-size: var(--font-size11);
+        line-height: 1.1;
+    }
+   
     .Latest__Project__Gallery, 
 .explore__properties,
 .fresh__prop,
@@ -871,7 +892,8 @@ transition: 0.5s ease-in-out;
 .Featured__Agents,
 .kalpataru__properties,
 .mumbai__properties,
-.search__bar 
+.search__bar,
+.Real__estate__properties__dubai 
 {
     margin-top: 10px;
 }
