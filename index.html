@@ -1,37 +1,38 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Property Deals And Investment</title>
     <link rel="icon" href="IMAGES/favicon.png">
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="CSS/slider.css">
-    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="css/jquery.magicsearch.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/jquery-ui.structure.css">
     <link rel="stylesheet" href="jquery ui/jquery-ui.theme.css">
-    <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/whatsapp.css">
-    <link rel="stylesheet" href="CSS/responsive.css">
-    <link rel="stylesheet" href="CSS/slick.min.css">
-    <link rel="stylesheet" href="CSS/slick.theme.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/whatsapp.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick.theme.min.css">
 </head>
 <body>
    <header>
      <!--******************* top-header section is going to be started ******************* -->
-    <div class="top-header-section d-xl-block d-none"> 
+    <div class="top-header-section gradient-support-bar d-xl-block d-none"> 
         <div class="container"> 
        <div class="row wrapper">
            <!--******************* top-header-left section is going to be started ******************* -->
           <div class="top-header-left d-xl-block d-none"> 
             <div class="logo">
-              <a href="javasript:void"><img src="IMAGES/logo/logo.png" alt="logo"></a> 
+              <a href="javasript:void"><img src="IMAGES/logo/main-logo.png" alt="logo"></a> 
             </div>
             <div class="select_box d-xl-block d-none" >
            <span class="hasDropdown" id="toggleDropdown"> Mumbai <svg class="svg-inline--fa fa-angle-down font-setting fa-1x" id="arrow" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
@@ -286,16 +287,17 @@
     <button type="button" class="close close-edit2" data-dismiss="modal" >&times;</button>
               </div>
               <div class="modal-body text-left">
-                <form>
-                  <div class="form-group">
+                <form action="" method="post">
+                  <div class="form-group inputBox">
                     <label><i class="fas fa-user pr-2 fa-1x"></i>Username:</label>
-                    <input type="text" name="" class="form-control control-majno" placeholder="Username">
+                    <input type="text" name="" class="form-control control-majno" placeholder="Username" autocomplete="off" required>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group inputBox">
                     <label><i class="fas fa-lock pr-2 fa-1x"></i>Password:</label>
-                    <input type="number" maxlength="12" name="" class="form-control control-majno" placeholder="Password">
+                    <input type="password" maxlength="12" name="" class="form-control control-majno" placeholder="Password" autocomplete="off" required>
                   </div>
-                  </form>   
+                  </form> 
+                 
               </div>   
               <div class="modal-footer justify-content-center modal-span">
                 <button class="btn btn-danger btn-outline-danger btn-sm" data-dismiss="modal">Login Please</button>
@@ -403,33 +405,7 @@
       <div class="container">
         <div class="row wrapper"> 
            <div class="menset"> 
-            <ul class="setmenu menu-main" id="setMenuList">
-              <li class="resp-activity d-xl-none">
-                <a href="javascript:void" class="menu-click">
-                  my activity
-                  <i class="fas font-setting down-head fa-angle-down mt-lg-4 ml-lg-1"></i>
-                  <i class="fas font-setting fa-angle-right d-xl-none d-block mt-lg-4 ml-lg-1"></i>
-                </a>
-                <div class="sub-menu mega-menu">
-                  <ul>
-                    <div class="mega-menu">
-                      <div class="mega-setting d-none">
-                        <i class="fas fa-arrow-left"></i>
-                        <span>my activity</span>
-                      </div>
-                      <ul>
-                        <h4>my activity
-                          <span class="fas fa-plus-circle plus-adjust plusminus"></span>
-                          <span class="fas fa-minus-circle minus-adjust plusminus"></span>
-                        </h4>
-                        <li><a href="javasript:void">reQuested Properties
-                          <span class="badge-set badge-adjusted">Free</span>
-                        </a></li>
-                      </ul>
-                    </div>
-                  </ul>
-                </div>
-                </li>
+            <ul class="setmenu menu-main" id="setMenuList">             
                     <!--******************* buy section is going to be started ******************* -->
                <li class="mega-list"><a href="javasript:void" class="menu-click">buy
                 <i class="fas font-setting down-head fa-angle-down mt-lg-4 ml-lg-1"></i>
@@ -437,10 +413,6 @@
               </a>
                     <div class="sub-menu mega-menu">
                         <ul class="five-grid-template-column">
-                           <div class="mega-setting d-none">
-                              <i class="fas fa-arrow-left"></i>
-                              <span>Buy</span>
-                            </div>
                            <div class="mega-menu" >
                       <ul>  
                         <h4>popular choices
@@ -510,11 +482,7 @@
                <li class="mega-list"><a href="javasript:void"class="menu-click">sell
                 <i class="fas font-setting down-head fa-angle-down mt-lg-4 ml-lg-1"></i>
                 <i class="fas font-setting fa-angle-right d-xl-none d-block mt-lg-4 ml-lg-1"></i>
-                </a>
-               <div class="mega-setting2 d-none">
-                <i class="fas fa-arrow-left"></i>
-                <span>sell</span>
-              </div>
+                </a>          
                 <div class="sub-menu mega-menu">
                     <ul class="three-grid-template-column">
                        <div class="mega-menu">
@@ -566,10 +534,6 @@
                 <div class="sub-menu mega-menu">
                     <ul class="four-grid-template-column">
                        <div class="mega-menu">
-                        <div class="mega-setting d-none">
-                          <i class="fas fa-arrow-left"></i>
-                          <span>rent</span>
-                        </div>
                   <ul class="d-flex flex-column">
                     <h4>popular choices
                       <span class="fas fa-plus-circle plus-adjust plusminus"></span>
@@ -637,17 +601,9 @@
                   <i class="fas font-setting down-head fa-angle-down mt-lg-4 ml-lg-1"></i>
                   <i class="fas font-setting fa-angle-right d-xl-none d-block mt-lg-4 ml-lg-1"></i>
                 </a>
-                <div class="mega-setting d-none">
-                  <i class="fas fa-arrow-left"></i>
-                  <span>home loans</span>
-                </div>
                 <div class="sub-menu menu-full-width-home mega-menu">
                     <ul class="five-grid-template-column">
                        <div class="mega-menu">
-                        <div class="mega-setting d-none">
-                          <i class="fas fa-arrow-left"></i>
-                          <span>home loans</span>
-                        </div>
                   <ul>
                     <h4>apply now
                       <span class="fas fa-plus-circle plus-adjust plusminus"></span>
@@ -720,10 +676,6 @@
                 <div class="sub-menu mega-menu">
                     <ul class="three-grid-template-column">
                        <div class="mega-menu">
-                        <div class="mega-setting d-none">
-                          <i class="fas fa-arrow-left"></i>
-                          <span>property services</span>
-                        </div>
                   <ul>
                     <h4>rent services
                       <span class="fas fa-plus-circle plus-adjust plusminus"></span>
@@ -781,10 +733,6 @@
                   <div class="sub-menu menu-full-width menu-full-adjustment mega-menu">
                       <ul class="four-grid-template-column">
                     <div class="mega-menu">
-                      <div class="mega-setting d-none">
-                        <i class="fas fa-arrow-left"></i>
-                        <span>smart advice </span>
-                      </div>
                     <ul>
                       <h4>smart research
                         <span class="fas fa-plus-circle plus-adjust plusminus"></span>
@@ -852,10 +800,6 @@
                     <div class="sub-menu max-width-set mega-menu">
                         <ul class="d-flex flex-column">
                            <div class="mega-menu">
-                            <div class="mega-setting d-none">
-                              <i class="fas fa-arrow-left"></i>
-                              <span>help</span>
-                            </div>
                       <ul>
                         <h4>help
                           <span class="fas fa-plus-circle plus-adjust plusminus"></span>
@@ -874,7 +818,7 @@
                 <img src="IMAGES/top-head-resp.jpg" alt="main-head">
               </div>
               <div class="d-xl-none logo" id="temp-head">
-                <a href="javasript:void"><img src="IMAGES/logo.png" alt="logo" style="background-color: red;"></a>
+                <a href="javasript:void"><img src="IMAGES/logo/main-logo.png" alt="logo" style="background-color: red;"></a>
               </div>   
                <!--******************* main-menu section is going to be ended ******************* -->
                 </div>
@@ -892,7 +836,7 @@
             <i class="fas fa-times mobile-nav-icon" name="close-outline"></i>
           </div>
           <div class="logo">
-            <a href="javasript:void"><img src="IMAGES/logo/logo.png" alt="logo"></a>
+            <a href="javasript:void"><img src="IMAGES/logo/main-logo.png" alt="logo"></a>
           </div>
           <div class="unstoppable">
             <button type="button" class="button btn-setting" data-target="#mymodal" data-toggle="modal">
@@ -1312,11 +1256,9 @@
               </div>
             </a>
           </li>
-          <li class="mega__item">
-            <a class="mega__link" href="#">
-              <div class="d-xl-none logo-section" id="temp-head">
-                <a href="javasript:void"><img src="IMAGES/logo/logo.png" alt="logo" style="background-color: red;" class="img-fluid"></a>
-              </div>
+          <li class="mega__item p-0">
+            <a class="mega__link d-xl-none logo-section" href="#">
+              <img src="IMAGES/logo/main-logo.png" alt="logo" class="w-100"></a>
             </a>
           </li>
           </ul>  
@@ -1327,12 +1269,238 @@
    </header>
    <main>
      <!-- ****************search__properties modification********************** -->
-     <section class="search__bar">
+     <section class="search__bar mb-5">   
       <div class="container">
         <div class="row wrapper">
-          <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 d-block m-auto"></div>
-          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 d-block m-auto"></div>
-          <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 d-block m-auto"></div>
+          <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 d-block m-auto">
+            <div class="row banner__slider slider12">
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/banner/andheri-east.jpg" alt="andheri-east" class="img-fluid ">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4 pl-2">
+                      <p><strong>Trending Societies</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/banner/forestvile.jpg" alt="forestvile" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4 pl-2">
+                      <p><strong>Trending Societies</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/banner/goregaon.jpg" alt="goregaon" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4 pl-2">
+                      <p><strong>Trending Societies</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/banner/jvlr.jpg" alt="jvlr" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4 pl-2">
+                      <p><strong>Trending Societies</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/banner/kalpataru.jpg" alt="kalpataru" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4 pl-2">
+                      <p><strong>Trending Societies</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/banner/kandivali.jpg" alt="kandivali" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4 pl-2">
+                      <p><strong>Trending Societies</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/banner/kanjomarg.jpg" alt="kanjomarg" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4 pl-2">
+                      <p><strong>Trending Societies</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/banner/lokhandwala.jpg" alt="lokhandwala" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4 pl-2">
+                      <p><strong>Trending Societies</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 d-block m-auto">
+            <div class="main__banner__filter__section__smartdeal d-flex flex-column">
+              <div class="main__heading__smartdeal__sec">
+                <h1>Welcome back! Let’s continue Your search</h1>
+              </div>
+              <div class="main__filter__section__subordinates__list">
+                <ul class="d-flex align-items-center">
+                  <li><a href="javascript:void">buy</a></li>
+                  <li><a href="javascript:void">rent</a></li>
+                  <li><a href="javascript:void">pG</a></li>
+                  <li><a href="javascript:void">plot</a></li>
+                  <li><a href="javascript:void">commercial</a></li>
+                  <li><a href="javascript:void">post free property add</a></li>
+                </ul>
+              </div>
+              <div class="main__filter__search__bar__setting">
+              <div class="input__fieldset">
+                <div class="recent__search d-flex align-items-center">
+                  <!-- <i class="fa fa-location-dot fa-1x pt-2 pr-2"></i> -->
+                  <!-- <button class="allision">Mumbai 
+                    <span class="close-button pl-2 button__close__input__field__search" aria-label="Close alert" type="button" data-close></span>&times;</button> -->
+                  <!-- <input type="text" class="checklist" id="mycheckboxes" placeholder="hhh"> -->
+                    <!-- <div class="checkbox__searchbar">mumbai <span class="span__close__icon">&times;</span></div> -->
+                  <!-- <div class="append-elements"></div> -->
+                    <div class="searching__city">
+                      <i class="fa fa-location-dot fa-1x pt-2 pr-2"></i>
+                      <input class="magicsearch " id="basic" placeholder="add more city for best serach...">
+                        <button id="set-btn" type="button" href="multiple.html">set a value</button>
+                    </div>
+                  
+              
+                    <!-- <button class="allision">banglore</button> -->
+                      <!-- <div class="callout" data-closable> -->
+                      <!-- <button class="close-button" aria-label="Close alert" type="button" data-close>
+                        <span aria-hidden="true">&times;</span>
+                      </button> -->
+                    <!-- </div> -->
+                  
+                   <!-- <div class="append-elements"></div> -->
+                    <!-- <label for="site-search">Search the site:</label> -->
+                    <!-- <input type="search" id="site-search" name="q" class="checklist" /> -->
+                  
+                    <div class="close__section__search__filter"></div>
+                      
+                </div>
+                <!-- <fieldset color-scheme="dark">
+                  <label for="default-dark">
+                    Mumbai
+                    <input type="checkbox" id="default-dark" checked placeholder="Add More..">
+                  </label>
+                </fieldset> -->
+                
+            </div>
+            <!-- <div class="flat"></div>
+                <div class="budget"></div>
+                <div class="search__box"></div> -->
+              <!-- </div> -->
+          </div>
+          </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 d-block m-auto">
+            <div class="row banner__slider slider12">
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/lodha.jpg" alt="lodha" class="img-fluid ">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4">
+                      <p><strong>Gallery Projects</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/vivinta.jpg" alt="Vivanta" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4">
+                      <p><strong>Gallery Projects</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/jiten.jpg" alt="jiten" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4">
+                      <p><strong>Gallery Projects</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/rustomjee.jpg" alt="Rustomjee" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4">
+                      <p><strong>Gallery Projects</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/alpine.jpg" alt="Alpine" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4">
+                      <p><strong>Gallery Projects</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/kalpataru.jpg" alt="Kalpataru" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4">
+                      <p><strong>Gallery Projects</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/nicco__residency.jpg" alt="Nicco" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4">
+                      <p><strong>Gallery Projects</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-12">
+                <figure class="fig-img h-banner mb-0">
+                  <img src="./IMAGES/card/project__gallery/fortune__florence.jpg" alt="Fortune" class="img-fluid">
+                  <figcaption class="fig-caption">
+                    <div class="property p-0 pt-4">
+                      <p><strong>Gallery Projects</strong></p>
+                    </div> 
+                  </figcaption>
+                </figure>
+              </div>
+          
+            </div>
+          </div>
         </div>
       </div>
      </section>
@@ -1409,8 +1577,350 @@
         </div>
       </div>
      </section>
+      <!-- ****************Real__estate__properties__dubais modification********************** -->
+      <section class="Real__estate__properties__dubai">
+        <div class="container">
+        <h2 class="h2-set">Real Estate Investment in Dubai</h2>
+          <div class="wrapper row slider13">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                  <figure class="fig-img outline__banner mb-0">
+                    <img src="./IMAGES/card/dubai/Palm-Jumeirah.webp" alt="Palm-Jumeirah" class="img-fluid">
+                    <figcaption class="fig-caption">
+                      <div class="property__bar__option">
+                        <h2><strong>Palm Jumeirah</strong></h2>
+                        <p>One of Dubai’s most well-known areas is Palm Jumeirah. It is one of the best areas for real estate investment in Dubai and offers tons of independent houses, beach resorts, and villas to purchase. An artificial archipelago built in the shape of a palm tree holds a prestigious status in the real estate market. Not just local but even international investors dream of purchasing a high-end property here. Depending on your budget, you can opt for 4 or 5 bedroom villas for sale in Palm Jumeirah packed with top-notch amenities. From built-in wardrobes and centralised A/C, gym area to a swimming pool, kids play area and concierge, you get to live in luxury here. </p> 
+                      </div> 
+                    </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                  <table class="table table-bordered mt-5 table-hover table-striped table-responsive-sm">
+                    <thead>
+                      <tr class="bg-dark" colspan="2">
+                        <th class="text-center text-white table-primary font-weight-bold">No. of Bedrooms</th>
+                        <th class="text-center text-white table-primary font-weight-bold">Price </th>
+                      </tr>
+                    </thead>
+                    <tbody>          
+                      <tr rowspan="2">
+                        <td class="text-center">3 Bedrooms</td>
+                        <td class="text-center">6.2 Million AED</td>
+                      </tr>               
+                      <tr>
+                        <td class="text-center">4 Bedrooms</td>
+                        <td class="text-center">9.2 Million AED</td>
+                      </tr>                   
+                      <tr>
+                        <td class="text-center">5 Bedrooms</td>
+                        <td class="text-center">15 Million AED and above</td>
+                      </tr>                                
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+                          </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                    <figure class="fig-img outline__banner mb-0">
+                      <img src="./IMAGES/card/dubai/Dubai-Marina.webp" alt="Dubai-Marina" class="img-fluid">
+                      <figcaption class="fig-caption">
+                        <div class="property__bar__option">
+                          <h2><strong>Dubai Marina</strong></h2>
+                          <p>Dubai Marina is a desirable neighbourhood drawing significant attention from investors worldwide. It is termed New Dubai and is the first choice for anyone looking to lead an opulent lifestyle in the city. Its proximity to Dubai Internet City, Dubai Media City and top-ranked universities in Dubai are a major part of its appeal. The development is spectacular as the builders have used state-of-the-art technology to design the plots. And, it won’t be too wrong to say that Dubai Marina is not far from challenging Palm Jumeirah as a premium residential district in the city of gold. </p> 
+                        </div> 
+                      </figcaption>
+                      </figure>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                    <table class="table table-bordered mt-5 table-hover table-striped table-responsive-sm">
+                      <thead>
+                        <tr class="bg-dark" colspan="2">
+                          <th class="text-center text-white table-primary font-weight-bold">No. of Bedrooms</th>
+                          <th class="text-center text-white table-primary font-weight-bold">Average Price </th>
+                        </tr>
+                      </thead>
+                      <tbody>          
+                        <tr rowspan="2">
+                          <td class="text-center">Studio Apartment</td>
+                          <td class="text-center">745K AED</td>
+                        </tr>               
+                        <tr>
+                          <td class="text-center">1 Bedroom</td>
+                          <td class="text-center">9.2 Million AED</td>
+                        </tr>                   
+                        <tr>
+                          <td class="text-center">2 Bedrooms</td>
+                          <td class="text-center">1.8 Million ED</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">3 Bedrooms</td>
+                          <td class="text-center">3 Million AED and above</td>
+                        </tr>                                 
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                          </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                      <figure class="fig-img outline__banner mb-0">
+                        <img src="./IMAGES/card/dubai/Downtown-Dubai.webp" alt="Downtown-Dubai" class="img-fluid">
+                        <figcaption class="fig-caption">
+                          <div class="property__bar__option">
+                            <h2><strong> Downtown Dubai</strong></h2>
+                            <p class="mb-0">Home to the tallest building in the world, the Burj Khalifa, Downtown Dubai is in the northern zone of the city. It offers anurban community feel, making it a hot favourite amongst investors.</p>      
+                              <p>Its defining structures, pedestrian-friendly footpaths and gorgeous promenades also help it stand out from other neighbourhoods in the city. Amidst attractions like the Dubai Fountain and luxurious shopping malls, you can find a great range of high-end apartments, townhouses and villas for sale in Downtown Dubai.</p> 
+                          </div> 
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                      <table class="table table-bordered mt-5 table-hover table-striped table-responsive-sm">
+                        <thead>
+                          <tr class="bg-dark" colspan="2">
+                            <th class="text-center text-white table-primary font-weight-bold">No. of Bedrooms</th>
+                            <th class="text-center text-white table-primary font-weight-bold">Average Price </th>
+                          </tr>
+                        </thead>
+                        <tbody>          
+                          <tr rowspan="2">
+                            <td class="text-center">1 Bedrooms</td>
+                            <td class="text-center">1.5 Million AED</td>
+                          </tr>               
+                          <tr>
+                            <td class="text-center">2 Bedrooms</td>
+                            <td class="text-center">3 Million AED</td>
+                          </tr>                   
+                          <tr>
+                            <td class="text-center">3 Bedrooms</td>
+                            <td class="text-center">4.9 Million AED and above</td>
+                          </tr>                                
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                          </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                    <div class="row">
+                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                        <figure class="fig-img outline__banner mb-0">
+                          <img src="./IMAGES/card/dubai/Arabian-Ranches.webp" alt="Arabian-Ranches" class="img-fluid">
+                          <figcaption class="fig-caption">
+                            <div class="property__bar__option">
+                              <h2><strong>Arabian Ranches</strong></h2>
+                              <p>The swanky villa community of Dubai, Arabian Ranches, features extravagant buildings featuring modern lifestyle amenities. These include private landscaped gardens, covered parking, shared pool, barbeque space, professional security, etc. Its tranquil surroundings are one of the major reasons why investors, both local and international, should consider investing here. Easy access to schools and attractions such as the Dubai Autodrome and Dubai Miracle Garden also make it an ideal location for the best property investment in Dubai. </p> 
+                            </div> 
+                          </figcaption>
+                          </figure>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                        <table class="table table-bordered mt-5 table-hover table-striped table-responsive-sm">
+                          <thead>
+                            <tr class="bg-dark" colspan="2">
+                              <th class="text-center text-white table-primary font-weight-bold">No. of Bedrooms</th>
+                              <th class="text-center text-white table-primary font-weight-bold">Average Price  </th>
+                            </tr>
+                          </thead>
+                          <tbody>          
+                            <tr rowspan="2">
+                              <td class="text-center">3 Bedrooms</td>
+                              <td class="text-center">3 Million AED</td>
+                            </tr>               
+                            <tr>
+                              <td class="text-center">4 Bedrooms</td>
+                              <td class="text-center">4.7 Million AED</td>
+                            </tr>                   
+                            <tr>
+                              <td class="text-center">5 Bedrooms</td>
+                              <td class="text-center">5.9 Million AED </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">6 Bedrooms</td>
+                              <td class="text-center">9.7 Million AED and above</td>
+                            </tr>                                 
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                          </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                      <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                          <figure class="fig-img outline__banner mb-0">
+                            <img src="./IMAGES/card/dubai/Damac-Hills-2.webp" alt="Damac-Hills-2" class="img-fluid">
+                            <figcaption class="fig-caption">
+                              <div class="property__bar__option">
+                                <h2><strong>Damac Hills 2</strong></h2>
+                                <p>Another good neighbourhood for real estate investment in Dubai is Damac Hills 2. It is a well-planned, eco-friendly neighbourhood that is expected to grow even more in the coming years. Investing in this location is thus a profitable option. The incredible supermarkets, beaches, restaurants, along with some upcoming attractions, make it the perfect residential spot. Whether you’re looking for lavish villas or apartments for sale in Damac Hills 2, you can find plenty of choices in this neighbourhood. </p> 
+                              </div> 
+                            </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                          <table class="table table-bordered mt-5 table-hover table-striped table-responsive-sm">
+                            <thead>
+                              <tr class="bg-dark" colspan="2">
+                                <th class="text-center text-white table-primary font-weight-bold">No. of Bedrooms</th>
+                                <th class="text-center text-white table-primary font-weight-bold">Average Price  </th>
+                              </tr>
+                            </thead>
+                            <tbody>          
+                              <tr rowspan="2">
+                                <td class="text-center">3 Bedrooms</td>
+                                <td class="text-center">1.1 Million AED</td>
+                              </tr>               
+                              <tr>
+                                <td class="text-center">4 Bedrooms</td>
+                                <td class="text-center">1.5 Million AED</td>
+                              </tr>                   
+                              <tr>
+                                <td class="text-center">5 Bedrooms</td>
+                                <td class="text-center">1.9 Million AED </td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">6 Bedrooms</td>
+                                <td class="text-center">2.6 Million AED and above</td>
+                              </tr>                                 
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                          </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                        <div class="row">
+                          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                            <figure class="fig-img outline__banner mb-0">
+                              <img src="./IMAGES/card/dubai/Dubai-Hills-Estate.webp" alt="Dubai-Hills-Estate" class="img-fluid">
+                              <figcaption class="fig-caption">
+                                <div class="property__bar__option">
+                                  <h2><strong>Dubai Hills Estate</strong></h2>
+                                  <p>Last but not least on our list is Dubai Hills Estate. This is located in the central region of Dubai. known as one of the most family-friendly neighbourhoods, it comprises buildings that match international standards. Experts count this area as one of the fastest developing areas, perfect for real estate investment. The variety of properties includes high-end villas and apartments for sale in Dubai Hills Estate along with recreational facilities. In addition to the marvellous 18-hole championship golf course, the neighbourhood has some of the best supermarkets and malls. </p> 
+                                </div> 
+                              </figcaption>
+                              </figure>
+                          </div>
+                          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                            <table class="table table-bordered mt-5 table-hover table-striped table-responsive-sm">
+                              <thead>
+                                <tr class="bg-dark" colspan="2">
+                                  <th class="text-center text-white table-primary font-weight-bold">No. of Bedrooms</th>
+                                  <th class="text-center text-white table-primary font-weight-bold">Average Price  </th>
+                                </tr>
+                              </thead>
+                              <tbody>          
+                                <tr rowspan="2">
+                                  <td class="text-center">3 Bedrooms</td>
+                                  <td class="text-center">3.9 Million AED</td>
+                                </tr>               
+                                <tr>
+                                  <td class="text-center">4 Bedrooms</td>
+                                  <td class="text-center">4.5 Million AED</td>
+                                </tr>                   
+                                <tr>
+                                  <td class="text-center">5 Bedrooms</td>
+                                  <td class="text-center">6.2 Million AED </td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center">6 Bedrooms</td>
+                                  <td class="text-center">18 Million AED and above</td>
+                                </tr>                                 
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                          </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                          <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                              <figure class="fig-img outline__banner mb-0">
+                                <img src="./IMAGES/card/dubai/Business-Bay-in-Dubai.webp" alt="Business-Bay-in-Dubai" class="img-fluid">
+                                <figcaption class="fig-caption">
+                                  <div class="property__bar__option">
+                                    <h2><strong>Business Bay</strong></h2>
+                                    <p>Straddling Dubai Creek, Business Bay is a contemporary financial district packed with corporate high-rises, stylish apartments buildings, and swanky hotels. Dubai Water Canal has jogging and cycling tracks plus a colorful mechanical waterfall. Mid-priced stores fill Bay Avenue mall, along with family-friendly dining options. Smart waterside restaurants serve Lebanese dishes, Asian street snacks, and high-end seafood</p> 
+                                  </div> 
+                                </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                             <p class="mt-4">Business Bay’s reputation has expanded internationally due to accolades from organizations like Lonely Planet, a leading travel guidebook publisher. Lonely Planet consistently rated Business Bay fifth amongst some of the globe’s ten “best-looking communities to visit,” ranking it alongside well-known destinations like Sunset Park in New York City, Botafogo in Rio, and Seongsu-dong in Seoul.</p>
+                            </div>
+                          </div>
+                          </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                            <div class="row">
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                                <figure class="fig-img outline__banner mb-0">
+                                  <img src="./IMAGES/card/dubai/International-City-Dubai-1.webp" alt="International-City-Dubai-1" class="img-fluid">
+                                  <figcaption class="fig-caption">
+                                    <div class="property__bar__option">
+                                      <h2><strong>International City</strong></h2>
+                                      <p>Suburban International City is centered on the lively Dragon Mart shopping and dining complex, noted for its electronics stores and Chinese groceries. Family-friendly global restaurants, from Greek to Indian, are scattered among residential developments that are named after different countries. Rare wading birds, including flamingos, inhabit the protected, man-made Warsan Lake wetlands </p> 
+                                    </div> 
+                                  </figcaption>
+                                  </figure>
+                              </div>
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                                <p class="mt-4">In International City, Flats and Villas can be obtained at cheaper rates. The main factor is that apartments in International City Dubai are reasonably priced and provide good value for money. It is the best property investment in Dubai.  in light of the renovation in International City, particularly close to Dragon Mart, constructing a Metro line will help drive up property values in the neighbourhood. </p> 
+                              </div>
+                            </div>
+                          </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                              <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                                  <figure class="fig-img outline__banner mb-0">
+                                    <img src="./IMAGES/card/dubai/Dubai-South.webp" alt="Dubai-South" class="img-fluid">
+                                    <figcaption class="fig-caption">
+                                      <div class="property__bar__option">
+                                        <h2><strong>Dubai South</strong></h2>
+                                        <p>Dubai South is a 145 square kilometer city in Dubai, United Arab Emirates. It was formerly known as Dubai World Central and was originally launched in 2006 as "The Centre of Tomorrow". In 2015, it was renamed Dubai South. </p>
+                                        <p>Dubai South is Dubai's largest single urban development. It's home to Al Maktoum International Airport, which will be the world's largest when fully operational. The city is also close to the Jebel Ali seaport and is intended to connect the region to the world.</p>
+                                        <p>Dubai South is divided into mini-cities, including: Residential, Commercial, Aviation, Logistics, Golf.</p>    
+                                      </div> 
+                                    </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                                  <p class="mt-xl-5 mt-lg-3">Dubai South is the city’s future, offering a wealth of opportunities for property investors, homeowners, and businesses. His Highness Sheikh Mohammed bin Rashid Al Maktoum, who planned the Dubai Plan 2021, deserves all the praise. this special area, which spans 715 hectares and is located in the northern portion of Dubai South, offers superior residential facilities at a fair price (compared to other locations in Dubai). The design of Dubai South Residential City was driven primarily by three factors. </p>
+                              <ul>
+                              <li>Residing adjacent to the place of employment.</li>
+                              <li>Accommodate the housing needs of those working in other areas of Dubai South.</li>
+                              <li>Provide a particular demographic cost and adaptability.</li>
+                              </ul>
+                                </div>
+                              </div>
+                          </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                                <div class="row">
+                                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                                    <figure class="fig-img outline__banner mb-0">
+                                      <img src="./IMAGES/card/dubai/Dubai-World-Trade-Centre-1536x1023.webp" alt="Dubai-World-Trade-Centre" class="img-fluid">
+                                      <figcaption class="fig-caption">
+                                        <div class="property__bar__option">
+                                          <h2><strong>Dubai World Trade Centre</strong></h2>
+                                          <p>Dubai World Trade Centre offers a venue for every event. From conferences and trade exhibitions, to concerts and galas, our scope and scale are unlimited. We also provide the infrastructure our organisers and exhibitors need to be successful, including event service teams who deliver comprehensive support.</p> 
+                                        </div> 
+                                      </figcaption>
+                                      </figure>
+                                  </div>
+                                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
+                                    <p class="mt-xl-5 mt-lg-3">It can be wise to invest in Dubai World Trade Center (DWTC) for a number of good reasons. Consider the following advice:</p>
+                                    <ul>
+                                      <li><strong class="pr-2">Location:</strong>The DWTC is in the centre of Dubai’s business district, making it a top choice for companies wishing to expand their presence there. Road, metro, and other transit modes make it simple to get to the core.</li>
+                                      <li><strong class="pr-2">Robust economy:</strong>Dubai’s economy is prospering due to its stable political climate. It also has a strong dedication to commercial expansion. Access this thriving economy and its numerous opportunities through investment in the DWTC. because of this diversity, several industry areas are represented by the DWTC, which holds various events and exhibitions in these fields as well as others like technology, finance, and healthcare.</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                          </div>             
+          </div>
+        </div>
+       </section>
      <!-- ****************kalpataru__properties modification********************** -->
-     <section class="kalpataru__properties">
+     <section class="kalpataru__properties mt-5">
       <div class="container">
         <div class="wrapper row">
           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-block margin-bottom">
@@ -4695,32 +5205,7 @@
                   <ul>
                     <li class="border-none"><a href="javasript:void">read article <i class="fas fa-arrow-right pl-lg-1"></i></a></li></ul>
                 </div>
-              </div>
-               <!-- <div class="video__part">
-               <div class="video__sec">
-                <img src="./IMAGES/card/fresh-prop/retouching-card-5.jpg" class="card-img-margin video__sec-img ">
-
-                </div>
-                <div class="video__Sec__right__Text">
-                <p>Inheritance Laws In India - All You to Know</p>
-                  <ul>
-                  <li><a href="javasript:void">watch video<i class="fas fa-arrow-right pl-lg-2"></i></a></li>
-                </ul>
-          
-                </div>
-
-              
-             
-              </div> -->
-              <!-- <div class="article__part">
-                <div class="article__doc">
-                  <img src="./IMAGES/card/fresh-prop/retouching-card-5.jpg" class="video__sec-img img-fluid">
-                  <p><strong>Sale Deed: Meaning, Format, and Components of a Sale Deed</strong></p>
-                  <ul class="mb-0">
-                    <li><a href="javasript:void">read article<i class="fas fa-arrow-right pl-lg-2"></i></a></li>
-                  </ul>
-                </div>
-                </div> -->
+              </div>   
               </div>
               <div class="card-footer">
                 <ul class="mb-0 d-flex justify-content-between align-items-center">
@@ -4966,7 +5451,8 @@
               <div class="jumbo__box">
                 <div class="jumbo__box__left">
                   <h2>post your property for <span class="display-1">free</span></h2>
-                  <h5>List it on <span title="Smartdeal & Investment" data-toggle="tooltip" aria-label="Smartdeal & Investment">smartdeal & investment</span> to get genuine leads</h5>
+                  <h5>List it on <span title="Smartdeal & Investment" data-toggle="popover" data-content="And here's some amazing content. It's very engaging. Right?">smartdeal & investment</span> to get genuine leads</h5>
+                  <!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button> -->
                 </div>
                 <div class="jumbo__box__fa-pull-right">
                   <button type="button" class="btn-setting" data-target="#mymodal" data-toggle="modal">
@@ -7226,14 +7712,25 @@
               <div class="appstore"><img src="./IMAGES/ICON/appstore.png" class="img-fluid"></div>
             </div>
             <div class="social-media-links">
-              <ul>
-                <li><a href="https://www.facebook.com" target="_blank"></a></li>
-                <li><a href="https://www.youtube.com" target="_blank"></a></li>
-                <li><a href="https://www.twitter.com" target="_blank"></a></li>
-                <li><a href="https://in.linkedin.com/" target="_blank"></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"></a></li>
-              </ul>
+              <a href="http://www.facebook.com" target="_blank" class="social__anchor">
+                <i class="fab fa-facebook facebook__setting social__link__available fa-2x"></i>
+              </a>
+              <a href="http://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter twitter__setting social__link__available fa-2x"></i>
+              </a>
+              <a href="http://www.instagram.com" target="_blank">
+              <i class="fab fa-instagram instagram__setting social__link__available fa-2x"></i>
+              </a>
+              <a href="http://www.youtube.com" target="_blank">
+              <i class="fab fa-youtube youtube__setting social__link__available fa-2x"></i>
+              </a>
+              <a href="http://www.linkedin.com" target="_blank">
+               <i class="fab fa-linkedin linkedin__setting social__link__available fa-2x"></i>
+              </a>
             </div>
+
+          
+
           </div>
           </div>
    
@@ -7314,6 +7811,7 @@
 </body>
 <script type="text/javascript" src="JS/jquery.3.6.js"></script>
 <script type="text/javascript" src="JS/bootstrap.js"></script>
+<script type="text/javascript" src="JS/jquery.magicsearch.js"></script>
 <script type="text/javascript" src="JS/jquery-ui.js"></script>
 <script type="text/javascript" src="JS/jquery-ui.min.js"></script>
 <script type="text/javascript" src="JS/font-awe-all.min.js"></script>
@@ -7324,5 +7822,36 @@
 <script type="text/javascript" src="JS/slick.js"></script>
 <script type="text/javascript" src="JS/slick.min.js"></script>
 <script type="text/javascript" src="JS/slider.js"></script>
+<script>
+ $(function() {
+        var dataSource = [
+            {id: 1, firstName: 'Tim', lastName: 'Cook'},
+            {id: 2, firstName: 'Eric', lastName: 'Baker'},
+            {id: 3, firstName: 'Victor', lastName: 'Brown'},
+            {id: 4, firstName: 'Lisa', lastName: 'White'},
+            {id: 5, firstName: 'Oliver', lastName: 'Bull'},
+            {id: 6, firstName: 'Zade', lastName: 'Stock'},
+            {id: 7, firstName: 'David', lastName: 'Reed'},
+            {id: 8, firstName: 'George', lastName: 'Hand'},
+            {id: 9, firstName: 'Tony', lastName: 'Well'},
+            {id: 10, firstName: 'Bruce', lastName: 'Wayne'},
+        ];
+        $('#basic').magicsearch({
+            dataSource: dataSource,
+            fields: ['firstName', 'lastName'],
+            id: 'id',
+            format: '%firstName% · %lastName%',
+            multiple: true,
+            multiField: 'firstName',
+            multiStyle: {
+                space: 5,
+                width: 80
+            }
+        });
+        $('#set-btn').click(function() {
+            $('#basic').trigger('set', { id: '3,4' });
+        });
+    });
+</script>
 
 </html>
