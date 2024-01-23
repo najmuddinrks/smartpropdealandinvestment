@@ -280,7 +280,12 @@
    height: 50px;
    z-index: 79;
 }
-
+.bottom-header-section .container .wrapper{
+   height: 60px !important;
+}
+ .logo a img{
+   width: 150px;
+}
 .bottom-header-section .container .wrapper .menset{
    display: flex;
    justify-content: flex-start;
@@ -290,13 +295,19 @@
 .bottom-header-section .container .wrapper .menset .menu-main .menu-full-width{
    position: absolute;
     width: 1286px;
-    left: -485%;
+    left: -450%;
     padding: 20px 10px 20px 10px;
 }
 .bottom-header-section .container .wrapper .menset .menu-main .menu-full-width-home{
-   left: -236%;
+   left: -222%;
    width: 1286px;
 
+}
+.bottom-header-section .container .wrapper .menset .menu-main .menu-full-width-home-buy{
+   left: -16px;
+}
+.bottom-header-section .container .wrapper .menset .menu-main .menu-full-width-home-prop-services{
+   left: -100px;
 }
 .bottom-header-section .container .wrapper .menset .menu-main .menu-full-adjustment{
    padding:20px;
