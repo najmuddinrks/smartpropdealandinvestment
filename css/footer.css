@@ -206,7 +206,7 @@
     padding: 0px 10px 0px 0px;
 }
 .bottom-footer .container .wrapper ul li a{
-    font-size: var(--font-size18);
+    font-size: var(--font-size16);
     color: var(--li-color);
     transition: 0.5s ease-in-out;
     text-decoration: none;
@@ -243,8 +243,7 @@
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    font-size: var(--font-size16);
-    line-height: 2;
+    font-size: var(--font-size14);
 }
 
 

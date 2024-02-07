@@ -43,17 +43,12 @@
 }
 .scroll {
    background: var(--red-main);
-   /* background: blue; */
-
  }
 .wrapper{
    display:flex;
    justify-content:space-between;
    align-items:center;
 }
-/* .top-header-section .container .wrapper{
-   height: 50px;
-} */
 
 /* top header left sec is starte */
 .top-header-section .container .wrapper .top-header-left{
@@ -71,7 +66,7 @@
 .top-header-section .container .wrapper .top-header-left .logo a img{
    max-width: 222PX;
    width: 100%;
-   min-height: 80px;
+   min-height: 58px;
    height: 50px;
    transition: 0.5s ease-in-out;
 }
@@ -277,7 +272,7 @@
    width: 100vw;
    top: 64px;
    left: 0;
-   height: 50px;
+   /* height: 50px; */
    z-index: 79;
 }
 .bottom-header-section .container .wrapper{
@@ -295,7 +290,7 @@
 .bottom-header-section .container .wrapper .menset .menu-main .menu-full-width{
    position: absolute;
     width: 1286px;
-    left: -450%;
+    left: -462%;
     padding: 20px 10px 20px 10px;
 }
 .bottom-header-section .container .wrapper .menset .menu-main .menu-full-width-home{
@@ -549,7 +544,6 @@ transition: 0.5s ease-in-out;
   width: 350px !important;
  }
  .logo-section{
-  /* margin-top: -5px; */
   padding: 12px 10px;
   height: 50px;
   background: var(--red-main);
