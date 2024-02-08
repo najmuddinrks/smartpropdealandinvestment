@@ -100,14 +100,18 @@ h5{ font-family:var(--lato-black) ;}
     radial-gradient(at 100% 0%, #7e00ff 0%, rgba(0,0,0,0) 70%),
     radial-gradient(at 0% 0%, #ec00ff 0%, rgba(0,0,0,0) 70%),
     #ff0000;
-    --body-color:rgb(255,255,255);
+   --body-color:radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(171,209,234,1) 100%); 
+   
+
+
+    /* --body-color:rgb(255,255,255);
     background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(171,209,234,1) 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(171,209,234,1)));
     background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(171,209,234,1) 100%);
     background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(171,209,234,1) 100%);
     background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(171,209,234,1) 100%);
     background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(171,209,234,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#abd1ea',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#abd1ea',GradientType=1 ); */
     --instagram:#d62976;
     --facebook:#3b5998;
     --twitter:#1DA1F2;
@@ -156,19 +160,21 @@ a{
 }
 html{
     font-size: 62.5%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     box-sizing: border-box;
+    background: var(--body-color) !important;
+    width: 100%;
     height: auto;
 }
 body{
     line-height: 1.2;
     letter-spacing: 1.1;
-    width: 100%;
+    width: 100% !important;
     height: 100vh;
     position: relative;
-    /* overflow-x: hidden; */
+    /* overflow: hidden; */
 }
-.cursor{
+/* .cursor{
     width: 20px !important;
     height: 20px !important;
     background:var(--dark-blue-op);
@@ -180,7 +186,7 @@ body{
     z-index: 10;
     transition: all linear0.2s;
     mix-blend-mode: difference;
-  }
+  } */
   .resp__search__bar{
     display: none;
   }
@@ -2024,10 +2030,9 @@ dd > .main__listing .listing .cat input:checked + span {
   ul.list__faq > li:has(input[type="radio"]:checked) + li {
     border-top: solid 1px var(--pure-white);
   }
- 
-  
-
-
+select.w__600{
+    width: 600px !important;
+}
 
 
 

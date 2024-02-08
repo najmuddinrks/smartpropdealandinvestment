@@ -20,7 +20,7 @@
 }
 .overlay2{
         width: 120%;
-        height: 178%;
+        height: 168%;
         position: absolute;
         top: 0;
         left: 0;
@@ -750,7 +750,7 @@ label {
     padding-top: 30px;
   }
   .prop__inside__collection{
-    width: 130px;
+    /* width: 130px; */
     height: 90px;
     text-align: center;
     text-transform: capitalize;
@@ -797,6 +797,7 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
 }
 .accordion-header5{
     padding: 10px 15px;
@@ -896,7 +897,50 @@ input:checked + .sliderabcd:before {
     color: #555;
     display: none; /* Initially hide the text */
 }
+/* ************commercial-tab input hover label animation effect************** */
+.input-animated {
+    position: relative;
+    margin-bottom: 1.5em; 
+  }
+  
+  .input-animated input[type="text"] {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+  }
+  
 
+  .label-name {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-size: var(--font-size14); 
+    color: var(--para-dark-h2); 
+  }
+  
+  .input-animated input[type="text"]:focus,
+  .input-animated input[type="text"]:valid {
+    border-bottom-color: var(--dark-blue-op);
+  }
+  
+  .input-animated input[type="text"]:focus + .label-name,
+  .input-animated input[type="text"]:valid + .label-name {
+    transform: translateY(-20px);
+    font-size: var(--font-size11);
+    color: var(--dark-blue-op); 
+  }
+  
+  .input-animated input[type="text"]:hover + .label-name {
+    color: var(--dark-blue-op); 
+  }
+  
+/* ************doubt************** */
 select.custom__select__bar:not([size]):not([multiple]){
     width: 500px !important;
     background: var(--softpink);
@@ -970,3 +1014,7 @@ select.custom__select__bar:not([size]):not([multiple]).selected{
 .ui-slider .ui-slider-range{
     background: var(--dark-blue-op)!important;
 }
+
+
+
+
