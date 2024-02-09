@@ -44,13 +44,14 @@ $(document).ready(function () {
         upArrow.toggleClass('d-none', !accordionItem.hasClass('active'));
     });
 
-    $('.bundle__chuck').click(function () {
-        $(this).addClass("d-none");/////option content if it is not required then comment it
-        $('.hidden__content').toggle(); 
+    document.querySelector('.bundle__chuck').addEventListener('click', function() {
+        this.classList.add('d-none');
+        document.querySelector('.hidden__content').classList.toggle('hidden');
     });
     
+    
     $('.bundle__chuck2').click(function () {
-        $(this).addClass("d-none");/////option content if it is not required then comment it
+        $(this).addClass("d-none");
         $('.hidden__content2').toggle(); 
     });
 
@@ -228,7 +229,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     // Initialize the slider
-    $("#slider").slider({
+    $("#slider143").slider({
         range: "min",
         min: 0,
         max: 100,
@@ -242,6 +243,6 @@ $(document).ready(function() {
     // Update the slider when the dropdown selection changes
     $("#slider-select").on("change", function() {
         var selectedValue = $(this).val();
-        $("#slider").slider("value", selectedValue);
+        $("#slider143").slider("value", selectedValue);
     });
 });

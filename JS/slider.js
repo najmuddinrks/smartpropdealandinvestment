@@ -544,7 +544,7 @@ $(document).ready(function () {
     dots: false,
     infinite: false,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     // variableWidth:200,
     prevArrow:
@@ -559,7 +559,7 @@ $(document).ready(function () {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: false,
           dots: false,
@@ -568,7 +568,7 @@ $(document).ready(function () {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: false,
           // centerMode: true,
@@ -580,7 +580,7 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: false,
           arrows: false,
@@ -590,7 +590,7 @@ $(document).ready(function () {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
           dots:true,

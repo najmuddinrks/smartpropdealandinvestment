@@ -373,12 +373,8 @@ $(window).scroll(function() {
       $('.top-header-section').removeClass("scroll");
     }
   });
-  // ************cursor***************
 
-var body = document.querySelector("body")
-var crsr = document.querySelector(".cursor");
-
-body.addEventListener("mouseover",function(dets){
-  crsr.style.left = dets.x+="px"
-  crsr.style.top = dets.y+="px"
-})
+// ************openNewPage***************
+  function openNewPage() {
+    window.location.href = 'Assets/resp__input__search_filter/newpopup.html';
+  }
