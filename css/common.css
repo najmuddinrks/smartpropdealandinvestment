@@ -174,19 +174,7 @@ body{
     position: relative;
     /* overflow: hidden; */
 }
-/* .cursor{
-    width: 20px !important;
-    height: 20px !important;
-    background:var(--dark-blue-op);
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    transition: all linear0.2s;
-    mix-blend-mode: difference;
-  } */
+
   .resp__search__bar{
     display: none;
   }
@@ -1643,9 +1631,7 @@ font-size: var(--font-size16);
 .border-radius{
     border-radius: 20px !important;
 }
-/* main{
-    margin-top: 80px;
-} */
+
 .see-all-prop{
     font-size: var(--font-size16);
     color:var(--red-main);
@@ -2030,10 +2016,10 @@ dd > .main__listing .listing .cat input:checked + span {
   ul.list__faq > li:has(input[type="radio"]:checked) + li {
     border-top: solid 1px var(--pure-white);
   }
-select.w__600{
+/* select.w__600{
     width: 600px !important;
 }
-
+ */
 
 
   

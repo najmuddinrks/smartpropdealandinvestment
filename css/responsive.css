@@ -233,7 +233,7 @@ transition: 0.5s ease-in-out;
 }
 
 /* *******************accordian H4*************************** */
-.ui-accordion .ui-accordion-header{
+.ui-accordion .ui-accordion-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -247,7 +247,7 @@ transition: 0.5s ease-in-out;
     padding: 6px 16px 6px 16px;
     cursor: pointer;
     border: 1px solid var(--pure-white);
-    color:var(--dark-color);
+    color: var(--dark-color);
     transition: 0.5s ease-in-out;
     text-transform: capitalize;
 }
@@ -350,7 +350,7 @@ main{
 }
 .overlay {
     width: 100%;
-    min-height:162%;
+    min-height:152%;
     line-height: 2;
     position: absolute;
     top: 30px;
@@ -684,6 +684,15 @@ main{
        .input__search__circle{
         top: -41%;
        }
+       body {
+        height: 43%;
+    }
+    .overlay {
+        min-height: 145%;
+    }
+    .main__banner__sect__resp__input__field__search__box{
+        top: 65%;
+    }
 }
 @media(max-width:768px){
     .logo a img{
@@ -882,10 +891,13 @@ main{
         height: 34px;
     }
     .overlay {
-        min-height: 150%;
+        min-height: 186%;
     }
     .resp__search__anchor__list ul li a{
         font-size:var(--font-size13);
+    }
+    .center__div ul li a{
+        font-size: var(--font-size18);
     }
 }
 
@@ -1032,6 +1044,13 @@ main{
 .card__elem img{
     max-width: 120px !important;
 }
+.main__banner__sect__resp__input__field__search__box {
+    top: 77%;
+}
+.overlay {
+    min-height: 190%;
+}
+
 
 }
 
@@ -1191,7 +1210,36 @@ main{
         font-size: var(--font-size11);
         line-height: 1.1;
     }
-   
+    .bottomline__search__input__box{
+        width: 272px;
+        height: 42px;
+    }
+    .mad-input-box::placeholder {
+        content: "Search nearby cities...";
+    }
+    .bottomline__search__box input {
+        width: 188px;
+    }
+    .main__banner__sect__resp__input__field__search__box {
+        top: 103%;
+    }
+    .input__search__circle {
+        top: -37%;
+        left: 92%;
+    }
+    .font-predict {
+        top: 68%;
+        left: 6%;
+    }
+    .resp__search__anchor__list ul li a{
+        margin: 0px 4px;
+        font-size: var(--font-size8);
+    }
+    .main__banner__sect__resp__input__field__search__box h2{
+        font-size: var(--font-size14);
+    }
+    
+
     .Latest__Project__Gallery, 
 .explore__properties,
 .fresh__prop,
