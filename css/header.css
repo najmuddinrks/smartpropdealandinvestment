@@ -186,7 +186,7 @@
    width: 100%;
    height: calc(100vh - 38vh);
    max-width: 300px;
-   top: 56px;
+   top: 61px;
    display: block;
    visibility: hidden;
    opacity: 0;
@@ -219,7 +219,7 @@
    left: 122%;
 }
 .top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup .btn-center{
-   margin: 6px auto 3px;
+   margin: 22px auto 3px;
    text-align: center;
    line-height: 1;
 }
@@ -227,6 +227,7 @@
    font-size: var(--font-size14);
    text-align: center;
    line-height: 1;
+   padding-bottom: 15px;
    color: var(--para-tint-h4);
 }
 .top-header-section .container .wrapper .top-header-right .login .select_box .login-bar + .login-popup .signup a{

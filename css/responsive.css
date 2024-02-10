@@ -3,7 +3,12 @@
         width: 100% !important;
         height: 60%;
         /* background:none !important; */
-        
+    }
+    .bottom-header-section .container .wrapper .menset .menu-main .menu-full-width{
+        display: none;
+    }
+    .bottom-header-section .container .wrapper .menset .menu-main .menu-full-width-home{
+        display: none;
     }
     .checkbox__custom__oriented{
         margin-right: 3px;
