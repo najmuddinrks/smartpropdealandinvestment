@@ -814,7 +814,7 @@ function initSlider5() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
           dots:true,
